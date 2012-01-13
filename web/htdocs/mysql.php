@@ -1,11 +1,16 @@
-<?
+<?php
 
-$host = "mysql4-p";
-$user = "p31862rw";
-$pass = "negerdreng2";
-$db = "p31862_web";
+//set config from ini
+$config=parse_ini_file('../config.ini',1);
 
-$connect = mysql_connect($host, $user, $pass);
-mysql_select_db($db);
+//extract config settings
+extract($config['database']);
 
-?>
+//connect database
+$connect = mysql_connect($config['database']['host'], $config['database']['user'], $config['database']['pass']);
+mysql_select_db($config['database']['name']);
+
+//unset database password
+unset($config['database']['pass']);
+
+//eof
