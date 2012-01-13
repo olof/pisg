@@ -1,10 +1,11 @@
 <?php
 
 session_start();
-
-$pw_salt='pisg+admin,';
-$pw_hash='a1764831e62d52191009207dadc0bc8e';
-$_SESSION['authed'] = ((isset($_REQUEST['password']) && md5($pw_salt.$_REQUEST['password']) == $pw_hash));
+if (!isset($_SESSION['authed']) || !$_SESSION['authed']) {
+    $pw_salt='pisg+admin,';
+    $pw_hash='a1764831e62d52191009207dadc0bc8e';
+    $_SESSION['authed'] = ((isset($_REQUEST['password']) && md5($pw_salt.$_REQUEST['password']) == $pw_hash));
+}
 
 include('mysql.php');
 
