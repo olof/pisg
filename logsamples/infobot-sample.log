@@ -1,0 +1,89 @@
+1004524153 [1] loaded param file ./conf/infobot.config (56 items)
+1004524153 [2] Loaded help file infobot.help
+1004524153 [3] opened are -> ./infobot-are
+1004524153 [4] opened is -> ./infobot-is
+1004524153 [5] opened ignore -> ./infobot-ignore
+1004524153 [6] loading sane defines conf/sane-is.txt
+1004524153 [7] loaded conf/sane-is.txt into is (8/8 good items)
+1004524153 [8] loading sane defines conf/sane-are.txt
+1004524153 [9] loaded conf/sane-are.txt into are (6/6 good items)
+1004524153 [10] Adding *cthulhu!hastur@*unspeakable.net to ignore list (from sane).
+1004524153 [11] Adding *!*@*nan*direct.ca to ignore list (from sane).
+1004524153 [12] Adding *!*@200.38.211.* to ignore list (from sane).
+1004524153 [13] opened plusplus -> ./infobot-karma
+1004524153 [14] opened seen -> ./infobot-seen
+1004524153 [15] Parsing User File
+1004524153 [16] Parsing Channel File
+1004526777 [1] loaded param file ./conf/infobot.config (56 items)
+1004526777 [2] Loaded help file infobot.help
+1004526777 [3] opened are -> ./infobot-are
+1004526777 [4] created new db is -> ./infobot-is
+1004526777 [5] loaded conf/infobot-is.txt into is (2/2 good items)
+1004526777 [6] opened ignore -> ./infobot-ignore
+1004526777 [7] loading sane defines conf/sane-is.txt
+1004526777 [8] loaded conf/sane-is.txt into is (8/8 good items)
+1004526777 [9] loading sane defines conf/sane-are.txt
+1004526777 [10] loaded conf/sane-are.txt into are (6/6 good items)
+1004526777 [11] Adding *cthulhu!hastur@*unspeakable.net to ignore list (from sane).
+1004526777 [12] Adding *!*@*nan*direct.ca to ignore list (from sane).
+1004526777 [13] Adding *!*@200.38.211.* to ignore list (from sane).
+1004526777 [14] opened plusplus -> ./infobot-karma
+1004526777 [15] opened seen -> ./infobot-seen
+1004526777 [16] Parsing User File
+1004526777 [17] Parsing Channel File
+1004526778 [18] setup: 2623 factoids; 10 IS; 2613 ARE
+1004526778 [19] Connecting to port 6667 of server 127.0.0.1 (127.0.0.1)...
+1004526778 [20]  connected.
+1004526778 [21] -!127.0.0.1!- *** If you are having problems connecting due to ping timeouts, please type /raw pong F62B6658 or /quote pong F62B6658 now.
+1004526778 [22] -!127.0.0.1!- *** If you still have trouble connecting, please email nospoof@dal.net with the name and version of the client you are using, and the server you tried to connect to: (irc.avians.net)
+1004526778 [23] joined #Feathers
+1004526778 [24] joined #BirdBot
+1004526778 [25] Your host is irc.avians.net, running version dal4.4.10
+1004526778 [26] This server was created Sun May 13 2001 at 03:41:57 EDT
+1004526778 [27] There are 12 users and 3 invisible on 2 servers
+1004526778 [28] I have 7 clients and 1 servers
+1004526778 [29] -[irc.avians.net]- Highest connection count: 18 (17 clients)
+1004526778 [30] - irc.avians.net Message of the Day - 
+1004526778 [31] - 16/1/2001 20:53
+1004526778 [32] - -_-   -_-   -_-   -_-   -_-   -_-   -_-   -_-   -_-   -_-  -_- 
+1004526778 [33] - Welcome to irc.avians.net, located in Cleveland, OH!
+1004526778 [34] - 
+1004526778 [35] - The Windriders (IRC Admin):
+1004526778 [36] -         Skandranon (skandranon@avians.net)
+1004526778 [37] -         Whyrl (whyrl@feathers.net)
+1004526778 [38] - 
+1004526778 [39] - The normal roost is on: #Feathers, feel free to join us!
+1004526778 [40] - 
+1004526778 [41] - SERVICES:       Avians.net employs services includding NickServ, ChanServ,
+1004526778 [42] -                 MemoServ, and HelpServ. /msg any of these services with
+1004526778 [43] -                 the word "help" for syntax assistance.
+1004526778 [44] - 
+1004526778 [45] - NEED HELP?      Please /join #Feathers if you have any questions or
+1004526778 [46] -                 otherwise need help. There is generally an IRC op on wing
+1004526778 [47] -                 to offer assistance.
+1004526778 [48] - 
+1004526778 [49] - If you have any questions about this, please email irc@avians.net.
+1004526778 [50] - 
+1004526778 [51] -                     -  http://www.avians.net -
+1004526778 [52] - 
+1004526778 [53] - Last revision, 16 Jan 2001 - Lord Skandranon (MCP)
+1004526778 [54] End of /MOTD command.
+1004526778 [55] >>> BirdBot (~BirdBot@irc.avians.net) has joined #Feathers
+1004530872 [68] <Whyrl/#feathers> hugs BirdBot!
+1004530875 [70] <Whyrl/#feathers> Good bot!
+1004536691 [97] <Takena/#feathers> waves to Whyrl! :>
+1004554167 [243] >>> mode/[1m#Feathers[0m [[1m+o Prio[0m] by [1mChanServ[0m
+1004566295 [434] >>> [1;32mPrio[0m materializes into [1;32mPrioAttaMall[0m 
+1004566279 [433] >>> Akil (Akil2001@modem-46.green-chromis.dialup.pol.co.uk) has joined #Feathers
+1004765092 [8495] >>> mode/[1m#avians[0m [[1m+ooo BirdBot Bushrat Kibbe[0m] by [1mWhyrl[0m
+1005030118 [1785] >>> mode/[1m#Feathers[0m [[1m+oo BirdBot Buran[0m] by [1mWhyrl[0m
+1005963897 [687] >>> [1mFalco_Lombardi[0m was kicked off [1m#feathers[0m by [1mWarphammer[0m ([1mPhysical threats? I don't think so.[0m)
+1006063103 [3153] >>> Skandranon[1m[[0m#Feathers :ATTENTION CORVIDS (and chimeric subsidiaries thereof) -- Flying Shinies Showers this evening in the sky! Watch where you're flying.[1m][0m set the topic: >
+1006260715 [7906] >>> Whyrl[1m[[0m#Feathers[1m][0m set the topic: Hooray for feathers!
+1007331465 [8616] >>> Whyrl[1m[[0m#avians :Just testing[1m][0m set the topic:  ignore this topic.
+1007331594 [79] QUIT BirdBot has quit IRC (regrouping; bbiab)
+1007331594 [80] closed db plusplus
+1007331594 [81] closed db are
+1007331594 [82] closed db seen
+1007331594 [83] closed db ignore
+1007331594 [84] closed db is

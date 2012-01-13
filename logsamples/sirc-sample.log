@@ -1,0 +1,22 @@
+*L* IRC log started on Thu Jan  23 20:03:10 2003
+20:03 *** LOG is set to on
+20:05 *>* You have joined channel #bartko
+20:05 *#* Users on #bartko: bar_tek @bartek09
+20:05 *<* You have left channel #bartko
+20:06 *>* You have joined channel #bartko
+20:06 *T* Topic for #bartko: old topic
+20:06 *T* Topic for #bartko set by bartek09!buscil@blah.blah on Thu Jan  23 20:30:37 2003
+20:06 *#* Users on #bartko: bar_tek @bartek09
+20:06 *T* bar_tek has changed the topic on channel #bartko to "new topic"
+20:07 *+* Mode change "+v bar_tek" on channel #bartko by bartek09
+20:07 *+* Mode change "-v bar_tek" on channel #bartko by bartek09
+20:08 <bar_tek> bla blah
+20:08 *+* Mode change "+o bar_tek" on channel #bartko by bartek09
+20:08 <bartek09> blah blah
+20:10 * bar_tek bluh bluh
+20:10 *+* Mode change "-o bartek09" on channel #bartko by bar_tek
+20:11 *>* bartko__ (~bartek@blah.blah) has joined channel #bartko
+20:11 *N* bartko__ is now known as bartko_
+20:11 *+* Mode change "+oo bartek09 bartko_" on channel #bartko by bar_tek
+20:12 *<* bartek09 has been kicked off channel #bartko by bar_tek (some reason)
+20:12 *<* Signoff: bartko_ (some reason)

@@ -1,0 +1,93 @@
+1010866737 NOTICE AUTH :*** Looking up your hostname
+1010866737 NOTICE AUTH :*** Found your hostname, cached
+1010866737 NOTICE AUTH :*** Checking Ident
+1010866737 NOTICE AUTH :*** Got ident response
+1010866737 :irc1.equnet.org 433 * oer :Nickname is already in use.
+1010866738 PING :393294281
+1010866738 :irc1.equnet.org 001 oeroer :Welcome to the EQUNet IRC Network oeroer
+1010866738 :irc1.equnet.org 002 oeroer :Your host is irc1.equnet.org, running version u2.10.10+lain(1.1.2)
+1010866738 :irc1.equnet.org 003 oeroer :This server was created Wed Jun 13 2001 at 11:15:00 EEST
+1010866738 :irc1.equnet.org 004 oeroer irc1.equnet.org u2.10.10+lain(1.1.2) dioswkg biklmnopstv
+1010866738 :irc1.equnet.org 005 oeroer SILENCE=15 WHOX WALLCHOPS USERIP CPRIVMSG CNOTICE MODES=6 MAXCHANNELS=20 MAXBANS=30 NICKLEN=15 TOPICLEN=250 KICKLEN=250 MAP :are supported by this server
+1010866738 :irc1.equnet.org 251 oeroer :There are 7 users and 17 invisible on 4 servers
+1010866738 :irc1.equnet.org 252 oeroer 5 :operator(s) online
+1010866738 :irc1.equnet.org 254 oeroer 6 :channels formed
+1010866738 :irc1.equnet.org 255 oeroer :I have 5 clients and 2 servers
+1010866738 :irc1.equnet.org NOTICE oeroer :Highest connection count: 13 (10 clients)
+1010866738 :irc1.equnet.org 375 oeroer :- irc1.equnet.org Message of the Day - 
+1010866738 :irc1.equnet.org 372 oeroer :- 20/12/2001 18:28
+1010866738 :irc1.equnet.org 372 oeroer :- 
+1010866738 :irc1.equnet.org 372 oeroer :-   Information for the EQUNet IRC Network - please read
+1010866738 :irc1.equnet.org 372 oeroer :- 
+1010866738 :irc1.equnet.org 372 oeroer :- **[ Local IRC operators ]**************************************
+1010866738 :irc1.equnet.org 372 oeroer :- 
+1010866738 :irc1.equnet.org 372 oeroer :-         Admin: EQU <equ@equnet.org>
+1010866738 :irc1.equnet.org 372 oeroer :- 
+1010866738 :irc1.equnet.org 372 oeroer :-         Oper: Spede <spede@cutery.fi>
+1010866738 :irc1.equnet.org 372 oeroer :-               Cable <cable@z.kqgames.com>
+1010866738 :irc1.equnet.org 372 oeroer :-               Tomppa <tniemi@uiah.fi>
+1010866738 :irc1.equnet.org 372 oeroer :- 
+1010866738 :irc1.equnet.org 372 oeroer :- **[ Channels ]**************************************************
+1010866738 :irc1.equnet.org 372 oeroer :- 
+1010866738 :irc1.equnet.org 372 oeroer :-   Join #opers to reach EQUNet admins and opers.
+1010866738 :irc1.equnet.org 372 oeroer :- 
+1010866738 :irc1.equnet.org 372 oeroer :- **[ URLs ]*****************************************************
+1010866738 :irc1.equnet.org 372 oeroer :- 
+1010866738 :irc1.equnet.org 372 oeroer :-   EQUNet IRC Network - http://www.equnet.org/
+1010866738 :irc1.equnet.org 372 oeroer :- 
+1010866738 :irc1.equnet.org 372 oeroer :- **[ History ]**************************************************
+1010866738 :irc1.equnet.org 372 oeroer :- 
+1010866738 :irc1.equnet.org 372 oeroer :-   Created in February 1999 by EQU with much help from
+1010866738 :irc1.equnet.org 372 oeroer :-   Bafi and Vekotin.
+1010866738 :irc1.equnet.org 372 oeroer :- 
+1010866738 :irc1.equnet.org 372 oeroer :-   The IRC software and some ideas (like this MOTD) were
+1010866738 :irc1.equnet.org 372 oeroer :-   borrowed from B2IRC and Quakenet.
+1010866738 :irc1.equnet.org 372 oeroer :- 
+1010866738 :irc1.equnet.org 372 oeroer :- **[ Disclaimer ]***********************************************
+1010866738 :irc1.equnet.org 372 oeroer :-  
+1010866738 :irc1.equnet.org 372 oeroer :-   IRC is a free media, the operators of this server take no
+1010866738 :irc1.equnet.org 372 oeroer :-   responsibility whatsoever for opinions expressed by users
+1010866738 :irc1.equnet.org 372 oeroer :-   on this network.
+1010866738 :irc1.equnet.org 372 oeroer :-  
+1010866738 :irc1.equnet.org 372 oeroer :-   Channel protectbots (eg eggdrop etc.) are allowed. However,
+1010866738 :irc1.equnet.org 372 oeroer :-   running clonebots or any kind of floodbots will get you
+1010866738 :irc1.equnet.org 372 oeroer :-   killed, and if necessary, banned as well.
+1010866738 :irc1.equnet.org 372 oeroer :-  
+1010866738 :irc1.equnet.org 372 oeroer :-   Takeovers and general bad attitude to the users of this
+1010866738 :irc1.equnet.org 372 oeroer :-   net might get you killed or even banned. So for your own
+1010866738 :irc1.equnet.org 372 oeroer :-   sake, act nicely.
+1010866738 :irc1.equnet.org 372 oeroer :-  
+1010866738 :irc1.equnet.org 372 oeroer :-   Racism and nazism are also strictly forbidden.
+1010866738 :irc1.equnet.org 372 oeroer :-  
+1010866738 :irc1.equnet.org 372 oeroer :-   Spamming and advertising will not be tolerated.
+1010866738 :irc1.equnet.org 372 oeroer :- 
+1010866738 :irc1.equnet.org 372 oeroer :-   By connecting to this server you give us the right to
+1010866738 :irc1.equnet.org 372 oeroer :-   probe your machine for open proxies/wingates.
+1010866738 :irc1.equnet.org 372 oeroer :-  
+1010866738 :irc1.equnet.org 372 oeroer :-   If you disagree with one or more of the statements above,
+1010866738 :irc1.equnet.org 372 oeroer :-   please disconnect now. Breaking any of the rules will be
+1010866738 :irc1.equnet.org 372 oeroer :-   taken very seriously by the IRC operators.
+1010866738 :irc1.equnet.org 372 oeroer :- 
+1010866738 :irc1.equnet.org 372 oeroer :- ***************************************************************
+1010866738 :irc1.equnet.org 372 oeroer :- 
+1010866738 :irc1.equnet.org 376 oeroer :End of /MOTD command.
+1010866738 :irc1.equnet.org NOTICE oeroer :on 4 ca 2(4) ft 20(20) tr
+1010866738 :irc1.equnet.org 302 oeroer :oeroer=+equ@irc1.equnet.org
+1010866738 :oeroer MODE oeroer :+i
+1010866740 :oeroer!equ@irc1.equnet.org JOIN :#oer
+1010866740 :irc1.equnet.org 332 oeroer #oer :http://oer.equnet.org | oer 1.0-51 | oer+MySQL 1.0-29
+1010866740 :irc1.equnet.org 333 oeroer #oer oer 1010317326
+1010866740 :irc1.equnet.org 353 oeroer = #oer :oeroer @oer @Bafi @EQU 
+1010866740 :irc1.equnet.org 366 oeroer #oer :End of /NAMES list.
+1010866740 :EQU!equ@mira.equnet.org MODE #oer +o oeroer 
+1010866742 :irc1.equnet.org 352 oeroer #oer equ irc1.equnet.org irc1.equnet.org oeroer H@ :0 http://oer.equnet.org/help.html
+1010866742 :irc1.equnet.org 352 oeroer #oer oer irc1.equnet.org irc1.equnet.org oer H@ :0 http://oer.equnet.org/help.html
+1010866742 :irc1.equnet.org 352 oeroer #oer sivis dita.sivis.org irc3.equnet.org Bafi H@ :2 Tero Nybacka
+1010866742 :irc1.equnet.org 352 oeroer #oer equ mira.equnet.org irc1.equnet.org EQU H*@ :0 http://www.equnet.org
+1010866742 :irc1.equnet.org 315 oeroer #oer :End of /WHO list.
+1010866744 :irc1.equnet.org 368 oeroer #oer :End of Channel Ban List
+1010866756 :EQU!equ@mira.equnet.org PRIVMSG #oer :test for mbrix
+1010866764 :EQU!equ@mira.equnet.org MODE #oer -o oeroer 
+1010866766 :EQU!equ@mira.equnet.org PRIVMSG #oer :!op oeroer
+1010866766 :oer!oer@irc1.equnet.org MODE #oer +o oeroer 
+1010866773 :EQU!equ@mira.equnet.org PRIVMSG #oer :oeroer quit

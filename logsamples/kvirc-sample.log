@@ -1,0 +1,1039 @@
+### Log session started at Fri Aug 24 11:48:37 2001 ###
+[11:48:37] wwp [anonymous@AMontpellier-201-2-1-77.abo.wanadoo.fr] has joined #ECI
+[11:48:37] Topic was set by ChanServ on Fri Aug 24 07:11:10 2001
+[11:48:37] Channel #eci is modeless
+[11:48:37] Channel was created on Fri Aug 24 05:09:53 2001
+[11:48:38] Channel synchronized in 1.357 seconds
+[11:48:39] <wwp> yop
+[11:48:59] <wwp> low mons hello (+ question)
+[11:49:18] <Mons> lu
+[11:49:32] <wwp> on peut enregistrer son nick sur ce server?
+[11:49:36] <Pix[Taff]> ju, tes en mandrake ?
+[11:49:48] <Mons> open^rpject ? non .
+[11:49:49] <low> zwizz wwp
+[11:50:00] <wwp> ok
+[11:50:01] <low> wwp: si
+[11:50:06] <wwp> ah
+[11:50:08] <Mons> lu Pix[Taff]$
+[11:50:10] <wwp> mettez vous d'accord!
+[11:50:12] <Mons> lu low
+[11:50:19] <wwp> lo luw
+[11:50:22] <low> lu Mons
+[11:50:25] <Mons> ?? low ?
+[11:50:26] <wwp> lo Muns!
+[11:50:29] <Mons> comment low ?
+[11:50:33] <Pix[Taff]> lo Mons
+[11:50:38] <wwp> l'est gros, Low
+[11:50:41] <low> Mons: ben si j'ai registre mon nick sur opn
+[11:50:44] <Pix[Taff]> ben mons fais /msg nickserv help
+[11:50:56] >>> nickserv : help
+[11:51:00] <wwp> merci low
+[11:51:27] <low> mais j'ai rien fait...
+[11:51:59] <wwp> mais si
+[11:52:06] <Mons> arf ...
+[11:52:08] <wwp> fais pas l'innocent
+[11:52:12] <wwp> on t'a vu
+[11:52:12] <low> ben non
+[11:52:15] <wwp> bbs
+### Log session terminated at Fri Aug 24 11:52:18 2001 ###
+### Log session started at Fri Aug 24 11:53:16 2001 ###
+[11:53:16] wwp [anonymous@AMontpellier-201-2-1-77.abo.wanadoo.fr] has joined #ECI
+[11:53:16] Topic was set by ChanServ on Fri Aug 24 07:11:10 2001
+[11:53:17] Channel #eci is modeless
+[11:53:17] Channel was created on Fri Aug 24 05:09:53 2001
+[11:53:17] Channel synchronized in 0.454 seconds
+[11:53:36] <wwp> re
+[11:53:44] <Mons> ptete ...
+[11:54:19] <Pix[Taff]> opn2 la grande blague
+[11:54:29] <Pix[Taff]> pas de hub visible, tout le monde sur la meme branche
+[11:54:48] <Pix[Taff]> quand tas un peu touché a l'admin irc opn2 c un grand moment de rire :))
+[11:58:28] <Mons> au fait ...
+[11:58:49] <low> wé ?
+[11:59:11] <Pix[Taff]> moui ?
+[11:59:24] <Mons> g mis le log de #eci sur grossac
+[11:59:48] <Pix[Taff]> si vous voulez je pose un bot qui logge, avec le log accessible en temps réel sur une page web
+[12:00:38] <low> faudrait voir ca avec les owners...moi ca me pose pas de pb en tt cas (mais j'ai trop a dire ds la conduite du chan donc bon...)
+[12:00:49] <Mons> ouep, si ça fait moins de merde que webdaeomon :)
+[12:01:03] <Pix[Taff]> moins de merdes ?
+[12:01:12] <Mons> lol
+[12:01:16] <Mons> bah ...
+[12:01:26] <Mons> son bot faisait nimp !
+[12:01:29] <Pix[Taff]> arf ok
+[12:01:33] <Pix[Taff]> bah c un ptit jeune
+[12:01:35] <low> bon app tous
+[12:01:47] <Pix[Taff]> ca fais 4 ans que je fais du botnet j'ai l'habitude
+[12:07:03] <wwp> bon app low
+[12:07:20] <wwp> low t'as pu regarder les pix?
+[12:07:27] <wwp> enfin l'url?
+[12:09:01] <wwp> allo low?
+[12:11:37] logb0t [pix@212.234.120.131] has joined #eci
+[12:11:47] <Pix[Taff]> bon c midi
+[12:11:52] <wwp> oué
+[12:11:57] <Pix[Taff]> a 2h je config le log et je donne l'url
+[12:12:01] <Pix[Taff]> deja ya le bot
+[12:12:02] <Pix[Taff]> :)
+[12:12:04] <Mons> kk
+[12:12:05] <Pix[Taff]> a plus tlm
+[12:12:06] <Mons> :)
+[12:12:12] <Mons> il fait quoi ce bot ?
+[12:12:15] <Pix[Taff]> c un eggdrop
+[12:12:26] <Pix[Taff]> il va logger dans un repertoire que je vais mettre en alias dans mon apache
+[12:12:28] <Pix[Taff]> c tout
+[12:12:29] <Pix[Taff]> :)
+[12:12:34] <Mons> ok
+[12:12:48] <Pix[Taff]> tous les jours nouveau log comme ca on perdra rien
+[12:12:59] <Pix[Taff]> (et sauvegarde de l'ancien evidemment)
+[12:13:05] Pix[Taff] bon app tlm
+[12:18:11] <wwp> Pix[Taff]: 
+[12:18:20] <wwp> Pix[Taff]: ton bot il fait le "seen"?
+[12:20:23] <Mons> !seen jeanseb
+[12:22:25] <wwp> %seen la_vierge
+[12:22:46] <wwp> nop
+[12:47:47] webdaemon [toto@Mix-Marseille-106-2-81.abo.wanadoo.fr] has joined #ECI
+[12:47:54] <webdaemon> hello
+[12:48:12] <webdaemon> logb0t ... mmmmm
+[12:52:29] webdaemon [toto@Mix-Marseille-106-2-81.abo.wanadoo.fr] has quit irc : [Leaving]
+[12:53:59] uzy is back (gone 02:55:54)
+[12:54:06] <uzy> fini l'apero, le repas et cie :)
+[12:54:10] <uzy> lu wwp
+[12:54:17] <uzy> t de mtp ?
+[12:55:02] <uzy> !op
+[12:55:07] <uzy> !wtf
+[12:55:13] <uzy> !smd
+[12:55:16] <uzy> !wwp
+[12:55:45] <uzy> bon, wwp, fais moi signe quand t'es de retour...
+[13:04:43] <Mons> pt 1
+[13:04:48] <Mons> ça avance plus le driver
+[13:04:56] <Mons> maintenant que jesnseb travaille ....
+[13:05:14] <Mons> pfff
+[13:05:23] <Mons> si seulement je savait ou aller ...
+[13:05:33] <uzy> ?
+[13:05:46] <uzy> jseb bosse plus sur le driver ?
+[13:07:27] <Mons> ben si
+[13:07:31] <Mons> mais que le soir
+[13:07:45] <uzy> arf
+[13:07:45] <Mons> et il se couche assez tot vu qu'il bosse le lendemain
+[13:07:55] <uzy> il est courageux
+[13:08:01] <Mons> c clair  !
+[13:08:07] <uzy> bosser le soir apres une journee de taff !
+[13:08:20] <uzy> il devrait te deleguer le taff
+[13:08:30] <uzy> te guider dans ce que tu dois faire
+[13:08:38] <uzy> vu que tu touches
+[13:08:41] <Mons> ouep ...
+[13:08:58] <uzy> pk tu le maillerais pas ?
+[13:08:59] <Mons> le soucis, c que la semaine prochaine, je vais être blindé de taff !
+[13:09:09] <uzy> ouaip
+[13:09:19] <uzy> ca veut donc dire que tu pourrais bosser que cet aprem ;)
+[13:09:37] <uzy> apres c week end => jseb reprends la main
+[13:38:38] <uzy> wwp
+[13:43:16] djook [o@cerbere.ocare.com] has joined #eci
+[13:43:23] <djook> slu everybody
+[13:43:34] <uzy> zwizz djook
+[13:43:34] <djook> wwp alors ton telephone ?
+[13:43:39] <djook> slu uzy
+[13:43:49] <djook> uzy does it !
+[13:44:01] <djook> pan pan pan !
+[13:44:06] <djook> lol
+[13:44:47] <uzy> :)
+[13:44:53] <uzy> djook: tu connais wwp ?
+[13:45:03] <djook> depuis hier oui !
+[13:45:12] <uzy> moarf
+[13:45:27] <uzy> irl ou sur le net ?
+[13:45:33] <djook> sur irc ici
+[13:45:36] <uzy> okiz
+[13:45:44] <uzy> et deja tu compte qu'il te file son num de tel ?
+[13:45:46] <uzy> ;)
+[13:45:52] <uzy> zetes homo
+[13:45:54] <uzy> ?
+[13:45:56] <djook> uzy: non, pas trop !
+[13:46:05] <djook> il voulait deriver sa ligne chez lui
+[13:46:33] <djook> arf !!
+[13:46:42] <djook> j'vais bouffer!
+[13:46:49] <djook> a toute...
+[13:47:27] <uzy> tout
+[13:47:32] <uzy> bon ap
+[13:49:05] uzy is away: (8~1337 activities~8)
+[14:10:08] <wwp> djook: heelo
+[14:10:23] <wwp> uzy re
+[14:10:23] uzy is back (gone 00:21:19)
+[14:10:29] <uzy> re
+[14:10:32] <uzy> t de mtp ?
+[14:11:06] <low> re
+[14:11:09] <wwp> oué
+[14:11:15] <wwp> why? toi idem?
+[14:11:18] <uzy> ouaip
+[14:11:24] <uzy> cote bissy
+[14:11:30] <uzy> t etudiant ?
+[14:11:32] <wwp> non
+[14:11:45] <wwp> campus de bissy, sur st clement?
+[14:11:58] <uzy> ouaip
+[14:12:00] <wwp> je suis un espion de chez ECI
+[14:12:05] <uzy> enfin, je suis pas sur bissy, pas tres loin
+[14:12:08] <wwp> oki
+[14:12:11] logb0t [pix@212.234.120.131] has left #eci [Left all channels]
+[14:12:18] logb0t [pix@212.234.120.131] has joined #eci
+[14:12:25] <Pix[Taff]> plop
+[14:12:27] <Pix[Taff]> test
+[14:12:27] <uzy> espion ?
+[14:12:28] <uzy> :)
+[14:12:43] <Pix[Taff]> bah c le but
+[14:12:44] <Pix[Taff]> :)
+[14:12:52] <wwp> uzy je suis po homo lol
+[14:14:35] logb0t [pix@212.234.120.131] has left #eci [Left all channels]
+[14:14:53] logb0t [pix@212.234.120.131] has joined #eci
+[14:14:59] <wwp> uzy tu etudies quoi,  a par le modem?
+[14:15:01] <Pix[Taff]> vouaaala
+[14:15:03] <Pix[Taff]> bon test
+[14:15:34] <wwp> ahah
+[14:16:31] <uzy> wwp: info
+[14:16:40] <uzy> t dans kel coin wwp ?
+[14:17:37] <wwp> uzy, je bosses sur lattes, mais habite castelnolelèze
+[14:17:41] webdaemon [toto@Mix-Marseille-106-1-230.abo.wanadoo.fr] has joined #eci
+[14:18:13] <wwp> -s
+[14:18:18] <wwp> et merde encore une fôte
+[14:18:35] <uzy> hehe:)
+[14:18:46] <uzy> bah, ca fait loin pour les reseaux sans fil !
+[14:18:54] <wwp> lol
+[14:18:56] <uzy> sinon je t'aurai enrole :)
+[14:18:56] <wwp> oui en effet
+[14:19:09] <wwp> j'a pas d'equipement hertzien moi
+[14:19:54] <wwp> ni IR, ni laser
+[14:20:22] <uzy> hehe
+[14:20:33] <uzy> 802.11b
+[14:20:35] <wwp> toi aussi alors tu pleures ton achat de modem usb?
+[14:20:37] <Pix[Taff]> IR heureusement
+[14:20:46] <uzy> nan
+[14:20:48] <wwp> ah
+[14:20:49] <uzy> je l'ai pas achete
+[14:20:51] <uzy> c un pote
+[14:20:51] <wwp> oh
+[14:20:54] <wwp> tu l'as volé?
+[14:21:09] <uzy> mais du coup on va etre oblige de faire tourner 2k en tant que routeur...
+[14:21:17] <uzy> nan, c un pote ki l'a achete ;)
+[14:21:18] <webdaemon> bis :(
+[14:21:19] <Pix[Taff]> pkoa 2k ?
+[14:21:25] <webdaemon> pkoa pas ?
+[14:21:25] <Pix[Taff]> prends un ptit 98 avec winroute pro
+[14:21:34] <Pix[Taff]> ca marche du tonnerre
+[14:21:36] <uzy> auh...
+[14:21:43] <uzy> j'voudrais faire de la QOS
+[14:21:53] <wwp> exact Pix[Taff] c ce que j'installe ce soir (en attendant mieux)
+[14:21:54] <Pix[Taff]> bah c pas un routeur 2000
+[14:21:55] <uzy> genre m'assurer un tier de la bp
+[14:22:00] <wwp> mais me manque un raccord de clavier lol
+[14:22:06] <Pix[Taff]> tu pourra pas sans soft additionnel ju
+[14:22:12] <Pix[Taff]> le QoS il le fais en client
+[14:22:17] <Pix[Taff]> mais pas en gestionnaire
+[14:22:18] <uzy> cad ?
+[14:22:22] <uzy> en client ?
+[14:22:29] <uzy> il limite ses envois ?
+[14:22:38] <Pix[Taff]> sur certains services QoS ya des paquets de scheduling
+[14:22:44] <Pix[Taff]> il sais les interpreter
+[14:22:54] <Pix[Taff]> mais il saura jamais faire du cbq en routeur par exemple
+[14:23:02] <wwp> keskidilui
+[14:23:03] <webdaemon> Concretement , ca fait koi le QoS ?
+[14:23:05] <Pix[Taff]> pour ca j'ai ptete ce qu'il te faut
+[14:23:30] <wwp> Pix[Taff]: tu confirmes qu'un win98SE+winroutePRO ça marche bien pour router tout ça?
+[14:23:31] <Pix[Taff]> QoS c'est un terme générique c'est Quality of Service, c'est un ensemble de techniques pour scheduler des paquets
+[14:23:42] <Pix[Taff]> faire de la priorité de flux, load balancing, tt ca
+[14:23:44] <webdaemon> concretement Pix !
+[14:23:48] <webdaemon> ok
+[14:23:55] <Pix[Taff]> wwp vivi winroute pro c'est un soft genial (pour une fois)
+[14:24:08] <wwp> oki
+[14:24:14] <wwp> facile de s'en servir,
+[14:24:15] <wwp> ?
+[14:24:17] <Pix[Taff]> ju si tu veux j'ai ce qu'il te faut
+[14:24:20] <Pix[Taff]> wwp: ouaip
+[14:24:25] <wwp> oki
+[14:24:27] <Pix[Taff]> tu selectionne l'interface adsl
+[14:24:28] <wwp> oki
+[14:24:31] <Pix[Taff]> perform NAT
+[14:24:33] <wwp> tant que j'y suis
+[14:24:39] <Pix[Taff]> et oublie pas de cocher "exclude from nat"
+[14:24:41] <uzy> Pix[Taff]: ouaip, je pense que tu vois bien ce que je veux faire...
+[14:24:42] <wwp> on peut voir les disques win via le rezo ?
+[14:24:45] <Pix[Taff]> sinon le poste routeur sortira pas
+[14:24:49] <wwp> y'a des servers nfs sous win32?
+[14:24:49] <Pix[Taff]> non wwp
+[14:24:54] <Pix[Taff]> nfs ?
+[14:24:56] <Pix[Taff]> alors la
+[14:24:59] <Pix[Taff]> pas integre en tt cas
+[14:25:02] <uzy> ouaip
+[14:25:04] <uzy> ca existe
+[14:25:12] <webdaemon> mets samba :) hihi
+[14:25:18] <uzy> tu te rappelle pas avoir fait du nux sous nt ? ;)
+[14:25:29] <uzy> le meme soft fais serveur nfs aussi
+[14:25:35] <Pix[Taff]> hehe ok
+[14:25:49] <wwp> Pix[Taff]: pas integré je le sais, mais third-party ?
+[14:26:23] <wwp> attends, samba ça montre du nux pour win32 mais pas l'inverse non?
+[14:26:34] <Mons> si webdaemon
+[14:26:34] <webdaemon> les 2 sens !
+[14:26:39] <wwp> non!
+[14:26:44] <wwp> ben merde
+[14:26:48] <wwp> j'ai tjrs cru que non
+[14:26:55] <Mons> lol webdaemon !
+[14:26:57] <wwp> ben merdalor
+[14:26:58] <webdaemon> ca marche bien, mais ca fout la merde sur le lan ....
+[14:27:00] <Mons> smbmount est ton amis
+[14:27:11] <wwp> smbmount? je va voir ça alors
+[14:27:13] <uzy> moarf :)
+[14:27:24] <uzy> Pix[Taff]: ton soft c koa ?
+[14:28:00] <Pix[Taff]> je le cherche
+[14:28:03] <Pix[Taff]> je sais plus ou je l'ai foutu
+[14:29:03] logb0t [pix@212.234.120.131] has left #eci [Left all channels]
+[14:29:12] <Pix[Taff]> j'affine le format du log :)
+[14:29:44] <uzy> Pix[Taff]: le type qui fait 12 trucs en meme temps ;))
+[14:30:49] <wwp> genre
+[14:31:17] logb0t [pix@212.234.120.131] has joined #eci
+[14:32:01] <Pix[Taff]> vala il est config
+[14:32:08] <wwp> arf
+[14:32:18] <wwp> hé
+[14:32:23] <wwp> a propos de smbmount
+[14:32:39] <wwp> le //server/share faut qu'il soit declaré dans smb.conf?
+[14:32:53] <webdaemon> installe swat !
+[14:32:57] <wwp> ah merde
+[14:33:04] <wwp> samba web administration tool
+[14:33:10] <webdaemon> yep 
+[14:33:20] <webdaemon> special weapons and tactics
+[14:33:25] <wwp> lol
+[14:33:28] <wwp> oui aussi
+[14:33:46] <webdaemon> Pix : tu fais koi ce soir !
+[14:33:59] <low> marche avec smb 2.2 swat?
+[14:34:11] <webdaemon> alors la ??? ye ne sais pas
+[14:34:20] <Pix[Taff]> webdaemon: chuis chez mes parents je garde la maison ce weekend
+[14:34:23] <Pix[Taff]> bon attention
+[14:34:34] <webdaemon> dommage, on ira pas chasser de la pouffe !
+[14:34:37] <Pix[Taff]> ne parlez plus de trucs qui craignent ya un bot qui logge a present
+[14:34:44] <webdaemon> ooops
+[14:35:02] Pix[Taff] [KelTruc@AMarseille-201-1-3-193.abo.wanadoo.fr] sets topic for #eci to :Driver Linux pour modem ECI USB ADSL | logb0t: http://212.234.120.229/eci
+[14:36:17] <uzy> mdr
+[14:36:22] <wwp> cul bite couille
+[14:36:37] <webdaemon> :)
+[14:36:39] <wwp> :))
+[14:36:53] <webdaemon> quand le bot n'est pas la les souris dansent
+[14:37:45] jeanseb [nvvc@AToulon-101-1-3-249.abo.wanadoo.fr] has joined #eci
+[14:37:46] ChanServ [s@ChanServ] sets mode +o jeanseb
+[14:37:47] jeanseb [nvvc@AToulon-101-1-3-249.abo.wanadoo.fr] sets topic for #eci to :Driver Linux pour modem ECI USB ADSL
+[14:38:01] <uzy> weeeeek end 4 jeanseb ???
+[14:38:05] <uzy> lu jeanseb
+[14:38:21] <webdaemon> lut
+[14:38:29] <jeanseb> yes !
+[14:39:17] <uzy> t fonctionnaire, c pas possible ;)
+[14:39:35] <Mons> le jeanseb...
+[14:39:44] <wwp> lo jeanseb
+[14:39:53] Pix[Taff] [KelTruc@AMarseille-201-1-3-193.abo.wanadoo.fr] sets topic for #eci to :Driver Linux pour modem ECI USB ADSL | logb0t: http://212.234.120.229/eci
+[14:39:59] <wwp> va pouvoir plancher sur le projet alors :))
+[14:40:28] <wwp> tiens à ce propos, j'ai drolement avancé!
+[14:40:45] <wwp> j'ai reussi à brancher les cables aux modems du 1er coup, sans plus me tromper
+[14:40:46] <uzy> wwp: tu codes toi aussi ?
+[14:40:50] <uzy> arf
+[14:40:51] <uzy> ok
+[14:40:52] <wwp> uzy non pas encore :)
+[14:40:55] <uzy> mdr
+[14:40:57] <wwp> mais ça peut venir si besoin est
+[14:41:04] <wwp> (nuit et w/e only)
+[14:41:30] <jeanseb> uzy : ouais fonctionnaire
+[14:41:40] <wwp> djook: back?
+[14:41:52] <Pix[Taff]> jeanseb: a la demande de mons ya un bot qui logge le channel
+[14:41:58] <Pix[Taff]> d'ou l'url
+[14:42:02] <jeanseb> kool g vu ca
+[14:42:05] <Mons> arf :)
+[14:42:11] <Mons> a ma demande :) lol 
+[14:42:18] <wwp> jeanseb: c vrai que t fonctionnaires?
+[14:42:20] <wwp> -s
+[14:42:23] <jeanseb> je change mon init :)
+[14:42:24] <wwp> putain ENCORE un s de trop
+[14:42:41] <Pix[Taff]> <Mons> g mis le log de #eci sur grossac
+[14:42:41] <Pix[Taff]> <Pix[Taff]> si vous voulez je pose un bot qui logge, avec le log accessible en temps réel sur une page web
+[14:42:41] <Pix[Taff]> <low> faudrait voir ca avec les owners...moi ca me pose pas de pb en tt cas (mais j'ai trop a dire ds la conduite du chan donc bon...)
+[14:42:41] <Pix[Taff]> <Mons> ouep, si ça fait moins de merde que webdaeomon :)
+[14:42:42] <low> lu jeanseb
+[14:42:50] <jeanseb> lu low
+[14:43:38] <jeanseb> wwwp: ouaip
+[14:43:41] <webdaemon> Pix! ne commence pas ou alors .......
+[14:43:48] <Pix[Taff]> mais g rien dit moi
+[14:43:53] <Mons> lol webdaemon :)
+[14:43:55] <low> d'ici qq mois "le roller pour les nuls" aux editions low ;) rah c trop galere de taper a une main
+[14:43:58] <webdaemon> dis au revoir a ton bot
+[14:44:17] <Pix[Taff]> web mdr
+[14:44:23] <Pix[Taff]> tu peux toujours essayer si tas envie
+[14:44:23] <Pix[Taff]> :)
+[14:44:46] <Pix[Taff]> j'ai deux ligne a decommenter, et un rehash a faire pour le transformer en machine à te traquer
+[14:44:47] <wwp> allez noooon
+[14:44:50] <webdaemon> tu oublie que je suis tourjour dans ton LAN
+[14:44:55] <wwp> commencez po la gueguerre des bots
+[14:45:00] <Pix[Taff]> bah
+[14:45:02] <Pix[Taff]> et alors ?
+[14:45:07] <Pix[Taff]> je l'admin le lan avec gilles
+[14:45:10] <wwp> moi aussi apres tout
+[14:45:23] <low> Pix[Taff]: he he sur la ls le flood va pas etre facile =)
+[14:45:49] <webdaemon> repartition de bande maintenant ?
+[14:45:52] <low> mais bon on est pas ici pour jouer a la gueguerre
+[14:45:58] Pix[Taff] vous quitte
+[14:46:04] Pix[Taff] maintenance de son routeur mode on
+[14:46:05] <uzy> ++pix
+[14:46:05] <wwp> non
+[14:46:10] <webdaemon> il a eu peur !
+[14:46:10] <wwp> a+
+[14:46:12] <webdaemon> :)
+[14:46:18] <Mons> lol
+[14:46:21] <Pix[Taff]> hehe
+[14:46:26] <Pix[Taff]> me cherche pas :p
+[14:46:38] jeanseb [nvvc@AToulon-101-1-3-249.abo.wanadoo.fr] sets mode +o Mons
+[14:47:06] Pix[Taff] [KelTruc@AMarseille-201-1-3-193.abo.wanadoo.fr] has quit irc : []
+[14:49:42] <low> jeanseb: koid 9 ? qt a moi rien que j'ai les 2 ds les choux a coz d'une chute en roller...c trop chiant );
+[14:50:18] <low> sauf que et 2 mains rah g trop du mal
+[14:51:02] <jeanseb> ki a une machine costaude sous win 98 ?
+[14:51:08] Mons [lecabe@AFontenayssB-101-1-5-56.abo.wanadoo.fr] has quit irc : [Ping timeout for Mons[AFontenayssB-101-1-5-56.abo.wanadoo.fr]]
+[14:51:15] <jeanseb> genre 700 mega
+[14:51:20] <jeanseb> hertz
+[14:51:24] <jeanseb> au moins
+[14:51:25] <uzy> nan
+[14:51:28] <webdaemon> avec le modem 
+[14:51:31] <uzy> j'ai ca mais sous nux
+[14:51:33] <jeanseb> oui
+[14:51:35] <uzy> mais sans modem
+[14:51:52] <jeanseb> mons doit avoir ca
+[14:52:19] <uzy> jeanseb: ca en es ou le sniffeur sous 2k ?
+[14:52:24] <wwp> lol
+[14:52:24] <jeanseb> je comprend pas pourkoi g pas le dump du buffer et g bien peur ke ca aille pas encore assez vite pour ma machine
+[14:52:26] <uzy> c'etait bien une erreur de compil .?
+[14:52:26] <wwp> costaude en quoi?
+[14:52:37] <jeanseb> ben moa je peut pâs le compiler
+[14:52:47] <jeanseb> frequence et proc
+[14:52:51] <wwp> jeanseb: que cherches tu exactement comme "machine costaude"?
+[14:52:56] <webdaemon> jeanseb : si faut vraiment se devouer !
+[14:53:10] <jeanseb> la plus puissante possible :)
+[14:53:30] <webdaemon> si tu attends ce soir !
+[14:55:10] <jeanseb> k moa je vais ouvrir un compte dans une baque et ma renseigner comment on en ferme un autre :)
+[14:55:12] <jeanseb> a tout 
+[14:56:15] <webdaemon> c'est pas open() et close() ?
+[14:56:42] <webdaemon> desolé, je fatigue!
+[14:57:58] <wwp> jeanseb: ben desolé alors ça ira po loin chez moi :)
+[15:02:40] <wwp> webdaemon: no problem avec smbmount, merci!
+[15:03:44] <wwp> webdaemon?
+[15:03:57] <webdaemon> oui
+[15:04:08] <webdaemon> j'etais dans mon frigo
+[15:04:15] <uzy> lol
+[15:04:20] <webdaemon> fais chaud
+[15:04:35] <wwp> ah
+[15:04:38] <wwp> heu
+[15:04:48] <wwp> si tu veux ajouter une entree dans le fstab
+[15:05:13] ===================================->>>
+[15:05:13] Error in command   : Unknown command
+[15:05:13] ===================================->>>
+[15:05:13] Parsing stopped at :
+[15:05:13] Line 1 : /machine/share       /mount/point  ...
+[15:05:13] Character 0
+[15:05:13] Logical location : COMMAND
+[15:05:13] Error detail : /machine/share       /mount/point   smbf...
+[15:05:16] <webdaemon> oui
+[15:05:18] <wwp> : //machine/share       /mount/point   smbfs     guest,rw      0  0
+[15:05:22] <wwp> ben ça marche po
+[15:05:43] <wwp> alors que j'arrive à la monter avec smbmount //machine/share /mount/point
+[15:06:18] <wwp> faudrait pitet upgrader mon mountd?
+[15:06:40] <wwp> paske la commande par mount -tsmbfs blabla marche po non plus (of course)
+[15:06:43] <webdaemon> alors la je sais pas
+[15:07:17] <wwp> oki
+[15:07:19] <wwp> je cherche
+[15:07:53] <wwp> mais heureusement comme tu disais, smbmount est notre copaing
+[15:10:00] <webdaemon> c'est pas moi c'est mons 
+[15:10:57] <webdaemon> Bon, je rentre chez moi ... a tout a l'heure:!
+[15:11:07] webdaemon [toto@Mix-Marseille-106-1-230.abo.wanadoo.fr] has quit irc : [Leaving]
+[15:11:40] <wwp> sacré lui alors
+[15:11:57] <wwp> djook: highlight moi quand t de retour please :)
+[15:12:57] uzy is away: weeeeekkkennd moins 2h !!! (=> un peu taff)
+[15:15:25] wwp is AWAY at 15:15:25 : Not behind the keyboard
+[15:15:25] wwp [anonymous@AMontpellier-201-2-1-77.abo.wanadoo.fr] is now known as wwpAWAY
+[15:42:40] Mons [lecabe@AFontenayssB-101-1-5-56.abo.wanadoo.fr] has joined #eci
+[15:42:43] <Mons> re
+[15:42:48] <uzy> re
+[15:42:52] <low> re
+[15:42:55] <Mons> mon pc est out
+[15:42:56] uzy is back (gone 00:30:00)
+[15:42:59] <Mons> faut que je rebbot
+[15:43:17] <Mons> reboot dans 40 min, a la fin du dl
+[15:43:34] <low> arf
+[15:43:46] <low> les joies zinzin...
+[15:45:27] <Mons> le pire :
+[15:45:33] <Mons> c pour dl solaris
+[15:45:41] <Mons> qui est presque pire que zinzin :)
+[15:45:44] <low> houla
+[15:45:46] <uzy> ouaip
+[15:45:53] <uzy> c pas tout jeunz ca ...
+[15:46:09] <Mons> ??
+[15:46:15] <Mons> solaris ?
+[15:46:18] <uzy> ouaip
+[15:46:20] <uzy> ca date
+[15:46:22] <Mons> ben si, c encore utilisé :)
+[15:46:24] <uzy> oua lors ya des maj
+[15:46:27] <low> ouarf sur sun ca va encore mais sur pc ):
+[15:46:27] <Mons> non, c recent !
+[15:46:33] <uzy> a bon
+[15:46:35] <Mons> lol
+[15:46:43] <Mons> solaris 8 !
+[15:46:45] <uzy> bin ya pleins des failles dessus ou quoi ?
+[15:46:48] <Mons> oui
+[15:46:59] <Mons> tu peux etre root tres facilement
+[15:47:01] <uzy> j'ai des potes ya 3 ans ils faisaient pleins de solaris
+[15:47:10] <uzy> k
+[15:47:17] <uzy> c pour ca que c connu alors :)
+[15:47:34] <Mons> lol
+[16:09:24] <djook> wwp djook is on air
+[16:09:47] <wwpAWAY> djook: 
+[16:09:51] <wwpAWAY> hello
+[16:09:54] <wwpAWAY> merci pour le tuyau hier
+[16:10:05] wwpAWAY is back after 0 d 0 h 54 m 40 s
+[16:10:05] wwpAWAY [anonymous@AMontpellier-201-2-1-77.abo.wanadoo.fr] is now known as wwp
+[16:10:27] <djook> wwp: c'est cool
+[16:10:32] <wwp> en fait
+[16:10:34] <djook> ta facture va doubler !!
+[16:10:47] <wwp> sur le prise 2, y'avait 1+3, comme sur la prise 1
+[16:11:05] <wwp> j'ai donc du toucher le config du boitier separateur
+[16:11:18] <wwp> et operer à une vraie derivation de la ligne 1, au lieu de la ligne 2
+[16:11:24] <wwp> enfin bref, ça marche
+[16:11:24] <djook> t'as rien fait sauter chez toi ? lol
+[16:11:27] <wwp> non
+[16:11:31] <wwp> (pas encore)
+[16:11:33] <wwp> ah
+[16:11:34] <wwp> si
+[16:11:35] <djook> c'est l'essentiel !
+[16:11:36] <wwp> les crepes
+[16:11:40] <djook> arf !
+[16:11:42] <wwp> :))
+[16:11:43] <wwp> mais
+[16:11:45] <wwp> truc bizarre
+[16:11:48] <wwp> mon modem marchait plus!
+[16:11:56] <djook> ah bon?
+[16:12:01] <wwp> rohlala me suis dis je
+[16:12:04] <wwp> éhvi
+[16:12:21] <wwp> or me j'a souviendu que h'avai du faire 2 modifs dans le boitier de la rallonge du modem
+[16:12:25] <wwp> pour que ça marche, avant
+[16:12:26] <djook> pas cense etre en relation avec la prise si le tel marche
+[16:12:30] <wwp> et j'ai simplement eu à les oter
+[16:12:31] <djook> ok
+[16:12:37] <wwp> bizarre d'ailleurs..
+[16:12:39] <djook> laborieux !
+[16:12:48] <wwp> 2 vers 1 et 4 vers 3.. 
+[16:13:17] <wwp> moi pas compris, mais moi fait sauté, ça y'en a marché
+[16:13:26] <wwp> moi dire tant mieux et danser sur balcon
+[16:13:41] <djook> great !
+[16:14:05] <djook> a ta place, j'aurais tout degager, sorti les deux fils principaux et deriver tout partout
+[16:14:11] <wwp> lol
+[16:14:24] <wwp> oui, mais toi tu es un peu bourrin, là, avoue :))
+[16:14:25] <djook> c'est ce que j'ai fait chez moi
+[16:14:30] <wwp> ah pardon!
+[16:14:41] <djook> les gars de telecoms, s'ils voient ca font un arret cardiaque !!
+[16:14:45] <wwp> enfin, ton conseil m'a bien aidé, car j'ai su par quoi commencé
+[16:14:48] <wwp> -é +er
+[16:15:04] <djook> le support technique, c'et mon metier !
+[16:15:05] <wwp> et par quoi finir (donc) (du coup) (par conséquent)
+[16:15:08] <wwp> ah
+[16:15:10] <djook> mais pas pour le tel !!!
+[16:15:14] <wwp> ahah
+[16:15:22] <wwp> tu fais du suporc teknik info?
+[16:15:35] <djook> du support teknik open-source
+[16:15:40] <wwp> ouhlllllléééééé
+[16:15:46] <djook> seulement des sofs license gpl etlinux
+[16:15:46] <wwp> ok
+[16:15:51] <wwp> ah bon
+[16:15:53] <wwp> chez qui?
+[16:15:57] <djook> open care
+[16:15:59] <wwp> ok
+[16:16:36] <wwp> vous fournissez du support pour quels softs (en gros)?
+[16:17:05] <djook> linux toutes distribs , apache, postfix, samba, sendmail
+[16:17:10] <wwp> oki
+[16:17:25] <wwp> la base meme du systeme linux quoi
+[16:17:29] <djook> tout ce qui tourne autour de l'os et les applications de types entreprises
+[16:17:42] <wwp> voué
+[16:17:48] <djook> on a un departement qui fournit des solutions
+[16:17:52] <wwp> base de données?
+[16:18:00] <djook> bases de donnees, securite
+[16:18:05] <wwp> informix?
+[16:18:11] <djook> no lo se
+[16:18:16] <wwp> ok
+[16:18:18] <djook> sybase, postgres
+[16:18:23] <wwp> mysql..
+[16:18:26] <djook> oracle
+[16:18:34] <wwp> oracle 8 et + je suppose
+[16:18:35] <djook> mysql sql postgresql
+[16:18:42] <djook> oui enfin pas moi  !!
+[16:18:47] <wwp> oui oui
+[16:18:54] <wwp> toi t dans quel domaine?
+[16:19:05] <wwp> TU VAS PARLER OUI!
+[16:19:08] <wwp> lol
+[16:19:10] <wwp> pardon
+[16:19:14] <djook> moi je suis au support premier et deuxieme niveau
+[16:19:17] <wwp> ah
+[16:19:26] <wwp> tu passes moins de temps dans l'ascenseur alors
+[16:19:45] <djook> je receptionne l'appel client et je resout dans la limitte de mes competences; apres je forwarde au labo ou aux consultant
+[16:20:00] <djook> you've gone ?
+[16:20:05] <wwp> ouah t un firewall à problemes
+[16:20:10] <djook> du genre
+[16:20:12] <wwp> oué
+[16:20:22] <djook> j'suis plutot un technicien cameleon
+[16:20:27] <wwp> lol
+[16:20:36] <wwp> tu aurais pu bosser chez SuSE alors :)
+[16:20:45] <djook> lol !!
+[16:20:50] <wwp> doh!
+[16:21:11] <wwp> t'as linux chez toi?
+[16:21:39] <djook> oui mais en client dhcp de win2k
+[16:21:45] <wwp> DOH!
+[16:21:51] <djook> c'est pôur ca que j'attends les drivers
+[16:21:59] <wwp> attends
+[16:22:01] <wwp> mais
+[16:22:10] <wwp> je vois pas le rapport :)
+[16:22:16] <djook> ah bon ?
+[16:22:20] <wwp> ou alors t'as fait un raccourci sur ma question?
+[16:22:37] <djook> pas de drivers pour linux donc partage de connexion internet win2000
+[16:22:38] <wwp> linux en client dhcp.. t'as quand meme bien linux!
+[16:22:41] <wwp> oué ok
+[16:22:47] <djook> ok ?
+[16:22:47] <wwp> sacré raccourci :)
+[16:22:50] <djook> yes
+[16:22:52] <wwp> lol
+[16:23:00] <wwp> c ce que je dois monter ce soir chez moi
+[16:23:07] <wwp> mais win98+winroute ça me suffira
+[16:23:17] <wwp> putain
+[16:23:22] <djook> il parait que winroute est pas necessaire
+[16:23:27] <wwp> heu
+[16:23:28] <wwp> ouais
+[16:23:40] <djook> il y a le protocole de partage a installer du cd
+[16:23:42] <wwp> t'as un truc pour partager la connexion sous win98SE mais g jamais pu le faire marcher
+[16:23:46] <djook> a la winme
+[16:23:49] <wwp> yep
+[16:23:58] <wwp> tu en sais plus?
+[16:24:05] <wwp> sur ce protocole à installer?
+[16:24:16] <djook> je sais que moi je m'emmerde pas avec win9x
+[16:24:18] <wwp> tant qu'a faire, si ça me simplifie la choooose
+[16:24:23] <wwp> lol
+[16:24:27] <wwp> moi j'ai que ça sous la mimine
+[16:24:29] <djook> meme sous winme ca marchait pas
+[16:24:32] <wwp> lol
+[16:24:35] <wwp> oki
+[16:24:42] <djook> pourtant c'est pix
+[16:24:46] <wwp> ahah
+[16:24:48] <djook> ki m'en avait parle
+[16:24:53] <wwp> ah
+[16:24:57] <wwp> mais pa'ti le pix
+[16:25:03] <djook> et il en disait du bien, j'etais tres etonne ...lol
+[16:25:42] <wwp> tiens
+[16:25:45] <wwp> bizarroïde
+[16:25:51] <wwp> faudra que je lui en touche un mot
+[16:27:16] <wwp> je me souviens que fallait configurer un machin et creer une disquette pour les win32 client
+[16:27:20] <wwp> le truc louche
+[16:27:40] <wwp> ou alors je confond avec une autre bizarrerie
+[16:27:53] <wwp> ou alors je confond pas
+[16:27:56] <wwp> ou alors mais si
+[16:28:00] <wwp> quoique!
+[16:28:01] <djook> moi on m'as dit que ca se rajoutait comme un composant windows normal
+[16:28:08] <wwp> ouep?
+[16:28:11] <wwp> bah
+[16:28:15] <wwp> je verra ça
+[16:28:19] <djook> et apres tu le selectionne dans les proprietes reseau
+[16:29:01] <djook> j'peux regarder faut que je reboute
+[16:29:15] <djook> mais ici, je paartagerai quedal alors ...
+[16:29:36] <wwp> ouais
+[16:29:43] <wwp> eheh g cru ke t t aux states
+[16:29:57] <wwp> isdn sur paris/banlieue?
+[16:30:00] Mons [lecabe@AFontenayssB-101-1-5-56.abo.wanadoo.fr] has quit irc : [Ping timeout for Mons[AFontenayssB-101-1-5-56.abo.wanadoo.fr]]
+[16:30:09] <djook> adsl
+[16:30:12] <wwp> oki
+[16:30:18] <djook> sur orsay
+[16:33:42] Mons [lecabe@AFontenayssB-101-1-5-56.abo.wanadoo.fr] has joined #eci
+[16:34:12] <wwp> re
+[16:34:50] <djook> re
+[16:36:53] <wwp> (annonce: échange pack modem usb contre pack modem ethernet avec possesseur de windows)
+[16:37:00] webdaemon [olivier@AMarseille-201-1-2-46.abo.wanadoo.fr] has joined #ECI
+[16:37:03] <wwp> nan di diou
+[16:37:33] <jeanseb> re
+[16:37:40] <wwp> id
+[16:37:46] <djook> wwp don't give up the fight
+[16:37:57] <webdaemon> kes tu fais wwp
+[16:38:07] <wwp> djook: lol si on peut plus plaisanter roh lala (quoi que)
+[16:38:12] <wwp> webdaemon: comment ça?
+[16:38:22] <djook> wwp lol!!!!
+[16:38:31] <wwp> c clair je crois
+[16:38:34] <djook> wwp j'y avais pense...lol
+[16:38:38] <wwp> ben oui
+[16:38:51] <wwp> maintenant faut convaincre un gars ké sous win que c pas pour l'entuber quoi
+[16:38:59] <wwp> et lui faire l'install en plus
+[16:39:03] <djook> dur dur    !
+[16:39:07] <wwp> ahah
+[16:39:12] <djook> c'est pourri d'avance
+[16:39:15] <wwp> p'tet po..
+[16:39:23] <wwp> si t'as un copain ké sous win+adsl ethernet..
+[16:39:32] <wwp> tu peux lui proposer c sur
+[16:39:42] <wwp> (je cherche qui je connais qui..)
+[16:39:44] <djook> parle de linux a un windowsien , il a des boutons dans la minute
+[16:39:49] <wwp> meuuuuuuh
+[16:40:03] <wwp> tu fais install le modem usb, si ça marche, tu pars avec son sien qué pas usb :)
+[16:40:38] <wwp> et hop
+[16:40:40] <djook> il va se sentir laise le gars, pourkoi t'es si content de partir avec son modem ?
+[16:41:02] <wwp> bah tu lui explique que t'as coincé par le manque de driver sous linux, c un aveu honnete
+[16:41:48] <djook> ils sont malhonnetes ces gars la ,il va trouver ca louche ! lol
+[16:43:16] <wwp> bah si c un pote quand meme
+[16:43:31] <wwp> sinon il te casse ta voiture, alors..
+[16:44:31] <djook> arf lol !
+[16:44:34] <wwp> et il viole ton chat
+[16:44:58] <djook> ah non, pas mon chat !
+[16:45:01] <wwp> (si si)
+[16:45:02] <djook> merde !
+[16:45:09] <wwp> t'as les boules hein
+[16:45:12] <djook> c'est moi qui m'occupe de lui d'habitude !
+[16:45:15] <jeanseb> c m'etonerai, les chattes elle font terriblement mal a leur male pendant l'acte
+[16:45:18] <jeanseb> :)
+[16:45:19] <wwp> alors tu vas pas lui faire de saloperie, à ton copaing
+[16:45:30] <wwp> jeanseb: et reciproquement
+[16:45:44] Pix[Taff] [KelTruc@AMarseille-201-1-4-84.abo.wanadoo.fr] has joined #eci
+[16:45:51] <wwp> ahah l'air de rien, jeanseb il laisse trainer une oreille, et dès que ça parle de violer un chat, hop!
+[16:45:54] <wwp> tiens pix
+[16:46:00] <Pix[Taff]> enfin bordel
+[16:46:02] <wwp> on parlait de toi justement (avant de parler de viol de chat)
+[16:46:04] <Pix[Taff]> quelle merde cette redhat
+[16:46:11] <Pix[Taff]> le modules.conf ne contient aucun alias
+[16:46:16] <djook> Pix[Taff]: slu you
+[16:46:16] <wwp> lol
+[16:46:18] <wwp> pratix
+[16:46:21] <Pix[Taff]> 'jour djook
+[16:46:26] <wwp> dis donc pix..
+[16:46:35] <djook> Pix[Taff]: y a pas conf.modules sous redhat ?
+[16:46:48] <djook> avec les alias ?
+[16:46:53] <wwp> Pix[Taff]:  t'as fait partage de connexion a partir d'une win98SE sans winroute?
+[16:47:22] <Pix[Taff]> a partir de modutils 2.4 c'est plus conf.modules djook
+[16:47:24] <Pix[Taff]> c modules.conf
+[16:47:32] <djook> oki doki
+[16:47:34] <Pix[Taff]> wwp non g installé une rh ce matin en vitesse
+[16:47:49] <wwp> souvent y'a qu'a virer le lien conf.modules, ou a inverser le lien si c modules.conf qui en est un d'ailleurs
+[16:48:00] <djook> etc/modules ?
+[16:48:24] <wwp> Pix[Taff]: bah djook avait l'air de se souvenir d'une action d'eclat de ta part telle que celle ci
+[16:48:45] <Pix[Taff]> une action d'eclat !?
+[16:48:48] <wwp> bé
+[16:48:54] <wwp> c facile?
+[16:49:03] <djook> etc/modutils/alias
+[16:49:10] <djook> etc/modutils/option
+[16:49:13] <djook> etc/modutils/path
+[16:49:14] <wwp> (je parle du partage de cnx sous win98 Pix[Taff])
+[16:49:18] <djook> arf !!
+[16:49:24] <uzy> bon tcho les cocos :)
+[16:49:31] <uzy> v prendre la route :(
+[16:49:31] <wwp> salut uzy
+[16:49:40] <wwp> tant que c pas le platane
+[16:49:46] <uzy> a lundi et bon wwwweeeeeeeeeekkkkkkk eeeeeeeennnnnnnnnnndddddddddeeeeeeeeeuuuuuuhhhh !!!!!!!!!!
+[16:49:58] <low> lu
+[16:49:58] <uzy> lol wwp
+[16:50:04] uzy [uzy@195.25.31.159] has quit irc : [yo]
+[16:50:49] <wwp> bbs (5min)
+[16:51:03] <jeanseb> mons : to sfcript pour les log l'es ok ?
+[16:52:58] Pix[Taff] [KelTruc@AMarseille-201-1-4-84.abo.wanadoo.fr] has quit irc : [Ping timeout for Pix[Taff][AMarseille-201-1-4-84.abo.wanadoo.fr]]
+[16:56:10] <jeanseb> mons !
+[16:57:41] <wwp> et hop
+[17:00:21] <webdaemon> jeanseb
+[17:01:03] <jeanseb> oui webdaemon
+[17:01:27] <webdaemon> 2sec !
+[17:01:37] Pix[Taff] [KelTruc@AMarseille-201-1-1-44.abo.wanadoo.fr] has joined #eci
+[17:01:48] Pix[Taff] re
+[17:01:58] Pix[Taff] putain de coupures de courant de mes deux si je puis dire
+[17:02:02] webd [root@AMarseille-201-1-2-46.abo.wanadoo.fr] has joined #eci
+[17:02:12] webdaemon [olivier@AMarseille-201-1-2-46.abo.wanadoo.fr] has quit irc : []
+[17:02:17] <wwp> t en afrique centrale Pix[Taff]?
+[17:02:29] <low> warf
+[17:02:31] <Pix[Taff]> ouais du coté du kenya la
+[17:02:34] <wwp> ah ok
+[17:02:54] <webd> jeanseb : est ce qu'un pc peut se comporter comme un peripherique USB ?
+[17:03:07] <wwp> heu
+[17:03:16] <webd> Simuler le modem par exemple ?
+[17:03:17] <wwp> lol
+[17:03:23] <low> webd: hmmm pas bien de surfer root
+[17:03:41] <webd> :)
+[17:03:57] <webd> sous BitchX en plus !
+[17:04:01] <wwp> lol
+[17:04:10] <webd> une daube interplanetaire
+[17:04:19] <jeanseb> non, j'y av deja pense 
+[17:04:34] <webd> et alors ?
+[17:04:44] <webd> ca foire ?
+[17:04:50] <jeanseb> pour faire un analyseur usb harware avec un eme pc
+[17:04:58] <webd> :) hehe
+[17:05:06] <webd> je fais ca pour les sockets 
+[17:05:06] <jeanseb> mais les signaux electrique st pas symetrique !
+[17:05:11] <webd> aye
+[17:06:35] <webd> mais ca fait chier, de pas pouvoir avoir le net quand tu bricolle le modem
+[17:06:55] <wwp> lol
+[17:07:05] <wwp> t'en faudrait 1 2e + une 2e ligne alors :)
+[17:07:35] <webd> bein, j'ai bien le RTC, mais bon ca va commencre a faire cher tout ca !
+[17:09:29] webd [root@AMarseille-201-1-2-46.abo.wanadoo.fr] has quit irc : [webd has no reason]
+[17:10:17] low [low@pamoc.univ-littoral.fr] has quit irc : [rentrage maison puis medecin ):]
+[17:13:42] <jeanseb> kekun ki sait ou hiberne mons ?
+[17:13:44] <jeanseb> kekun ki sait ou hiberne mons ?
+[17:13:44] <jeanseb> kekun ki sait ou hiberne mons ?
+[17:14:51] <Pix[Taff]> aucune idée
+[17:18:40] <wwp> nope
+[17:21:21] <jeanseb> bon les gas , je vais un peu yoyoter pour cause de test sniffeur
+[17:21:28] <jeanseb> vous inquitez pas
+[17:21:45] <djook> webd rtc what is that ?
+[17:21:58] <jeanseb> allez Premier reboot iminant
+[17:23:35] <jeanseb> j'y go
+[17:23:40] jeanseb [nvvc@AToulon-101-1-3-249.abo.wanadoo.fr] has quit irc : [Rebbot #1]
+[17:24:07] wwp is AWAY at 17:24:07 : Not behind the keyboard
+[17:24:08] wwp [anonymous@AMontpellier-201-2-1-77.abo.wanadoo.fr] is now known as wwpAWAY
+[17:24:24] djook [o@cerbere.ocare.com] is now known as djook_lazy
+[17:26:26] djook_lazy [o@cerbere.ocare.com] has quit irc : [Client Exiting]
+[17:33:13] Mons is back
+[17:35:09] jeanseb [nvvc@AToulon-101-1-3-249.abo.wanadoo.fr] has joined #eci
+[17:35:09] ChanServ [s@ChanServ] sets mode +o jeanseb
+[17:35:14] <Mons> re jeanseb
+[17:35:22] <jeanseb> re
+[17:35:34] <jeanseb> mons : ton script svp :)
+[17:35:37] <Mons> kk
+[17:35:41] <Mons> sur grossac
+[17:35:47] <Mons> je te dcc
+[17:38:20] <jeanseb> mons pb vec grossac ?
+[17:38:29] <Mons> ouep :)
+[17:38:41] <Mons> lol ;)
+[17:38:45] <Mons> je te dcc de suite
+[17:39:30] <Mons> hehe c fait
+[17:39:35] <jeanseb> translog c koi ?
+[17:39:41] <Mons> desole pour le retard, gt en course
+[17:39:59] <Mons> tu fais translog.sh *log , ça te sort des .gz
+[17:40:09] <Mons> passés a la moulinette
+[17:40:48] <jeanseb> ouais mais moa je prefere les log non zipee
+[17:41:01] <jeanseb> marce ke vi sur les .gz c pas terrible
+[17:41:05] <Mons> bah !
+[17:41:11] <Mons> tu fais a la min alors !
+[17:41:23] <Mons> ou tu commente la ligne avec le gzip :)
+[17:41:31] <Mons> demerdes toi !!
+[17:42:32] <jeanseb> :)
+[17:42:59] <wwpAWAY> lol
+[17:43:06] <wwpAWAY> ceci dit bz2 c mieux :)) lol
+[17:43:09] <Mons> jeanseb, je me demandes ce que tu as fait avec mon serv :) il marche plus depuis ce matin !
+[17:43:12] wwpAWAY is back after 0 d 0 h 19 m 5 s
+[17:43:12] wwpAWAY [anonymous@AMontpellier-201-2-1-77.abo.wanadoo.fr] is now known as wwp
+[17:43:22] <wwp> l'a pissé dedans pitet
+[17:43:32] <jeanseb> ben g voulu creer un compte utilisateur et planter
+[17:43:42] <jeanseb> puis g voulu logoin et replanter
+[17:43:58] <jeanseb> dois avoir un pb avec mysql et php 
+[17:44:03] <jeanseb> ki plante windows
+[17:44:16] <Mons> ouep ..
+[17:44:26] <Mons> mais now, c pire ...
+[17:44:31] <Mons> page blanche :)
+[17:44:36] <jeanseb> g vue
+[17:44:39] <Mons> par contre, ça plante plus !
+[17:44:49] <jeanseb> regarde le sce de la page
+[17:44:50] <Mons> ... :(
+[17:44:56] <Mons> ouep, g vu
+[17:45:05] <jeanseb> c koi ?
+[17:45:28] <Mons> c la sortie de php mais sans les trucs qui devrait y avoir a l'interieur
+[17:45:39] <Mons> ptete que sql est down
+[17:45:46] <Mons> ça expliquerait tt. ...
+[17:46:23] <jeanseb> moi j'av ca qd php.ini charge pas les ext mysql...
+[17:46:42] <Mons> hummm...
+[17:46:45] <Mons> zarb ...
+[17:46:59] <Mons> moi, ça marche plus depuis que apache a crashé ...
+[17:48:39] <Mons> jeanseb, tu fais quoi là ?
+[17:48:45] <Mons> au fait, 
+[17:48:54] <Mons> moi cassos ce soir vers 19h30
+[17:49:05] <Mons> reviens demain ...
+[17:49:08] <Mons> mais g tu taff
+[17:49:13] <Mons> tt le WE
+[17:50:05] Pix[Taff] [KelTruc@AMarseille-201-1-1-44.abo.wanadoo.fr] has quit irc : [Ping timeout for Pix[Taff][AMarseille-201-1-1-44.abo.wanadoo.fr]]
+[17:50:29] <jeanseb> ben je surf un peu et je regarde le snoop
+[17:51:37] <Mons> ok
+[17:51:53] <Mons> sinon, les acces sur default.ida, c pas codered ?
+[17:51:54] Pix[Taff] [KelTruc@AMarseille-201-1-4-84.abo.wanadoo.fr] has joined #eci
+[17:51:59] <Mons> Pix[Taff] !
+[17:52:00] <Mons> Pix[Taff] !
+[17:52:02] <Mons> sinon, les acces sur default.ida, c pas codered ?
+[17:52:14] webdaemon [root@AMarseille-201-1-2-46.abo.wanadoo.fr] has joined #eci
+[17:52:16] <Mons> ou red truc ?
+[17:52:23] <webdaemon> rere
+[17:52:32] <webdaemon> qui est sous redhat ici
+[17:52:33] <webdaemon> .
+[17:52:56] <Pix[Taff]> re
+[17:53:02] <Pix[Taff]> oui Mons
+[17:53:06] <Pix[Taff]> c'est code red
+[17:53:11] <Mons> lol ;)
+[17:53:12] <webdaemon> comment tu veux faire du java ou du c sans les accolades !  grrr
+[17:53:14] <Pix[Taff]> si tu vois des NNNNN c la v1 si tu vois ds XXXXX c la v2
+[17:53:18] <Mons> y'en a vraiment plein !!!
+[17:53:23] <Mons> c grave !
+[17:53:47] uzy [uzy@dyn-213-36-137-221.ppp.libertysurf.fr] has joined #eci
+[17:53:49] <uzy> re
+[17:53:55] <uzy> Pix[Taff]: t la ?
+[17:54:05] <uzy> les .xm ca s'ouvre avec koa ?
+[17:56:15] Pix[Taff] [KelTruc@AMarseille-201-1-4-84.abo.wanadoo.fr] has quit irc : [Ping timeout for Pix[Taff][AMarseille-201-1-4-84.abo.wanadoo.fr]]
+[17:57:24] Pix[Taff] [KelTruc@AMarseille-201-1-4-84.abo.wanadoo.fr] has joined #eci
+[17:59:36] Pix[Taff] [KelTruc@AMarseille-201-1-4-84.abo.wanadoo.fr] has quit irc : []
+[17:59:38] Pix[Taff] [KelTruc@AMarseille-201-1-4-84.abo.wanadoo.fr] has joined #eci
+[18:08:30] uzy [uzy@dyn-213-36-137-221.ppp.libertysurf.fr] has quit irc : [long way from home bab]
+[18:11:28] <Mons> pfoui !
+[18:11:32] <Mons> grossac up
+[18:11:42] <Mons> j'avais modif le code ...
+[18:12:01] <Mons> c bon, jeanseb, c up
+[18:12:18] <jeanseb> k regarde les log
+[18:12:38] <jeanseb> me touche pas au forum :)
+[18:13:44] <jeanseb> te sur de ton script ?
+[18:14:00] <Mons> hum ...
+[18:14:04] <Mons> oui, les logs ?
+[18:14:12] <jeanseb> me semblais ki av qu'une seul D7
+[18:14:20] <jeanseb> kekesoit le log ...
+[18:14:28] <Mons> et ?
+[18:15:01] <jeanseb> ben ds
+[18:15:12] <jeanseb> *  ledfixjs1.log.vend.prec.txt.gz
+[18:15:16] <jeanseb> y'en a uh wagon 
+[18:15:29] <jeanseb> oups c dans *  log_passage_led_verte_1.log.vend.prec.txt.gz
+[18:15:30] <Mons> hummm ...
+[18:15:43] <Mons> ouep , c mon log ça ...
+[18:15:46] <wwp> passage led verte?
+[18:15:58] <wwp> y'a du nouveau coté avancement?
+[18:15:58] <Mons> led verte fixe quoi
+[18:16:05] <Mons> non, je crois pas
+[18:16:08] <wwp> ah ouf
+[18:16:13] <wwp> j'ai zu peur
+[18:16:39] <jeanseb> tu as tjrs les log ?
+[18:16:42] <Mons> oui
+[18:16:53] <Mons> grossac dans pppeci
+[18:17:18] <jeanseb> y'a ke le .zip :)
+[18:17:29] <jeanseb> au fait logflo c le loader tu peut virer!
+[18:17:30] <Mons> ??
+[18:17:36] <Mons> kk
+[18:18:33] <wwp> yop question à 2 F, l'est deposé sous sourceforge ce projet?
+[18:18:39] <Mons> oui
+[18:18:42] <wwp> ah!
+[18:18:55] <wwp> les sources alpha/cvs y sont?
+[18:19:06] <Mons> ouep, ça y est
+[18:19:09] <wwp> AH!
+[18:19:30] <Mons> ça a ete mis a jour en plus je crois
+[18:19:34] <wwp> what is ze name of the project?
+[18:19:40] <Mons> hummm ...
+[18:19:44] <wwp> pppeci?
+[18:19:54] <Mons> http://sourceforge.net/projects/eciadsl
+[18:20:00] <wwp> ah ok thanx
+[18:20:17] <Mons> ts les liens importants st sur grossac ou sur le site de flash
+[18:20:29] <Mons> ce serait pas mal de mettre les sites dans le topic
+[18:20:32] <Mons> jeanseb
+[18:20:40] <jeanseb> ou http://eciadsl.sourceforge.net <- our le site web 
+[18:20:46] <jeanseb> oui
+[18:22:14] <jeanseb> mons : ton script bug c sur
+[18:22:21] <Mons> humm ... :(
+[18:22:34] <Pix[Taff]> franchement tu pars en couille mons...
+[18:22:39] <Mons> bah je v corriger
+[18:22:47] <Mons> c quoi le bug ?
+[18:22:55] <Pix[Taff]> c conceptuel
+[18:22:57] <Pix[Taff]> fo tout refaire
+[18:23:02] <Mons> pfff :(
+[18:23:17] Mons est depité
+[18:23:27] <jeanseb> je compar js.log.vend.prec.txt.gz
+[18:23:30] <jeanseb> et le log
+[18:23:38] <jeanseb> et le type/Request corespond pas
+[18:23:52] <Mons> ouep ...
+[18:23:57] <Mons> je regarde ça de suite
+[18:24:15] <jeanseb> 00000410	0.05405120	  Request                 = a0	
+[18:24:19] <jeanseb> URB 5
+[18:24:29] <jeanseb> L'urb VENDOR : Type : 0 , value : 01 , index : 00	
+[18:24:34] <jeanseb> g compris
+[18:24:44] <jeanseb> ton type il arrive dans l'urb suivante
+[18:24:55] <jeanseb> tu dump avan de l'avoir !
+[18:25:47] <Mons> ouep .. je m'en doutait ...
+[18:26:49] <Mons> kk, je corrige...
+[18:27:33] <wwp> ürb!
+[18:27:34] <wwp> pardon
+[18:30:48] jseb [nvvc@AToulon-101-1-3-249.abo.wanadoo.fr] has joined #eci
+[18:30:48] jeanseb [nvvc@AToulon-101-1-3-249.abo.wanadoo.fr] has quit irc : [Read error to jeanseb[AToulon-101-1-3-249.abo.wanadoo.fr]: Connection reset by peer]
+[18:31:01] jseb [nvvc@AToulon-101-1-3-249.abo.wanadoo.fr] is now known as jeanseb
+[18:31:38] ChanServ [s@ChanServ] sets mode +o jeanseb
+[18:31:42] ChanServ [s@ChanServ] sets mode +o Mons
+[18:35:08] <Mons> re jeanseb
+[18:35:14] <Mons> c corrigé je crois
+[18:36:03] <Mons> ptete encore un bug pour la premiére val
+[18:36:10] <Mons> mais sinon c ok
+[18:36:29] <Mons> http://grossac.dyndns.org/pppeci/sources/stats.pl
+[18:36:35] <jeanseb> k
+[18:36:45] <jeanseb> t'a relance sur les log du site ?
+[18:36:54] <Mons> nop ... je fais :)
+[18:40:04] <Mons> gz a jours ...
+[18:40:55] <jeanseb> k mrci
+[18:41:07] <jeanseb> je cherche un bug :)
+[18:41:17] <Mons> y'en a encore un je crois
+[18:41:25] <Mons> pour le premiére urb vend ...
+[18:41:42] <Mons> mais pas le temps de corriger, faut que je parte ... d'ici 2 min ...
+[18:42:10] <jeanseb> k
+[18:43:04] webdaemon [root@AMarseille-201-1-2-46.abo.wanadoo.fr] has quit irc : [BitchX-75p3 -- just do it.]
+[18:43:17] nwebdaemo [root@AMarseille-201-1-2-46.abo.wanadoo.fr] has joined #eci
+[18:43:57] nwebdaemo [root@AMarseille-201-1-2-46.abo.wanadoo.fr] is now known as webdaemon
+[18:44:02] <Mons> ok ... a plus tous ..
+[18:44:13] <jeanseb> plus
+[18:44:13] <webdaemon> +
+[18:44:15] <Mons> le script aussi est sur le site ...
+[18:44:16] <Mons> +
+[18:44:21] Mons [lecabe@AFontenayssB-101-1-5-56.abo.wanadoo.fr] is now known as Mons_aw
+[18:44:25] <wwp> question: quelles logs de comm system-modem voulez-vous (je veux dire, en provenance de quel application)?
+[18:45:35] Pix[Taff] [KelTruc@AMarseille-201-1-4-84.abo.wanadoo.fr] has quit irc : []
+[18:47:30] <wwp> jeanseb?
+[18:47:48] <jeanseb> ben c le log de l'initiamlisationdu modem kil ns faut
+[18:47:55] <wwp> oui mais
+[18:47:58] <wwp> generée par quoi?
+[18:48:10] <wwp> pas le systeme ou par un autre outil qui spy la comm usb?
+[18:49:45] <webdaemon> par windows (access reseau distant ) je presume
+[18:50:18] <webdaemon> et a travers le driver du modem,non ?
+[18:51:22] <wwp> okay
+[18:51:28] <wwp> np alors
+[18:52:03] <wwp> ben ça fait pas de dump des paquets.. si c ça qu'il faut logger, autant savoir quel outils ils utilisent
+[18:52:19] <wwp> un usb sniffer?
+[18:53:21] <jeanseb> oui
+[18:53:31] <wwp> ah!
+[18:53:40] <wwp> lequel jeanseb? (ou alors, "oui" à quelle question?)
+[18:53:53] <webdaemon> ce que j'ai pas compris, c'est qu'il y a 1 page w2k sur snoopy
+[18:54:00] <wwp> snoopy!
+[18:54:02] <wwp> c donc ça
+[18:56:18] <wwp> jeanseb: les specs usb c 2.0 ou 1.1?
+[18:56:44] <webdaemon> wwp: tu serais pas en train de t'y mettre ?
+[18:56:52] <wwp> moi?
+[18:56:53] <wwp> heu
+[18:56:59] <wwp> (:chuttt:)
+[18:57:13] <webdaemon> :)
+[18:57:43] <webdaemon> mmmm ... les rillettes de thon au gouter !! divin !
+[18:57:49] <wwp> arglz
+[18:57:55] <wwp> c t donc ça cette odeur
+[18:58:20] <webdaemon> lol
+[18:58:28] <jeanseb> 2.0
+[18:58:38] <wwp> merci jeanseb
+[18:58:53] <wwp> me semblait que c t du 1.1 (marqué sur le modem ou dans sa doc)
+[18:59:01] <jeanseb> bon v tester kek truc
+[18:59:02] <jeanseb> a tt
+[18:59:05] jeanseb [nvvc@AToulon-101-1-3-249.abo.wanadoo.fr] has left #eci []
+[18:59:14] <wwp> merde, aurais une version du modem pourrie encore plus que non supportée?
+[19:00:12] <wwp> gosh!
+[19:00:14] <wwp> damned
+[19:00:17] <wwp> trahison!
+[19:00:26] <wwp> voire "doh!"
+[19:00:32] <webdaemon> kes ki t'arive?
+[19:00:34] <wwp> ben
+[19:00:47] <wwp> me semblait avoir lu sur la doc du modem que c t usb 1.1
+[19:01:04] <wwp> aurais-je bu/fumé?
+[19:01:10] <webdaemon> tu oublie la compatibilite descendante !
+[19:01:16] <wwp> ouais ok ok
+[19:01:27] <webdaemon> enfin, je pense !
+[19:01:39] <wwp> et il serait plus simple de concevoir un driver usb avec le protocole 2.0?
+[19:01:47] <wwp> sinon c po necessaire
+[19:01:53] <wwp> au contraire meme
+[19:02:03] <wwp> tu peux plus faire tourner ton driver sur les becanes qui n'ont que l'usb 1.1
+[19:02:26] <wwp> me trompè-je?
+[19:02:39] <webdaemon> je sais pas, j'ai pas lu les docs ...
+[19:03:51] <webdaemon> tout le monde a des ports en 2.0, je pense
+[19:03:59] <wwp> hum
+[19:04:02] <wwp> j'espère
+[19:04:38] <wwp> comme tout le monde à au moins un PII avec au moins 128meg de ram :)))
+[19:05:05] <wwp> adieu, la possibilité d'utiliser son vieux vieux pc (usb1.1) pour servir de routeur adsl alors :)
+[19:30:47] webdaemon [root@AMarseille-201-1-2-46.abo.wanadoo.fr] has quit irc : [Ping timeout for webdaemon[AMarseille-201-1-2-46.abo.wanadoo.fr]]
+[20:02:07] wwp is AWAY at 20:02:07 : Not behind the keyboard
+[20:02:08] wwp [anonymous@AMontpellier-201-2-1-77.abo.wanadoo.fr] is now known as wwpAWAY
+[20:07:26] Mr-Ragga [polrse@APlessis-Bouchard-102-1-1-93.abo.wanadoo.fr] has joined #eci
+[20:09:04] Mr-Ragga [polrse@APlessis-Bouchard-102-1-1-93.abo.wanadoo.fr] has quit irc : [(I was using Polaris SE) Version:(1.0) Wasted:(1 Minute and 46 Seconds Online)]
+[20:11:41] wwpAWAY is back after 0 d 0 h 9 m 34 s
+[20:11:41] wwpAWAY [anonymous@AMontpellier-201-2-1-77.abo.wanadoo.fr] is now known as wwp
+[20:12:51] wwp is AWAY at 20:12:51 : Gone fishin'
+[20:12:51] wwp [anonymous@AMontpellier-201-2-1-77.abo.wanadoo.fr] is now known as wwp_away
+[20:12:55] wwp_away is back after 0 d 0 h 0 m 4 s
+[20:12:55] wwp_away [anonymous@AMontpellier-201-2-1-77.abo.wanadoo.fr] is now known as wwp
+[20:19:55] <wwp> tsoin
+### Log session terminated at Fri Aug 24 20:23:34 2001 ###

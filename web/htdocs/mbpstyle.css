@@ -1,0 +1,135 @@
+a { text-decoration: underline; }
+
+a:link { color: #0b407a; }
+
+a:visited { color: #0b407a; }
+
+a:hover {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a.menulink { text-decoration: none; }
+a.menulink:link { text-decoration: none; color: #0b407a; }
+a.menulink:visited { color: #0b407a; }
+a.menulink:hover {
+    text-decoration: underline; 
+    color: black;
+}
+
+a.email { text-decoration: none; }
+a.email:link { text-decoration: none; color: white; font-weight: bold; }
+a.email:visited { color: #0b407a; }
+a.email:hover {
+    text-decoration: underline; 
+    font-weight: bold;
+}
+
+
+body {
+    background-color: #1a3967;
+    font-family: verdana, arial, sans-serif;
+    font-size: 12px;
+    color: black;
+}
+
+.text {
+    font-family: verdana, arial, sans-serif;
+    font-size: 12px;
+    color: black;
+}
+
+.text7 {
+    font-family: arial, verdana, arial, sans-serif;
+    font-size: 10px;
+    color: black;
+}
+
+.text8 {
+    font-family: verdana, arial, sans-serif;
+    font-size: 11px;
+    color: black;
+}
+
+.text8w {
+    font-family: tahoma, verdana, arial, sans-serif;
+    font-size: 11px;
+    color: white;
+}
+
+.text10 {
+    font-family: verdana, arial, sans-serif;
+    font-size: 12px;
+    color: white;
+}
+
+.menu {
+    font-family: tahoma, verdana, arial, sans-serif;
+    font-size: 12px;
+    color: black;
+    font-weight: bold;
+    border-right: #101010 1px solid;
+    border-left: #101010 1px solid;
+}
+
+.menuitem {
+    font-family: tahoma, verdana, arial, sans-serif;
+    font-size: 12px;
+    color: black;
+    font-weight: bold;
+    background-color: #dddbdb;
+    border-right: none;
+    border-left: none;
+    border-bottom: #101010 1px solid;
+    text-align: center;
+}
+
+.menutitle {
+    font-family: tahoma, verdana, arial, sans-serif;
+    font-size: 12px;
+    color: white;
+    font-weight: bold;
+    background-color: #666699;
+    border-right: none;
+    border-left: none;
+    border-top: #101010 1px solid;
+    border-bottom: #101010 1px solid;
+    text-align: center;
+}
+
+.highlight {
+    font-family: tahoma, verdana, arial, sans-serif;
+    font-size: 12px;
+    color: black;
+    font-weight: bold;
+    background-color: white;
+    border-right: none;
+    border-left: none;
+    border-bottom: #101010 1px solid;
+    text-align: center;
+}
+
+.table {
+    border-color: #000000;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.code {
+    background-color: #d8d8d8;
+    color: white;
+    font-size: 12px;
+    margin-left: 15px;
+    font-family: "courier new", courier, monospace;
+}
+
+.news {
+    background-color: #f4eec1;
+    border: 1px solid #101010;
+}
+
+.border {
+    border-color: #000000;
+    border-style: solid;
+    border-width: 1px;
+}

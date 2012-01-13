@@ -1,0 +1,76 @@
+
+Session Start: Fri Aug 30 10:52:14 2002
+Session Ident: #afterlife
+[10:52] * Now talking in #afterlife
+[10:52] * Topic is '.....'
+[10:52] * Set by Hobben on Sat Aug 24 12:35:10
+[10:52] * ChanServ sets mode: +o Sentrosi
+[10:52] -> -Sentrosi- notice test
+[10:52] -Sentrosi- notice test
+[10:52] -> *Sentrosi* msg test
+[10:52] * Sentrosi sets mode: +v Sentrosi
+[10:52] * Sentrosi sets mode: -v Sentrosi
+[10:52] * Sentrosi sets mode: -o Sentrosi
+[10:52] * Retrieving #afterlife info...
+[10:52] * Sentrosi changes topic to '......'
+[10:53] * You were kicked by Sentrosi (you suck)
+[10:53] * Dekein was kicked by Sentrosi (you suck)
+Session Close: Fri Aug 30 10:53:07 2002
+
+Session Start: Fri Aug 30 10:53:09 2002
+Session Ident: #afterlife
+[10:53] * Now talking in #afterlife
+[10:53] * Topic is '......'
+[10:53] * Set by Sentrosi on Fri Aug 30 10:52:46
+[10:53] * ChanServ sets mode: +o Sentrosi
+[10:53] -> Ops #afterlife: need a sample of mirc6 logs ;)
+[10:53] <Sentrosi> heh
+[10:53] <Sentrosi> bbl
+[10:53] * Disconnected
+Session Close: Fri Aug 30 10:53:46 2002
+
+Session Start: Fri Aug 30 11:06:11 2002
+Session Ident: #afterlife
+[11:06] * Now talking in #afterlife
+[11:06] * Topic is '......'
+[11:06] * Set by Sentrosi on Fri Aug 30 10:52:46
+[11:06] * ChanServ sets mode: +o Sentrosi
+[11:06] -Jorr:@#afterlife- ...
+[11:06] * You were kicked by Dekein (you suck)
+Session Close: Fri Aug 30 11:06:24 2002
+
+Session Start: Fri Aug 30 11:06:31 2002
+Session Ident: #afterlife
+[11:06] * Now talking in #afterlife
+[11:06] * Topic is '......'
+[11:06] * Set by Sentrosi on Fri Aug 30 10:52:46
+[11:06] * ChanServ sets mode: +o Sentrosi
+[11:06] <Sentrosi> argh was typing
+[11:06] <Sentrosi> mirc6 log formats is retarded, actions look just like mode changes
+[11:07] * Delheru_ has joined #afterlife
+[11:07] * Sentrosi changes topic to 'wtf?'
+[11:07] <Sentrosi> oh I het it, there's a special character in the line
+[11:08] <Sentrosi> how retarded
+[11:08] * Sentrosi thinks mIRC6's logformat is RETARDED!
+[11:08] <Sentrosi> wonder what it does if I type this heh
+[11:08] * Sentrosi changes topic to 'mirc6 sucks ASS'
+[11:08] * paluwen has quit IRC (Read error: Connection reset by peer)
+[11:09] <Sentrosi> it left in the special character in the log.... lame crappy useless program, how the hell are you supposed to reliably parse that kind of format?
+[11:09] <Dekein> you don't?
+[11:10] * Thanotos has joined #afterlife
+[11:10] * ChanServ sets mode: +o Thanotos
+[11:10] <Sentrosi> huh?
+[11:10] <Thanotos> I don't what?
+[11:10] * yasai has quit IRC (Ping timeout)
+[11:10] <Thanotos> oh thats even worse
+[11:10] * yasai has joined #afterlife
+[11:10] * Thanotos has joined #afterlife
+[11:11] <Thanotos> looks EXACTLY the same as when I joined
+[11:11] <Thanotos> gotta be able to tell it to fix that shit
+[11:12] * Disconnected
+Session Close: Fri Aug 30 11:12:10 2002
+
+#16:04 <coaster> Alt+O -> IRC -> Options -> Short join/parts
+#16:04 <coaster> I guess that's ticked?
+[05:32a] * Quits: cxz (~guniradsa@Rizon-2AE4CB4A.dsl.sndg02.pacbell.net) (irc.tokyotosho.com *.split)
+[05:33a] * Joins: cxz (~guniradsa@Rizon-2AE4CB4A.dsl.sndg02.pacbell.net)

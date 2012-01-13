@@ -1,0 +1,640 @@
+IRC log started Fri Aug 16 15:04
+*** Value of LOG set to ON
+<yakk> no, I'm not as smart as luyer
+<yakk> dayta: I have none "going"
+* dayta comforts yakk
+<mesh> grahame mustang might know? hrm.
+15:15
+<m|chael> Wow. I found code (in C) that finds the maximum of 3 variables with only six comparisons! :P
+<yakk> POST!
+15:30
+<m|chael>     if((contfd >= s) && (contfd >= fw_handle)) {
+<m|chael>         maxfd = contfd;
+<m|chael>     }
+<m|chael>     if((s >= contfd) && (s >= fw_handle)) {
+<m|chael>         maxfd = s;
+<m|chael>     }
+<m|chael>     if((fw_handle >= contfd) && (fw_handle >= s)) {
+<m|chael>         maxfd = fw_handle;
+<m|chael>     }
+<yakk> ahh, of course
+<m|chael> maxfd is used only for the first arg to select()
+<yakk> select *bad*
+<yakk> poll *good*
+* m|chael nods vigorously.
+<yakk> /dev/poll *better*
+<m|chael> But I don't have time to fix this.
+* yakk nods.
+<yakk> know that feeling
+<m|chael> But I do have time to update my vent page at http://quota2.murdoch.edu.au/shame.html ;)
+<yakk> m|chael: what are you doing at murdoch? programming? sysadmining?
+<m|chael> 'Unix Support Officer'
+<m|chael> Mostly adminning.
+<m|chael> But I have this heap-of-shit RedHate box used for web proxy and student byte-counting.
+<m|chael> kernel 2.3.29 (hacked), squid 2.2.STABLE4 (hacked), tac_plus (hacked)
+<m|chael> When Adrian gets back from Sydney I'm going to get work to pay him to get the squid hacks added to upstream.
+15:45
+> this assumes adrian does come back from sydney :P
+<dayta> he was due back start of this week...
+* dayta ponders
+<yakk> m|chael: cool
+* m|chael grins at trs80.
+> yes, he was. current estimate involving a date is another month. but he also said "I don't know when I'm coming back" when I talked to him yesterday
+<yakk> whats adrian doing in sydney?
+<yakk> isn't he studying?
+>  quota and proxy service FOO | BAR | green
+> yakk: he's withdrawing
+<yakk> again? :)
+<m|chael> He -was-, presumably up until someone offered him dumptrucks full of money :P
+<yakk> heh
+<yakk> whats he doing in sydney?
+<m|chael> trs80: Oi! That pages isn't really live yet :P
+* m|chael wonders if/when /dev/netfilter_ipv4 went away.
+> yakk: ISP stuff. he said before he went "6.5 figure salary", but I'm not sure if that's for what he's doing now or not.
+* m|chael faints.
+<Barnes> 6.5? Wouldn't that be halfway between a 6 figure and a 7 figure salary? I really don't think he's getting that much.
+<m|chael> 10^(6.5-1)?
+<grahame> gah
+16:00
+<grahame> damn all stupid people
+<grahame> damn them
+<m|chael> "I see dumb people"
+<grahame> rofl
+<grahame> man SQL sucks
+<grahame> it's just difficult to do so many simple things
+<m|chael> Sounds like tcsh. :P
+* acolyte peers at grahame 
+<acolyte> easy to do simple things
+<acolyte> its just things are often not simple 
+<acolyte> databases in general suck
+16:15
+<m|chael> Is there an alternative? Flat text? :P
+<Barnes> XML is the way.
+* proXy bings
+* m|chael grins at Barnes.
+16:30
+<yakk> eeeek!
+<yakk> its the simpsons furry episode!
+16:45
+<grahame> oh no
+<yakk> furries scare me
+<dayta> not as much as plushies ;)
+<grahame> erk
+17:00
+<yakk> plushies scare me
+<yakk> scare scare scare
+<grahame> heh
+<grahame> cya guys
+*** Signoff: grahame (foo)
+17:15
+17:30
+17:45
+18:00
+*** vXIQ (~dunc@spdax1-138.dialup.optusnet.com.au) has joined channel #ucc
+*** vXIQ is now known as dunc-
+> comindico to iprimus goes via the US.
+18:15
+*** yakk is now known as yakkGone
+18:30
+*** Signoff: dunc- (BitchX-1.0c19 -- just do it.)
+18:45
+19:00
+<mesh> iprimus are very very sucky. like tpgi
+19:15
+<Lathiat> yes
+<Lathiat> they are
+<Lathiat> trs80: u get that
+<Lathiat> i goto melbourne to get to ucc
+<Lathiat> not as bad as the us tho
+19:30
+19:45
+20:00
+20:15
+20:30
+*** acolyte has left channel #ucc
+20:45
+21:00
+21:15
+21:30
+21:45
+22:00
+22:15
+22:30
+22:45
+23:00
+23:15
+23:30
+* Lathiat is away: (sleeping) [BX-MsgLog On]
+23:45
+00:00
+*** ircd.gimp.org Friday August 16 2002 -- 09: 00:18 -07:00
+*** Topic for #ucc: Q is for Al'Qaeda
+*** #ucc drs80 1027999007
+Pub: #ucc       proXy Lathiat mesh @trs80 @dayta @Burrito Barnes @m|chael dunc shig @yakkGone 
+00:15
+00:30
+00:45
+01:00
+01:15
+01:30
+01:45
+02:00
+02:15
+02:30
+* dayta grumbles
+02:45
+03:00
+03:15
+03:30
+03:45
+04:00
+04:15
+04:30
+*** yakkGone is now known as yakk
+04:45
+05:00
+05:15
+05:30
+05:45
+06:00
+06:15
+06:30
+06:45
+07:00
+07:15
+07:30
+07:45
+08:00
+08:15
+08:30
+08:45
+09:00
+09:15
+09:30
+09:45
+10:00
+10:15
+10:30
+10:45
+11:00
+11:15
+*** yakk is now known as yakkGone
+11:30
+<proXy> bing
+11:45
+12:00
+*** Topic for #ucc: Q is for Al'Qaeda
+*** #ucc drs80 1027999007
+Pub: #ucc       proXy Lathiat mesh @trs80 @dayta @Burrito Barnes @m|chael dunc shig @yakkGone 
+12:15
+12:30
+12:45
+13:00
+13:15
+13:30
+13:45
+14:00
+14:15
+14:30
+14:45
+15:00
+15:15
+<Lathiat> heyas
+15:30
+15:45
+* proXy bings from Midland
+16:00
+16:15
+16:30
+16:45
+17:00
+<shig> Morning.
+17:15
+17:30
+17:45
+<mesh> morning shig
+* proXy bings
+* proXy also notes it isn't morning
+<proXy> shig ; you were gone by the time that I awoke
+18:00
+<mesh> mm. 8.5% beer
+* proXy notes that he doesn't want beer today
+<mesh> smile
+18:15
+18:30
+*** yakkGone is now known as yakk
+<yakk> bleah
+<yakk> drunken
+<mesh> good night?
+<yakk> yes, actually
+<yakk> I was wearing my "kissing contest" t-shirt
+<yakk> and I think I won
+<yakk> h0t girls
+<yakk> mmmm
+<yakk> so tasty
+<yakk> bleah
+<yakk> I need Barnes' home phone #
+<yakk> mmm
+<yakk> college girls...
+18:45
+<yakk> my life is like a spam message
+* trs80 grins
+<yakk> well, this evening anyway
+<mesh> teehee
+<yakk> mm
+<yakk> farscape makes me homesick
+19:00
+*** yakk is now known as yakkGone
+19:15
+19:30
+19:45
+20:00
+20:15
+20:30
+> http://www.theaustralianit.com.au/articles/0,7204,4911945%5E15306%5E%5Enbv%5E,00.html - " Solution 6 said the AlphaWest management team would pay $18 million cash to buy back the farm"
+20:45
+* dayta ponders
+21:00
+<dayta> the bloody telstra cable usage page appears to be down more than it is up.
+*** dunc_ (~dunc@spdax1-138.dialup.optusnet.com.au) has joined channel #ucc
+<dayta> hey dunc.
+<dunc_> heyhey
+* dayta found an electronic burr grinder :)
+<shig> explodingdog is funny
+<dunc_> ooo
+<dunc_> cool
+<dayta> last one  in the store :)
+<dunc_> I got a pepper grinder for my birthday, and thought about trying coffee beans in one :-}
+* dayta grins
+<dayta> I have no use for my old manual one now :)
+<dayta> the new one's _so_ much faster :P
+<dayta> you just select fineness, press a button, and it does it :)
+<dunc_> cool
+<dunc_> how much?
+* dayta can't seem to find anywhere to download blakes' seven movies.
+<dayta> $135
+<dayta> the woman I bought it off seemed doubtful she'd be able to find another one for some reason.
+<dayta> it's by breville though, so I figure it'd be quite easy to get a random electronics store to order one in.
+* dayta shrugs
+<dayta> perhaps it doesn't work like that
+<dunc_> probably does.
+<dunc_> should be able to buy one /somewhere/.
+* dayta nods
+<dunc_> but I need money first
+<dayta> yeah :)
+<dayta> I've _almost_paid off my credit card :P
+<dunc_> coffee maker second
+<dayta> by then I should be able to tell you if it's gonna fall apart or not
+<dunc_> and coffee beans third
+21:15
+<dunc_> I'm not minding the instant at the moment.  but I know I will as soon as I smell fresh grounds again.
+<dayta> yes :)
+<dayta> had a conversation with the girl in the store about that ;)
+<dayta> got it from a place in that little arcade just north of subi train station...
+<dayta> specialises in coffee, some random kitchen equipment, and drinking paraphernalia ;)
+<dayta> almost ended up with martini glasses too :P
+21:30
+<dunc_> Melissa gave me the F1 2001 PS2 game for my birthday dayta ... apparently after you saying it was probably OK? :-)
+<dayta> I think my response was actually 'Yeah, looks like it doesn't completely suck' I just read a few reviews of it :P
+<dayta> she'd already bought it at the point she asked me ;)
+<dunc_> oh
+<dunc_> she didn't mention that bit, conveniently.
+<dayta> I'm like "I don't want to answer these questions dammit :P"
+<dayta> what's it like anyhow?
+<dunc_> well, I thought I remembered seeing the preview with you on one of those magazine cover DVD's and us lambasting it to all hell.
+<dayta> oh, entirely possible. I don't really remember names though :P
+<dunc_> I played it a little bit, not as bad as I expected.
+<dunc_> a bit like MotoGP, except in F1 cars and a lot more polished.
+<dayta> reviews I read said it had a pretty good 'full season' type game.
+<dunc_> yeah, I don't know that I can be bothered though.
+<dayta> bah!
+<dayta> (says the guy who hasn't played a game on his ps2 in multiple weeks)
+<dunc_> I'm not into the whole realism thing, just want to grab a car and race.  Surprisingly, I was able to do that.
+<dayta> cool ;)
+<dayta> and... f1... 
+<dunc_> I raced around Suzuka because it's familiar territory :-)
+<dayta> good impression of speed? :)
+* dayta rofls
+<dayta> does it drive similarly in an f1 car?
+<dayta> how do your lap times compare?
+<dunc_> heheh
+<dunc_> didn't get that far.  haven't actually played motoGP since I got it from you.
+<dunc_> it does drive similarly.
+<dayta> nah, you'd kindaq played it out ;)
+<dunc_> much easier to brake for corners in the F1 car.
+<dunc_> oh, and you can actually steer under brakes, I think that makes most of the difference - don't actually need to set up for corners as much.
+* dayta grins
+<dayta> indeed. I need a roadgoing f1 car :)
+<dayta> then I need roads that are flat enough.
+<dayta> bugger this 6 seconds to 100 thing. 
+<dunc_> that's what this game is - F1 cars which don't shatter when you hit the walls.
+<dunc_> dude my bike is faster than that.
+<Barnes> Can you jack other peoples F1 cars?
+<dunc_> hey barnes.
+<dayta> dunc: of course it is, that's _my_ car :P
+<Barnes> Hey hey.
+<dunc_> doubt it, but I'll try :-)
+<dayta> I shoulda told her to try and find a copy of gta3 actually.. it doesn't matter that you've played itbefore ;)
+<dunc_> yup
+<dunc_> when I checked recently, gta3 was still in the top ten.
+21:45
+<dunc_> I'm enjoying ICO a lot.
+<dunc_> there have been a couple of times where I've been really frustrated and about to give up when I see the answer.
+<dunc_> fuck, ps2 games are selling for up to $81 on ebay.  that's > 80% of retail :-/
+* dayta grins
+<dayta> yeah, finish ico so I can borrow it ;)
+<dunc_> pfeh
+<dunc_> it looks pretty long.
+<dunc_> but we will see
+<dayta> ps2 games are outselling xbox by about 3:1 at the moment.
+<dayta> yeah, interesting you say that ;) since the reviews I said didn't agree.
+<dayta> btw, did you get the dvd remote with it?
+<dunc_> I rainchecked a package at target which included a remote.  so no, not yet.
+<dunc_> but no the sony remote, in case you wanted the dvd driver update.
+<dunc_> Tekken 4
+<dunc_> Tekken 4 marks the return of Namco's premier fighting franchise. Tekken strikes back with new jaw-dropping graphics, game play mechanics, and fearsome fighters.
+<dunc_> oops
+<dunc_> apparently GTA: Vice City will be out end of october.
+<dayta> yeah, i'll be getting it :)
+<dayta> I need to get hold of the dvd-driver update at some point.
+<dayta> might bug teik about it again.
+<dunc_> do you have problems playing dvd's?
+<dayta> the sound gets out of sync lots.
+<dayta> haven;'t had any issues with them actually _playing_, but better quality would be nice :P
+* dayta ponders
+<dayta> though, I could probly write my own by now :)
+<dunc_> driver?
+<dunc_> I'm sick, so bed time.  ciao.
+22:00
+<dayta> dvd player ;) ok, g'night
+22:15
+22:30
+22:45
+23:00
+23:15
+23:30
+23:45
+00:00
+*** ircd.gimp.org Saturday August 17 2002 -- 09: 00:03 -07:00
+*** Topic for #ucc: Q is for Al'Qaeda
+*** #ucc drs80 1027999007
+Pub: #ucc       dunc_ proXy Lathiat mesh @trs80 @dayta @Burrito Barnes @m|chael dunc shig @yakkGone 
+00:15
+00:30
+00:45
+01:00
+01:15
+01:30
+01:45
+02:00
+02:15
+02:30
+02:45
+03:00
+03:15
+03:30
+03:45
+04:00
+04:15
+04:30
+04:45
+05:00
+05:15
+05:30
+05:45
+06:00
+06:15
+06:30
+06:45
+07:00
+07:15
+07:30
+07:45
+08:00
+08:15
+08:30
+08:45
+09:00
+09:15
+09:30
+09:45
+10:00
+10:15
+*** acolyte (~Andrew@203.63.54.147) has joined channel #ucc
+<acolyte> morning
+10:30
+* proXy bings
+<dunc_> morning
+<acolyte> heyya dunc
+<dunc_> acolyte: hope you're not at work
+10:45
+<acolyte> umm, maybe 
+<dunc_> tsck tsck
+<dunc_> what are you in for?  deadline?
+<acolyte> something like that 
+<acolyte> oh fucking yay
+<acolyte> I hate crap bugs like this one 
+* acolyte pondes
+11:00
+11:15
+11:30
+11:45
+*** Signoff: proXy (irc.lekstuga.org sumo.solutionsfirst.com.au)
+*** Signoff: Barnes (irc.lekstuga.org sumo.solutionsfirst.com.au)
+*** proXy (gavel@opera.iinet.net.au) has joined channel #ucc
+*** Barnes (barnaby@whippersnipper.pacific.net.au) has joined channel #ucc
+*** Signoff: Barnes (irc.acc.umu.se sumo.solutionsfirst.com.au)
+*** Signoff: proXy (irc.acc.umu.se sumo.solutionsfirst.com.au)
+*** proXy (gavel@opera.iinet.net.au) has joined channel #ucc
+*** Barnes (barnaby@whippersnipper.pacific.net.au) has joined channel #ucc
+12:00
+*** Topic for #ucc: Q is for Al'Qaeda
+*** #ucc drs80 1027999007
+Pub: #ucc       Barnes proXy acolyte dunc_ Lathiat mesh @trs80 @dayta @Burrito @m|chael dunc shig @yakkGone 
+12:15
+12:30
+12:45
+13:00
+13:15
+13:30
+13:45
+*** acolyte has left channel #ucc
+14:00
+14:15
+*** yakkGone is now known as yakk
+14:30
+> morning yakk
+> hard night partying?
+<yakk> nah
+<yakk> slacking
+<yakk> last night was good partying
+* dayta yawns
+<dayta> g'day
+<dayta> now, should I a) clean my car. b) calibrate the projector, or c) sit around slacking and reading
+14:45
+<yakk> d)
+<yakk> tard
+<dayta> 'tard'?
+<dayta> is that an action of some sort? :)
+*** Signoff: mesh (Ping timeout: 600 seconds)
+15:00
+<yakk> sort of
+<yakk> its a way of life
+<yakk> for example I'm tarding
+<yakk> I'm sitting at home chatting on my laptop watching a documentary about dwarves
+15:15
+* dayta grins
+<dayta> ahh, so slacking and reading a book could be tarding...
+<dayta> or does it require some sort of 'net' dependancy?
+<yakk> if its a tardy book...
+<yakk> whats the book?
+<yakk> is it about dwarves?
+<dayta> nah.. it's by sean williams ;)
+<dayta> it's about post-apocalyptic, magic-enabled australia
+<yakk> which one?
+<yakk> oooh, sounds good
+<dayta> between the stone mage and the sea?
+<yakk> I like sean williams' writing
+<yakk> I heard that was good
+<dayta> minus the 'between'
+<dayta> he is.
+<dayta> and I always kinda like books that feel like australia
+<yakk> yeah
+<yakk> I know what you mean
+<dayta> I think australian culture (as in, aboriginal culture I guess) is under-represented.
+* yakk nods.
+<yakk> "modern" australian culture is pretty unique too
+<dayta> theres a lot of original stuff there, untapped :)
+<yakk> a lot of the aboriginal-based stuff I've read was pretty superficial
+* dayta nods
+<yakk> though perhaps I just don't get it because I guess we didn't really get a great education in it
+<dayta> 'ave a blow of me didgeridoo mate. Then we can go and whack some wallabies with me boomerang.
+<yakk> heh
+* dayta ponders
+<yakk> and throw a vauge dreamtime reference in there :)
+<dayta> my auntie wrote a book on aboriginal artwork ;)
+<yakk> cool
+<dayta> unfortunately, I've never really had a good opportunity to talk to her :(
+<dayta> I've been told she's the family member I'm most like :P Probly explains why she never talks to the rest of the family ;P
+<yakk> heh
+<dayta> 'Ghost World' looks cool :)
+<yakk> is she local?
+<yakk> Lots of people like Ghost World
+<dayta> nope, not local
+<yakk> I didn't like it as much, but I thought it was pretty good
+<dayta> may be going to see y tu mama tambien tonight.
+<yakk> who is that?
+<dayta> some sort of random road trip movie. I'm working entirely off having been told it looks decent :P
+<dayta> I believe it's mexican
+<yakk> cool
+<yakk> sounds mexican
+<shig> Mroning
+<yakk> hi shig
+<dayta> hey shig
+15:30
+<shig> Hi guys
+<shig> How's life treating you?
+<yakk> good
+<yakk> slack
+<yakk> had an awesome time out last night
+15:45
+> mexican teen road trip movie
+16:00
+* yakk is watching the History of Britain thing on tv
+* dayta grins at trs80
+<dayta> but a lot of reviews say it's good..
+<dayta> deep and meaningful undertones of the duality of mexican society and shit like that.
+* trs80 nods
+> guess what the director's next project is?
+16:15
+<dayta> I've no idea. :P
+> harry potter 3
+<dayta> hehe :)
+<dayta> remember, it goes art-flick, money-flick, repeat ;)
+* trs80 grins
+<dayta> also did great expectations, a little princess, fallen angels..
+* dayta shrugs
+<yakk> thats almost a jay & silent bob strike back quote
+<dayta> but this is the only one he's written
+<dayta> yakk: where'd you reckon I got it from? :)
+<yakk> heh
+* yakk must watch that sober one day
+<dayta> I love the scene with Ben Affleck and Matt Damon :)
+<dayta> Good Will Hunting 2 - Hunting Season.
+<yakk> lemonface ooh!
+<yakk> lionface argh!
+<dayta> lemonface?
+<yakk> was that what it was?
+* dayta grins
+<dayta> I remember now :P
+16:30
+<yakk> F1RST POST!!!!!
+<yakk> HOT GRITS!
+* yakk is watching The Professional / Leon
+<dayta> 'great movie
+<yakk> yes
+16:45
+17:00
+<yakk> I had forgotten how good this movie is
+17:15
+17:30
+<dayta> it was on tv here not that long ago.
+*** mesh (~mattj@relay1.uwa.edu.au) has joined channel #ucc
+<mesh> sigh. 
+<dayta> sigh?
+<mesh> the terminal had stopped responding
+17:45
+<dayta> I occasionally suspend input on my screens then forget about it for a day or two ;)
+<dayta> it's hard to spot on here, it's not like a lack of traffic is unusual
+* trs80 notes michael's on timer triggers are useful in this regard
+* dayta scratches his head
+* dayta needs a bookshelf
+18:00
+18:15
+18:30
+18:45
+19:00
+19:15
+19:30
+*** yakk is now known as yakkGone
+19:45
+20:00
+20:15
+20:30
+20:45
+21:00
+21:15
+21:30
+21:45
+*** Riff (~epoch@004.pth0107.pth.iprimus.net.au) has joined channel #ucc
+*** proXimity (~epoch@004.pth0107.pth.iprimus.net.au) has joined channel #ucc
+*** Riffington (~epoch@004.pth0107.pth.iprimus.net.au) has joined channel #ucc
+*** Signoff: proXimity (Give me a break! "Purposity" isn't even a word!)
+*** Signoff: Riffington (Give me a break! "Purposity" isn't even a word!)
+22:00
+*** Signoff: Riff (Give me a break! "Purposity" isn't even a word!)
+*** Riff (~epoch@004.pth0107.pth.iprimus.net.au) has joined channel #ucc
+22:15
+22:30
+22:45
+23:00
+23:15
+23:30
+Pub: #ucc       Riff mesh Barnes proXy dunc_ Lathiat @trs80 @dayta @Burrito @m|chael dunc shig @yakkGone 
+-> *trs80* test
+*trs80* test
+* -> trs80: trs80 test
+*> trs80 test
+23:45
+<shig>  (~epoch@004.pth0107.pth.iprimus.net.au) has joined channel #ucc
+<shig> *** proXimity (~epoch@004.pth0107.pth.iprimus.net.au) has joined channel #ucc
+<shig> *** Riffington (~epoch@004.pth0107.pth.iprimus.net.au) has joined channel #ucc
+<shig> Fuck
+<Riff> gnome2 fucked me
+<Riff> It registered my keysequence 3 times (which it occasionally does)
+<Riff> and therefore executed xchat 3 times
+00:00
+*** ircd.gimp.org Sunday August 18 2002 -- 09: 00:25 -07:00
+*** Topic for #ucc: Q is for Al'Qaeda
+*** #ucc drs80 1027999007
+Pub: #ucc       Riff mesh Barnes proXy dunc_ Lathiat @trs80 @dayta @Burrito @m|chael dunc shig @yakkGone 

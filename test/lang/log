@@ -1,0 +1,414 @@
+--- Log opened Sun Jan 25 00:00:02 2004
+00:08 <bernhard> Myon: Der "Die Zahlen sprechen für sich :)" - Teil in der Statistik klappt leider noch nicht ganz. Wenn ich mal Zeit habe, kucke ich mal über den Quellcode. Aber dann sage ich nochmal bescheid.
+00:08 <bernhard> Aber sonst: Die Statistik ist echt geil! Gefällt mir sehr gut :))
+00:13 -!- Y_Plentyn [~aw@d146-200.dsl.expressnet.de] has quit [Ping timeout]
+00:13 -!- ypl (Wonneproppen) [~aw@d153-204.dsl.expressnet.de] has joined #plant
+00:15 <bernhard> Ist schon lustig: Bin in der Monats- und Wochenstatistik als Oberquatscher aufgeführt. Und ausnahmsweise mal nicht in der Tagesstatistik. Bin bald vom Stuhl gefallen, als kodomo mir das gezeigt hat :))
+00:16 <ypl> be: wer sonst?
+00:18 <bernhard> Wer sonst *lol* FelixKatz für heute
+00:19 <bernhard> Du brichts wahrscheinlich noch die "join und dann ping timeout" - Statistik
+00:19 <bernhard> Du Armer, möchte nicht in Deiner Haut stecken
+00:21 <ypl> ic
+00:21 <ypl> ach, geht weg.
+00:23 <bernhard> Wem gebe ich denn mein Bild für die IRC-Statistikseite? 
+00:24 <bernhard> Myon: Wie kann ich Dir das Bild zukommen lassen?
+01:22 <LnxBil> Myon: Von mir gibt es ja genug bilder im netz ;-)
+01:22 <LnxBil> Weiss wer, wies dem onkel geht? Hat ihn schonmal einer besucht?
+01:53 <bernhard> oh, ist er im Krankenhaus? (P.S.: Habe de_Onkel mal im Chat gesehen, kenne ihn aber nicht)
+02:10 -!- ypl [~aw@d153-204.dsl.expressnet.de] has quit [Ping timeout]
+02:11 -!- ypl (Wonneproppen) [~aw@d164-200.dsl.expressnet.de] has joined #plant
+02:32 -!- ypl [~aw@d164-200.dsl.expressnet.de] has quit [EOF From client]
+03:15 <bernhard> Gute Nacht allerseits!
+03:15 -!- bernhard [-bernhard@p508AD347.dip0.t-ipconnect.de] has quit [leaving]
+05:32 -!- lizz [ego@xGagC632.WH1.tu-dresden.de] has quit []
+10:16 <LnxBil> Morgen
+11:29 -!- bernhard (Bernhard Kraemer) [-bernhard@p508ACB2E.dip0.t-ipconnect.de] has joined #plant
+12:06 <Re-EL> moin
+12:14 <Re-EL> lol, wie schlecht. www.eplus.de geht nur mit flashplugin
+12:14 * Re-EL muss feststellen das die welt nur nach aus bwl studenten mit maketing als hauptfach besteht
+12:19 <bernhard> Ich habe mir gestern den Macromedia Shockwave Flashplayer unter Debian installiert, wenn Du das suchst
+12:20 <bernhard> Klappt prima unter Opera und Mozilla
+12:21 <bernhard> apt-get install flashplugin-nonfree
+12:23 <bernhard> Aber komisch - bei eplus lädt er trotzdem "default-noflash". Egal, halte eh nichts von animierten lachenden Gesichtern, die mir Handys verkaufen wollen
+12:23 <bernhard> So lachen sie wenigstens nur
+12:23 <bernhard> und ziehen am Strohhalm. Der Zusammenhang zu Eplus ist natürlich offensichtlich
+12:27 <bernhard> Geht Euch das auch so? Wenn ich eine Werbung sehe zu irgendeinem komplizierten Ding wie einem Meßgerät etc, dann sehe ich immer ein dummes Gesicht von jemanden, dem man ansieht, daß er von Tuten und Blasen keine Ahnung hat.
+12:28 <bernhard> Letztens eine Werbung von der Telekom : Sagt ein dummgrinsender DAU: "Wenn ich ins Internet gehe, will ich mir keine Gedanken um Sicherheit machen" Telekom. 
+12:30 <bernhard> Da kommt's mir hoch, aber kräftig
+12:31 <Re-EL> ok, fuer den hip top gib es nen ssh client. nun will ich das ding
+12:33 <Re-EL> hiptop
+12:33 <Re-EL> so, /me ist essen. bis spaeter
+12:34 <FelixKatz> Tiptop? Hiphop?
+12:38 <bernhard> Kennt Ihr das Problem: USB-Stick von kodomo installiert kriegen, es läuft wunderbar, bis ein paar Tage später es gar nicht mehr läuft mit der Begründung nach dem Mounten: /dev/sda1 doesn't exist ? Bisher hat immer nur ein Neustart des systems geholfen, und manchmal nicht mal das. Woran kann das liegen?!
+12:40 -!- rossinie (rossinie) [~rossinie@Bc81c.b.pppool.de] has joined #plant
+12:40 -!- Y_Plentyn (Wonneproppen) [~aw@d0-253.dsl.expressnet.de] has joined #plant
+12:40 -!- rossinie is a friend, handle: rossinie, global flags: [none], flags for #plant: [none]
+12:40 <rossinie> morgen
+12:40 <rossinie> ´hat jmd ein tut wo ich mal nachlesen kann wie ich eine DVD auf eine CD im SVCD format bekomme?
+12:41 <Y_Plentyn> so, einmal kernelcompile angeworfen, auf daß ich ihn heut abend abholen kann
+12:41 <bernhard> ?! Heute /abend/?
+12:41 <Y_Plentyn> jo
+12:42 <FelixKatz> rossinie: Wow! Das war ja mal ne Frage, bei der ich auf Anhieb verstanden habe, was Du willst. Nur schade, dass ich keine Antwort habe ;)
+12:42 <bernhard> Ist das aber nicht noch ein 80x86 von ganz früher?
+12:42 <rossinie> FelixKatz: ich kann wenn(!!!) ich will
+12:42 <Y_Plentyn> K5
+12:42 <Y_Plentyn> AMD K5
+12:43 <FelixKatz> rossinie: Dann willst Du nur sehr selten ;)
+12:43 <bernhard> Also entweder ist der mit 1KHz getaktet, oder Du hast einen riiiiesigen Kernel :)
+12:43 <Y_Plentyn> beides. 133MHz und 2.6.0
+12:44 <rossinie> FelixKatz: naja ich werde mir mal mühe geben :-)
+12:44 <bernhard> enorm. Na dann, viel Spaß. Wenn es nebenher duddelt, ist es ja halb so schlimm. Ich habe mich nur gewundert
+12:44 <bernhard> Y_Plentyn: Viel Glück!
+12:44 <Y_Plentyn> jaja... mein netz stört mich mehr als mein kernel... ;-)
+12:45 <bernhard> dann ist gut
+12:45 <FelixKatz> rossinie: Tu mal "deb ftp://ftp.nerim.net/debian-marillat/ stable main" in /etc/apt/sources.list, sag "apt-get update" und "apt-cache search dvd". Vielleicht findest Du ja was ;)
+12:45 <Y_Plentyn> und ich hab musik und einen anderen rechner... ;-)
+12:45 <rossinie> mir hat mal jmd gesat dass hyperthreading von dem Frontsidebus abhängt stimmt das?
+12:45 <rossinie> FelixKatz: danke aber mein debian läuft zuhause noch nicht vollständig werds morgen mal confen
+12:45 <Y_Plentyn> stimmt. ohne frontsidebus kein hyperthreading
+12:46 <rossinie> Y_Plentyn JEDER HAT NEN FRONTSIDEBUS1ß
+12:46 <bernhard> ich etwa auch? ;)
+12:47 <bernhard> mal fühlen...
+12:47 <bernhard> nö, ich kann nichts erkennen
+12:47 <Y_Plentyn> ja, bernhard, auch du.
+12:47 <bernhard> doch ... da!
+12:47 <bernhard> puh, nochmal Glück gehabt
+12:47 * Y_Plentyn l8
+12:48 <rossinie> :-(
+12:56 <rossinie> ich habn proggie dass mir isos schreibt von der dvd, hab ja kein dvd brenner...
+12:57 <bernhard> Ich gehe dann mal zu Stella. Bis heute abend wahrscheinlich!
+12:57 -!- bernhard [-bernhard@p508ACB2E.dip0.t-ipconnect.de] has quit [leaving]
+13:02 <rossinie> kann jmd von euch ein bisschen asm?
+13:08 <rossinie> ich geh mal off
+13:09 <FelixKatz> Welcher Assembler? x86, SPARC, VAX, PDP/11, oder was?
+13:14 -!- rossinie [~rossinie@Bc81c.b.pppool.de] has quit [Ping timeout]
+13:23 -!- Y_Plentyn [~aw@d0-253.dsl.expressnet.de] has quit [Ping timeout]
+13:24 -!- Y_Plentyn (Wonneproppen) [~aw@d0-253.dsl.expressnet.de] has joined #plant
+14:41 -!- At-Tifl (V) [~Miranda@brln-d9b824f5.pool.mediaWays.net] has joined #plant
+14:51 -!- At-Tifl [~Miranda@brln-d9b824f5.pool.mediaWays.net] has quit [Miranda IM! Smaller, Faster, Easier. http://miranda-im.org]
+15:06 <Re-EL> man ich hab die flemm
+15:07 <Re-EL> die welt ist scheisse
+15:08 <Re-EL> und warum hebt prodigy meine stimmung. *gruebel*
+15:09 <Re-EL> warum nehmen komische wellen die aus mindestens genausokomischen dingsbumse kommen einfluss auf die stimmung? 
+15:12 -!- At-Tifl (V) [~Miranda@c-134-74-48.b.dial.de.ignite.net] has joined #plant
+15:14 <Y_Plentyn> re: http://www.junkpile.demon.co.uk/principia.htm
+15:14 <Y_Plentyn> das ist wichtig!
+15:15 <Re-EL> How I Found Goddess
+15:15 <Re-EL> And What I Did To Her
+15:15 <Re-EL> When I Found Her
+15:15 * Re-EL muss doch ein bischen grinsen
+15:27 <Y_Plentyn> gell?
+15:35 -!- lizz (stephan) [ego@xGagC632.WH1.tu-dresden.de] has joined #plant
+15:38 <Y_Plentyn> moin lizz
+15:39 <Y_Plentyn> The pope has a water cannon -- it is a water cannon
+15:40 <Y_Plentyn> He uses it to shoot holy water at people -- it is a holy-water cannon
+15:40 <Y_Plentyn> He blesses it -- it is a holy holy-water cannon
+15:41 <Y_Plentyn> He blesses the hell out of it -- it is a wholly holy holy-water cannon
+15:41 <Y_Plentyn> He has it pierced -- it is a holey wholly holy holy-water cannon
+15:42 <Y_Plentyn> Batman and Robin arrive -- it is used to shoot them.
+15:50 -!- At-Tifl [~Miranda@c-134-74-48.b.dial.de.ignite.net] has quit [Miranda IM! Smaller, Faster, Easier. http://miranda-im.org]
+15:55 -!- At-Tifl (V) [~Miranda@c-134-74-48.b.dial.de.ignite.net] has joined #plant
+15:58 -!- At-Tifl [~Miranda@c-134-74-48.b.dial.de.ignite.net] has quit [Miranda IM! Smaller, Faster, Easier. http://miranda-im.org]
+16:00 <lizz> moin Y_Plentyn
+16:00 <lizz> war in der Küche mir Essen warmmachen...
+16:00 <lizz> LOL
+16:01 <Myon> moin
+16:01 <lizz> nette Sache, die Du da gepostet hast...
+16:01 <lizz> moin Myon
+16:02 <lizz> so, bin ein wenig afk (essen)
+16:17 <lizz> wieder da
+16:18 <Y_Plentyn> moin myon
+16:20 <Y_Plentyn> grmpf. mein ipsec scheint in meinem kernel panik zu erzeugen
+16:21 <lizz> @YPs: ich antworte mal mit nem Schüttelreim, den ich von Benjie habe: How much wood would a woodchuck chuck if a woodchuck would chuck wood?
+16:31 <Y_Plentyn> oha. er würgte eine klapperschlang, bis ihre klapper schlapper klang
+16:36 <lizz> hehe
+16:38 <MrRagga> http://www.pro-linux.de/news/2004/6383.html *kopfschuettel*
+16:42 <Y_Plentyn> jo
+16:55 <Y_Plentyn> so, mein rechner an der uni ist tot.
+17:19 -!- mode/#plant [+o chris101] by chris101_
+17:19 -!- mode/#plant [+o Re-EL] by chris101
+17:34 <Y_Plentyn> gehmermal zum nächsten
+17:43 <XTaran> Hmmm, wie kriege ich raus, ob es ein mit TeX darstellbares Zeichen auch in Unicode gibt und wenn ja, wie es dort heißt?
+17:44 <chris101> unicode? robilad!
+17:44 <chris101> oder du fragst mal google
+17:44 <XTaran> Google habbich grade gefragt.
+17:45 <chris101> evtl. findest du die bezeichnung im postscript font
+17:45 <XTaran> Antwort war selten eine komplette Liste aller Unicode-Zeichen...
+17:45 * XTaran sucht Buchstaben wie mit \= (also mit einem Querstrich drüber)...
+17:46 <XTaran> Oh, man sollte nur nach der ganzen Liste und nicht nach den Buchstaben such, dann klappt's auch mit Google...
+17:46 <chris101> den namen von dem ding kannst du evtl. auch im zusammenhang mit HTML finde und dann google...
+17:46 <XTaran> http://helmer.aksis.uib.no/menota/guidelines/tools/entities/charlist_1-0.html
+17:47 <XTaran> chris101: Nee, genau das habe ich versucht und das ist schief gegangen.
+17:47 <chris101> runic? wow!
+17:47 <XTaran> Uiui, was für kranke Buchstaben es n Unicode so gibt: http://helmer.aksis.uib.no/menota/guidelines/tools/entities/glyphs/v-aaligac.gif
+17:59 <Re-EL> XTaran: ich baue gerade ne hp. das ist ja arbeit wie ne s..
+18:00 <Re-EL> XTaran: mein deutsch ist so schlecht, ich kann einfach ncit formulieren
+18:00 <Y_Plentyn> el: mit tex ist es einfachr. für mich zumindest ;)
+18:00 <Re-EL> XTaran: schau dir mal den anfang von ix-tech.de an.
+18:01 <chris101> Re-EL:  kommt drauf an, wieviel aufwand du dir machen willst
+18:01 <Re-EL> Y_Plentyn: aso, ich muss die auch ncoh in ner lynx tauglichen version bauen
+18:01 <Re-EL> chris101: viel
+18:01 <Re-EL> chris101: ich will mein geld damit verdienen
+18:01 <chris101> dann nimm emacs :)
+18:01 <chris101> selfhtml ist dein freund
+18:01 <XTaran> El: mompel
+18:02 <Re-EL> nee, der inhalt macht mir probleme. wie gesagt formulieren macht mir huddel
+18:03 <XTaran> El: Jo, Design sieht nett aus.
+18:03 <chris101> Re-EL: du willst die emailadresse nciht so da stehen lassen, spam
+18:04 <XTaran> Nur war formulieren auch noch nie meine Stärke. Ich sitz vor E-Mails, Symlink-Artikeln, Doku zu eigenen Programmen oder einfach nur eigenen Webseiten auch immer ewig.
+18:05 <Re-EL> chris101: aso, stimmt
+18:05 <Re-EL> chris101: naja, wie soll ich das sonst stehen lassen
+18:07 <XTaran> Hmmm, seit wann gibt ein whois auf eine .de-Domain wieder Telefonnummern aus?
+18:07 <XTaran> Und E-Mail-Adressen bin ich im .de-whois auch nicht mehr gewohnt...
+18:07 <XTaran> Re-EL: Was ist it-maid.de? :-)
+18:08 <Re-EL> ja die stirbt
+18:08 <Re-EL> ich fah mal gerade ins mac
+18:08 <Re-EL> bis spaeter
+18:08 <XTaran> mac?
+18:08 <XTaran> Du fährst in einen Apfel?
+18:09 <chris101> Re-EL: es gibt mehrere moeglichkeiten, mach den href und das  mailto weg und schreib im plaintex "blah AT blubb.com", so machts XTaran jedenfalls, hat sich bewaehrt ;) oder du URL-encodest die buchstaben
+18:10 <XTaran> chris101: Bei Geschäftskunden würde ich letzteres empfehlen. So Sachen wie ich bei Symlink mache kommen da weniger gut...
+18:11 <XTaran> Wenn's Klicken funktionieren soll, aber Spam-Bots nicht, dann empfehle ich alles im HREF HTML-Entity zu kodieren, insbesondere alle Sonderzeichen inkl Klammeraffe und Punkten.
+18:11 <Y_Plentyn> http://www.hadrons.org/~guillem/debian/debtakeover/
+18:12 <XTaran> Y_Plentyn: Jepp, ein politisch sehr aktives Skript. ;-)
+18:12 <Y_Plentyn> xt: gell? *grins*
+18:13 <XTaran> Y_Plentyn: Da gab's dann auch noch jemand, der es remote geschafft hat, ein RedHat in ein Debian zu wandeln. :-)
+18:13 <XTaran> Kam auch irgendwo im DWN.
+18:14 <Y_Plentyn> da hbichs grad her
+18:15 <XTaran> Jo, debtakeover war in 1/04 oder 2/04, das mit dem remote debianifizieren war IIRC in 3/04...
+18:17 <XTaran> Aus http://www.debian.org/News/weekly/2004/03/:
+18:17 <XTaran> Entfernte Debianinstallation über Red Hat. Emma Jane Hogbin verkündete den Erfolg Ihrer entfernten Debian-Installation auf der Debian Nutzer-Liste. Diese Methode benutze nicht debootstrap, und ist in zwei Dateien dokumentiert, die die Installation und die folgende Konfiguration beschreiben.
+18:19 <XTaran> Achja, hatte ich den hier schon erwähnt? http://www.pippir.de/photopost/data/512/1ami_mars.jpg
+18:19 <XTaran> (Amerikaner auf dem Mars)
+18:25 <FelixKatz> Brueller.
+18:33 <Y_Plentyn> das kannte ich schon
+18:35 <Y_Plentyn> so, kernel fertig
+18:35 <Y_Plentyn> waren nur ~5h
+18:35 <XTaran> .oO( reboot )
+18:35 <Y_Plentyn> nö, später
+18:35 <XTaran> Y_Plentyn: Auf was für einer Kiste?
+18:35 <Y_Plentyn> amd k5 133
+18:36 <XTaran> Ahja, kenne ich irgendwo her. Der hat 100 MHz :-)
+18:36 <XTaran> Habbich auch zwei von. :-)
+18:37 <Y_Plentyn> jo
+18:40 <FelixKatz> XTaran: Meiner ist langsamer, meiner ist langsamer! 
+18:41 <XTaran> *grins* Hätte noch eine 386er mit 16 MHz anzubieten... ;-)
+18:42 <FelixKatz> Ich hab ne PDP11/73 mit ... wieviel waren das? 2Mhz? anzubieten.
+18:42 <XTaran> Jo, da kann ich nich mehr mithalten. :-)
+19:30 -!- MrRagga [-jonas@pD9EA5C39.dip.t-dialin.net] has quit [Ping timeout]
+20:04 <Myon> XTaran: ping
+20:05 <XTaran> Myon: pong
+20:05 <Myon> Embperl. Will ich das benutzen?
+20:05 <XTaran> Kommt drauf an, was Du machen willst. :-)
+20:05 <Myon> sollte ich mir zuerst mod_perl anschauen?
+20:06 <XTaran> Wenn Du's für dynamische Seiten benutzen willst, solltest Du mod_perl benutzen, sonst wird das recht langsam, ja.
+20:06 <Myon> ich will ein Mail-Archiv ins Web stellen und brauche einige Seiten die ein SQL-Backend ansprechen
+20:07 <XTaran> Dafür klingt die Kombination Embperl / DBIx::Recordsetrecht passend in meinen Ohren...
+20:07 <Myon> bisher hab ich ein einziges Programm was html-Templates einliest
+20:07 <XTaran> s/Recordsetrecht/Recordset recht/
+20:07 <Myon> nee, hat nix mit Jura zu tun *g*
+20:08 <XTaran> Einlesen worein?
+20:08 <Myon> ... und nach ein paar s/// wieder ausspuckt
+20:08 -!- MrRagga (Jonas Weismueller) [-jonas@pD9EA6718.dip.t-dialin.net] has joined #plant
+20:11 <FelixKatz> Hm ... ich brauch ein Paper von Satoru Fujishige, ich weiss nicht, wo's publiziert  wurde, ich weiss nur, dass es im Zeitraum 2000-2003 publiziert wurde, und dass es um maximum flows geht.
+20:11 <Myon> bisher benutze ich http://www.df7cb.de/projects/conf/lib/perl/cb/template.pm, das ist aber Spackerei
+20:11 <MrRagga> http://nopaste.php.cd/7133
+20:11 <Myon> FelixKatz: citeseer
+20:15 <Y_Plentyn> ich find es lustig. mein irc wackelt kaum, meine verbindung zur uni umso mehr
+20:17 <Myon> grumpf, kann ich Sachen aus IndexIgnore (apache) wieder rausnehmen?
+20:18 <XTaran> Myon: Neu setzen?
+20:19 <XTaran> Myon: Was macht das Perl-Modul?
+20:20 -!- Netsplit BelWue.DE <-> *.sk, freenet.de quits: @chris101, @mjung
+20:20 <Myon> XTaran: sowas wie http://www.df7cb.de/bilder.template/bilder-index.wml (nach wml) auswerten
+20:20 <Myon> offensichtlich möchte ich da eine bessere Programmiersprache haben...
+20:21 <FelixKatz> Hm, weder citeseer noch DBLP finden was in dem Zeitraum, das auch nur annaehernd passt.
+20:21 <XTaran> Myon: Lustige Syntax.
+20:22 <Myon> XTaran: die Syntax war ok, bis ich das __IF gebraucht hab :-/
+20:22 <XTaran> Aber genausowas kannst Du sehr gut mit WML machen, vorallem IMHO lesbarer.
+20:22 <XTaran> Jo, das ist heftig.
+20:22 <XTaran> In Embperl sähe das so aus:
+20:22 <Myon> XTaran: du meinst eperl?
+20:22 <XTaran> [$ if prevdir_exists() $]
+20:22 <Myon> der Teil mit __ wird von wml garnicth angefaßt
+20:22 <XTaran> Myon: Nein.
+20:23 <Myon> das Problem ist eigentlich, daß ich aus der Datei sowohl gloables Layout (per wml) als auch Code raushalten will
+20:24 <Myon> letzteres würde über ein use stuff; natürlich gehen
+20:24 <XTaran> <a href="[+ $PREVLINK +]">&lt;&lt; [+ $PREVTITLE +]</a> (<i>[+ $PREVDATE +]</i>) |
+20:24 <XTaran> [$ endif $]
+20:24 <Myon> kann ich das [$ if noch in Pseudo-HTML verpacken?
+20:25 <XTaran> Myon: In Embperl kannst Du ohne Probleme use verwenden.
+20:25 <XTaran> Myon: Wie meinst Du das?
+20:25 <Myon> also <prev><a href="..."></prev>
+20:25 <XTaran> WML wird [$ und Co nicht anfassen.
+20:25 <Myon> so daß der Benutzer garnix von Embperl merkt
+20:25 -!- mjung_ (Marko) [~madbob@contact.mpi-sb.mpg.de] has joined #plant
+20:25 -!- mjung_ is a friend, handle: mjung, global flags: [none], flags for #plant: ao
+20:25 <XTaran> Welcher Benutzer?
+20:25 <XTaran> Der Surfer sieht nix von Embperl?
+20:25 <Myon> der der das Template schreibt
+20:25 -!- mode/#plant [+o mjung_] by Myon
+20:25 <XTaran> s/\?/./
+20:26 <XTaran> Achso.
+20:26 <XTaran> Hmmm.
+20:26 <XTaran> Wie wird das Template verarbeitet?
+20:26 <XTaran> Mit WML?
+20:26 <Myon> ja
+20:26 <Myon> das CGI liest dann http://www.df7cb.de/bilder.template/bilder-index.html
+20:26 <XTaran> Dann kannst Du das Embperl einfach in WML-Pseudo-HTML verpacken...
+20:27 <Myon> uargh :-)
+20:27 <Myon> Embperl kann ab v2 auch HTML-Tags, oder?
+20:27 <XTaran> So wie PHP halt <?php ... ?> Syntax hat, hat Embperl halt [$, etc.
+20:27 <XTaran> Das konnte auch schon 1.x teilweise.
+20:28 <Myon> jo und wml <: und <?
+20:28 <XTaran> Bei Embperl 2.x kannst Du per Perl-Modul komplett beliebige Syntaxe (sp?) definieren.
+20:28 <Myon> der Punkt wo ich gemerkt hab das ich vermutlich was anderes nehmen möchte war http://www.df7cb.de/df7cb/logbuch/stats.cwml
+20:29 <XTaran> z.B. kannst Du "ab Werk" bereits [$ syntax ssi $] sagen und dann parst er Server-Side-Include-Syntax.
+20:29 <Myon> (wobei das nicht mal so häßlich ist)
+20:29 <Myon> eperl parst leider keine selbstdefinierten Tags
+20:30 <XTaran> Hmmm, genau.
+20:30 <XTaran> Beispiel?
+20:30 <Myon> netterweise gibts ja schon <: :> und <? !>, ich hatte schon sehr üble Methoden benutzt um <: zu quoten ;)
+20:31 <Myon> Beispiel für was?
+20:33 <XTaran> Myon: für selbst definierte Tags, die geparst werden sollten.
+20:34 <Myon> das <prev> von oben
+20:34 <XTaran> Macht das nicht WML schon?
+20:35 <Myon> statisch ja, aber nicht im eperl-Pass
+20:35 <XTaran> So würde ich das jetzt angehen, wenn ich das Embperl aus den Templates raushalten wollte.
+20:35 <XTaran> eperl kann keine if-Blöcke über eperl-Block-Grenzen hinweg?
+20:36 <Myon> weiß ich nicht
+20:36 <Myon> ich will mich aber nicth auf wml verlassen, der (lesbare) Input soll eigentlich das .html sein
+20:37 <XTaran> *aufdemschlauchsteh*
+20:37 <Myon> ob der dann mit wml erzeugt ist oder Mozilla ist dann fast egal
+20:37 <Myon> XTaran: das Skript soll auf mehreren Rechnern laufen
+20:38 <Myon> und soll z.B. mit meinem Layout, dem AI-Layout und dem AStA-Layout tun
+20:38 <XTaran> Mozilla?
+20:38 <XTaran> Ah, ic.
+20:38 <Myon> oder mit was auch imemr Philip die AStA-Seiten machen
+20:38 <Myon> t
+20:38 * Myon sein irc laggt
+20:39 <Myon> ok, ich stürz mich einfach mal in Embperl, mal sehen wie das so ist
+20:39 <Myon> will ich schon 2.0 benutzen?
+20:39 <XTaran> Ja.
+20:39 <Y_Plentyn> da kennt sich xt in jedem falle aus... ;-)
+20:40 <Myon> Y_Plentyn: jo, ecos.de ist der erste Hit mit "embperl" ;)
+20:40 <XTaran> Myon: *g*
+20:40 <Myon> XTaran: hmm, 2.0 ist nur in Sid drin
+20:40 <XTaran> Myon: Wobei ich immer perl.apache.org/embperl/ angebe, das ist repräsentativer. ;-)
+20:40 <XTaran> Myon: Ja, ich weiß.
+20:40 <XTaran> Für Woody ist das zu neu...
+20:41 <XTaran> Das war damals noch nicht sooooo stabil...
+20:41 <Myon> das les ich auch, ich brauchs ja nicht auf deutsch ;)
+20:41 <XTaran> Chef will demnächst 2.0 final rausbringen...
+20:41 <XTaran> Fragt sich nur, wann er Zeit dazu hat...
+20:41 <Myon> Depends: libcgi-pm-perl | libcgi-perl, immer diese Entscheidungen...
+20:42 <XTaran> Hmmm.
+20:42 <XTaran> Wo ist da der Unterschied? *wunder*
+20:42 <Myon>  This package is destined to replace libcgi-pm-perl, but at the moment
+20:54 <Myon> XTaran: wer ist zuständig wenn http://perl.apache.org/embperl/pod/doc/README.v2 kaputt ist?
+20:56 <XTaran> Myon: Mein Chef.
+20:56 <XTaran> Ah, ic.
+20:56 <XTaran> mompel.
+20:56 <XTaran> Nimm mal http://www.ecos.de/embperl/pod/doc/README.v2
+20:57 <XTaran> Da scheint der Apache.org-Server mit den MIME-Typen nicht ganz so passend konfiguriert zu sein...
+20:57 <Myon> http://perl.apache.org/embperl/pod/doc/Config.-page-1-.htm enthält auch haufenweise ungeparstes pod
+20:58 <Myon> hmm, die ecos-Seite auch
+20:59 <XTaran> Achso, dachte Du meinst, daß das HTML als Plain-Text angezeigt wird...
+21:00 <Myon> XTaran: das auch
+21:00 <XTaran> Ohja, ich seh, was Du meinst...
+21:00 <XTaran> Werd's weitergeben...
+21:00 <XTaran> Danke.
+21:01 <Myon> k
+21:02 <Myon> die mod_perl-Doku brauch 29MB?!
+21:03 <XTaran> Myon: Echt? Dabei ist die sowas von unvollständig. Jedenfalls die für mod_perl 2.0
+21:07 <Myon> Need to get 11.4MB of archives. After unpacking 29.2MB will be used.
+21:07 <Myon> Get:1 http://ftp.mpi-sb.mpg.de sarge/main libapache-mod-perl-doc 1.29.0.1-1cvs20031206 [11.4MB]
+21:09 <Myon> das scheint einfach ein wget -r von perl.a.o zu sein
+21:11 <Myon> hmpf, ich wollte eigentlich nur ein CGI schreiben, keine large scale e-commerce-enabled-Umgebung aufsetzen...
+21:11 <FelixKatz> Myon: Dafuer braeuchtest Du eh J2EE, nicht mod-perl ;)
+21:12 <Myon> FelixKatz: sei bloß ruhig, mein neuer Nachbar hier macht Infowiss und drückt mir regelmäßig Gespräche wie toll Java-{Beans,Enterprise,blubb} wäre
+21:13 <FelixKatz> Sagen wir mal so, soweit ic hweiss, ist J2EE (und Jakarta, und Struts und so) echt nicht schlecht.
+21:16 <XTaran> FelixKatz: Dafür deutlich lahmer als mod_perl IIRC.
+21:16 <XTaran> Von dieser kranken, ekligen Sprache names Java mal ganz abgesehen.... ;-)
+21:18 <FelixKatz> Langsam ist egal. Steckst Du halt noch zwei Prozessoren mehr in Deine V3800 rein. Oder steckst Dein Oracle in einen RAC rein.
+21:18 <FelixKatz> Und den meisten Leuten, die sowas entwickeln, willst Du kein Perl in die Hand geben, die koennen damit viel zu viel kaputtmachen.
+21:19 <XTaran> FelixKatz: Stimmt.
+21:20 <XTaran> Jedenfalls das mit dem "kein Perl in die Hand geben"...
+21:22 <Myon> hrmpf: http://www.df7cb.de/mutt/archive/test/test.html
+21:24 <FelixKatz> XTaran: Und soll ich Dir was sagen -- ich hab damit gar keine Probleme. Lieber geb ich den Leuten ein etwas einschraenkenderes Werkzeug, und dafuer hacken sie sich keine Hand ab, und es laeuft am Ende, als dass irgendein Wizard das Zeug kaputtoptimiert und es am Ende keiner mehr versteht.
+21:25 <Myon> XTaran: was ist da falsch: ?
+21:25 <XTaran> FelixKatz: Ja, nur _ich_ will so nicht programmieren. Da muß ich die Hälfte der Zeit rumprobieren, wie ich das, was ich gerne hätte, trotz der Beschränkungen oder brutal durchgesetzten  Programmiersprachennetiquette trotzdem hinbekomme.
+21:26 <XTaran> Myon: Daß er die Datei nicht findet? Keine Ahnuung. Was machst Du da genau? :-)
+21:26 <Myon> Bisher nur PerlModule Embperl
+21:26 <Myon> <Files *.html>
+21:26 <Myon> SetHandler perl-script
+21:26 <Myon> PerlHandler Embperl
+21:26 <Myon> </Files>
+21:26 <Myon> <h1>Hallo Test</h1>
+21:26 <Myon> [+ 5 + 4 +]
+21:26 <FelixKatz> Ich sag jetzt nix gegen Deine Programmierkenntnisse -- aber fuer  jeden, der das kann, gibt's zehn, die denken, sie koennten's, und es dann grossartig verbocken.
+21:26 <XTaran> Die Datei existiert auch unter dem angegebenen Pfad?
+21:26 <Myon> ja
+21:27 <XTaran> Hmmm. Und das ist _Deine_ 404 vom Server, oder?
+21:28 <XTaran> Ah, Fehler gefunden: Hatte beim Cut&Paste nicht die ganze URL erwischt. mompel.
+21:29 <XTaran> Myon: Ggfs. fehlt noch ein PerlModule Embperl
+21:29 <XTaran> Oder ein Options +ExecCGI
+21:30 <XTaran> Das ist jedenfalls so mal der Unterschied zu meiner Embperl-Config hier...
+21:30 <Myon> ersteres hab ich (s.o.), zweiteres steht in der .htaccess eins höher
+21:31 <XTaran> Ah, das war hinter dem "Bisher nur" versteckt...
+21:31 <XTaran> Hmmm, den Apache hast Du neu gestartet, oder?
+21:33 <Myon> jetzt ja, half aber nix
+21:33 <Myon> oder reicht graceful nicht?
+21:33 <XTaran> Hmmm, wie alt ist das mod_perl?
+21:33 <XTaran> Aus Woody?
+21:34 <Myon> nee, Sarge
+21:35 <XTaran> Hmmm. Da sollte eigentlich ein gescheites mod_perl drin sein.
+21:35 <Myon> mod_perl ansich tut
+21:35 <XTaran> Laß mich ma grade noch grübeln.
+21:36 <XTaran> Ja, aber ältere Version hatten Probleme beim initialisieren von komplexeren Perl-Modulen beim graceful...
+21:39 <Myon> hmm, ich erinnere mich gerade daß beim Kommentar zu 2.0b10 was von Perl 5.8 stand
+21:39 <Myon> ich hab b9
+21:41 <Myon> btw: es wäre nett wenn die Embperl-Doku vernünftige <title> hätte
+21:50 <XTaran> Myon: Hau doch bitter versuchshalber das Options +ExecCGI mit in die Files-Section mit rein...
+21:50 <XTaran> Die wird nämlich vor der .htaccess geparst...
+21:52 <Myon> es scheint ja bis auf "[12369]ERR: 56: : Unknown Provider eprun" zu tun
+21:53 <Myon> +- ExecCGI ändert nix
+21:53 <XTaran> Hmmm, jetzt seh ich auch den 500er, vohin hatte ich einen 403er.
+21:54 <Myon> jo das war ein kurzer PerlHandler Apache::Registry-Test
+21:56 <XTaran> Hmmm, sieht so aus, als wäre das noch ein Problem im Bereich "neue Konfig-Direktiven in 2.0".
+21:56 <Myon> wie gesagt: 2.0b9
+21:57 <Myon> ich kann mal 1.x probieren
+21:57 <XTaran> Myon: Ja, schon.
+21:57 <XTaran> Ja, entweder das oder nochmal in Readme.v2 reinschauen...
+21:58 <Myon> ich mußte den Rechner leider die Tage auf (Woody+Sarge)/2 upgraden, weil ich letztens libhtml-mason-perl zerschossen hatte
+21:58 <Myon> von daher kann da schon manches seltsam sein :-(
+21:58 <XTaran> Welche Perl-Version läuft da btw?
+21:58 <Myon> 5.8.2-2
+22:00 <XTaran> Hmmm, mit 5.8.2 scheint's noch Huddel zu geben. :-(
+22:01 <Myon> hmpf - mit 1.3 und PerlModule HTML::Embperl passiert genau das gleiche
+22:01 <Myon> oder...
+22:01 <XTaran> Hmmm.
+22:02 <XTaran> Die Fehlermeldung taucht in der ML meist im Zusammenhang mit Shared-Memory auf. :-(
+22:02 <Myon> es tut :-)
+22:02 <Myon> mußte den Server noch neu starten und/oder PerlHandler HTML::Embperl
+22:02 <XTaran> Huch?
+22:03 <XTaran> Also es tut mit 1.3.x
+22:03 <Myon> 1.3.6-1, ja
+22:03 <XTaran> Jepp, sieht so aus.
+22:03 <XTaran> Dann schau mal, ob Du damit zurecht kommst.
+22:03 <XTaran> Werde jedenfalls morgen mal Chef fragen, wie das mit Perl 5.8.2 und Embperl 2.0 ist
+22:04 <Myon> ich kann auch gerne nochmal was testen, wenn ich soll
+22:04 <Myon> den Perl*Handler-Kram will ich mir erst später anschauen, oder?
+22:04 <Myon> oder ist das auch für normale Anwendungen interessant?
+22:08 <XTaran> Myon: Weniger.
+22:08 <XTaran> Das brauchst Du wenn Du tiefer im Apache-Request-Handling rumfriemeln willst.
+22:08 <Myon> ok
+22:08 <Myon> angesichts der Tatsache, daß ich jahrelang ohne mod_rewrite überlebt hab, wohl eher erstmal nicht ;)
+22:23 <Myon> hmm, mit Apache::PerlRun funktioniert ein Skript nur bei jedem zweiten mal...
+22:27 <Myon> was ist hier falsch? : $str =~ s/\%([\dA-Fa-f]{2})/print chr(hex("$1"));/ge;
+22:27 <Myon> REDIRECT_ERROR_NOTES=Not a CODE reference at /home/cb/public_html/lib/bilder.cgi line 73.
+22:29 <Myon> hmm, wieder mal ein blödes Namespace-Problem
+23:04 <Myon> XTaran: mod_perl macht keinen Spaß :-/
+23:04 <Myon> oder ich lern endlich mal wie Packages et al. funktionieren
+23:08 -!- bernhard (Bernhard Kraemer) [-bernhard@p508ACB2E.dip0.t-ipconnect.de] has joined #plant
+23:43 <chris101_> Juhu!
+--- Log closed Mon Jan 26 00:00:24 2004
