@@ -12,7 +12,7 @@ if (!isset($_SESSION['authed']) || !$_SESSION['authed']) {
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
 <title>pisg news admin system</title>
-<link rel="stylesheet" href="mbpstyle.css" type="text/css">
+<link rel="stylesheet" href="css/admin.css" type="text/css">
 <style type="text/css">
 
 body {
@@ -24,7 +24,7 @@ body {
 <?
 if (!$_SESSION['authed']) { ?>
     Please type in administrator password<br />
-    <form method="post" action="admin.php">
+    <form method="post" action="">
     <input type="password" name="password" size="40">
     <input type="hidden" name="add" value="<? print $add; ?>">
     <input type="hidden" name="edit" value="<? print $edit; ?>">

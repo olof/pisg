@@ -31,7 +31,7 @@ if (isset($_SERVER['HTTP_ACCEPT'])) {
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
 <title>pisg examples admin system</title>
-<link rel="stylesheet" href="mbpstyle.css" type="text/css" />
+<link rel="stylesheet" href="css/admin.css" type="text/css" />
 <style type="text/css">
 
 body {
