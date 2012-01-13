@@ -1,16 +1,14 @@
-<? session_start(); ?>
-<?
-exit;
-    $_SESSION['authed'] = 1;
-if (isset($_POST['password']) && $_POST['password'] == "hejskatter") {
-    $_SESSION['authed'] = 1;
-}
+<?php
 
-?>
-<?
-include("mysql.php");
+session_start();
 
-if (isset($_SESSION['authed'])) {
+$pw_salt='pisg+admin,';
+$pw_hash='a1764831e62d52191009207dadc0bc8e';
+$_SESSION['authed'] = ((isset($_REQUEST['password']) && md5($pw_salt.$_REQUEST['password']) == $pw_hash));
+
+include('mysql.php');
+
+if ($_SESSION['authed']) {
     if (isset($_GET['verify'])) {
         mysql_query("UPDATE examples SET shown=1 WHERE id=$_GET[verify]") or die(mysql_error());
     } else if (isset($_GET['remove'])) {
@@ -42,7 +40,7 @@ body {
 </head>
 <body>
 <?
-if (!isset($_SESSION['authed'])) { ?>
+if (!$_SESSION['authed']) { ?>
     Please type in administrator password<br />
     <form method="post" action="admin_examples.php">
     <input type="password" name="password" size="40" />
