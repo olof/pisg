@@ -11,13 +11,13 @@ include('mysql.php');
 
 if ($_SESSION['authed']) {
     if (isset($_GET['verify'])) {
-        mysql_query("UPDATE examples SET shown=1 WHERE id=$_GET[verify]") or die(mysql_error());
+        mysql_query('UPDATE examples SET shown=1 WHERE id='.$_GET['verify']) or die(mysql_error());
     } else if (isset($_GET['remove'])) {
-        mysql_query("DELETE FROM examples WHERE id=$_GET[remove]") or die(mysql_error());
+        mysql_query("DELETE FROM examples WHERE id=".$_GET['remove']) or die(mysql_error());
     } else if (isset($_GET['deny'])) {
-        mysql_query("UPDATE examples SET remove=0 WHERE id=$_GET[deny]") or die(mysql_error());
+        mysql_query("UPDATE examples SET remove=0 WHERE id=".$_GET['deny']) or die(mysql_error());
     } else if (isset($_GET['edit'])) {
-        mysql_query("UPDATE examples SET channel='$_POST[channel]', maintainer='$_POST[maintainer]', network='$_POST[network]', url='$_POST[url]' WHERE id=$_GET[edit]") or die(mysql_error());
+        mysql_query("UPDATE examples SET channel='".$_POST['channel']."', maintainer='".$_POST['maintainer']."', network='".$_POST['network']."', url='".$_POST['url']."' WHERE id=".$_GET['edit']) or die(mysql_error());
     }
 }
 if (isset($_SERVER['HTTP_ACCEPT'])) {
@@ -33,7 +33,6 @@ if (isset($_SERVER['HTTP_ACCEPT'])) {
 <title>pisg examples admin system</title>
 <link rel="stylesheet" href="css/admin.css" type="text/css" />
 <style type="text/css">
-
 body {
     background-color: white;
 }
@@ -43,11 +42,11 @@ body {
 <?
 if (!$_SESSION['authed']) { ?>
     Please type in administrator password<br />
-    <form method="post" action="admin_examples.php">
+    <form method="post" action="">
     <input type="password" name="password" size="40" />
-    <input type="hidden" name="add" value="<? print $add; ?>" />
-    <input type="hidden" name="edit" value="<? print $edit; ?>" />
-    <input type="hidden" name="delete" value="<? print $delete; ?>" />
+    <input type="hidden" name="add" value="<?=$add?>" />
+    <input type="hidden" name="edit" value="<?=$edit?>" />
+    <input type="hidden" name="delete" value="<?=$delete?>" />
     <input type="submit" value="Submit" />
     </form>
 <? } else { ?>
@@ -82,17 +81,14 @@ while ($row = mysql_fetch_array($query))
  <li><?=$row['id']?> | <a href="admin_examples.php?remove=<?=$row['id']?>">remove</a> | <a href="admin_examples.php?deny=<?=$row['id']?>">deny</a> | <?=$row['channel']?> | URL: <a href="<?=$row['url']?>"><?=$row['url']?></a> | Reason: <?=$row['reason']?></li>
 <?
 }
-
 ?>
 </ol>
 
-<? if (isset($_GET['doedit'])) { ?>
+<?php
 
-<?
-$query = mysql_query("SELECT * FROM examples WHERE id=$_GET[doedit]") or die(mysql_error());
-
-$row = mysql_fetch_array($query);
-
+if (isset($_GET['doedit'])) {
+    $query = mysql_query("SELECT * FROM examples WHERE id=$_GET[doedit]") or die(mysql_error());
+    $row = mysql_fetch_array($query);
 ?>
 <h3>Editing statistics page <?=$_GET['doedit']?></h3>
 <form action="admin_examples.php?edit=<?= $_GET['doedit']?>" method="post">
