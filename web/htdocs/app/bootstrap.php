@@ -12,7 +12,7 @@ date_default_timezone_set($timezone);
 //database
 require 'db.php';
 $db=new db($dbfile);
-//$db->reset('data/db.sql');
+//$db->setup('data/db.sql');
 
 //route
 require 'route.php';

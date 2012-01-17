@@ -1,13 +1,13 @@
 ErrorDocument 400 fail
 ErrorDocument 401 bad
 ErrorDocument 403 bad
-ErrorDocument 500 fail
+#ErrorDocument 500 fail
 
-Options -MultiViews
+#Options -MultiViews
 
 <IfModule mod_rewrite.c>
 RewriteEngine on
-
+#RewriteBase /
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_URI} !^index\.php$
