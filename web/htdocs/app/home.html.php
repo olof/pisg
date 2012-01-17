@@ -64,3 +64,5 @@ customizeable.</p>
 
 <h3>Need help?</h3>
 <p>Can't make things work? You can try the <a href="list">mailing list</a>.</p>
+
+<a href="http://sourceforge.net/donate/index.php?group_id=31862"><img src="http://images.sourceforge.net/images/project-support.jpg" width="88" height="32" border="0" alt="Support This Project" /> </a>
