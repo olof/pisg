@@ -1,7 +1,7 @@
 <h3>Available downloads</h3>
 
-<a href="http://prdownloads.sourceforge.net/pisg/pisg-<?= $DEFINES['CURRENT_RELEASE']?>.tar.gz">pisg-<?= $DEFINES['CURRENT_RELEASE'] ?>.tar.gz</a> - Unix tarball<br />
-<a href="http://prdownloads.sourceforge.net/pisg/pisg-<?= $DEFINES['CURRENT_RELEASE']?>.zip">pisg-<?= $DEFINES['CURRENT_RELEASE'] ?>.zip</a> - Zip file <br />
+<a href="http://prdownloads.sourceforge.net/pisg/pisg-<?=$release_version?>.tar.gz">pisg-<?=$release_version?>.tar.gz</a> - Unix tarball<br />
+<a href="http://prdownloads.sourceforge.net/pisg/pisg-<?=$release_version?>.zip">pisg-<?=$release_version?>.zip</a> - Zip file <br />
 <br />
 Older releases are found <a href="http://sourceforge.net/project/showfiles.php?group_id=31862">here</a>
 

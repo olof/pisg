@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>Supported logfile formats by pisg</title><link rel="stylesheet" href="docbook-xsl.css" type="text/css" /><meta name="generator" content="DocBook XSL Stylesheets V1.75.2" /></head><body><div xml:lang="en" class="article" title="Supported logfile formats by pisg" lang="en"><div class="titlepage"><div><div><h2 class="title"><a id="id2802422"></a>Supported logfile formats by pisg</h2></div></div><hr /></div><div class="toc"><p><b>Table of Contents</b></p><dl><dt><span class="section"><a href="#_mirc6">1. mIRC6</a></span></dt><dt><span class="section"><a href="#_mirc6hack">2. mIRC6hack</a></span></dt><dt><span class="section"><a href="#_mirc">3. mIRC</a></span></dt><dt><span class="section"><a href="#_xchat">4. XChat</a></span></dt><dt><span class="section"><a href="#_eggdrop">5. Eggdrop</a></span></dt><dt><span class="section"><a href="#_grufti">6. Grufti</a></span></dt><dt><span class="section"><a href="#_bxlog">7. bxlog</a></span></dt><dt><span class="section"><a href="#_mbot">8. mbot</a></span></dt><dt><span class="section"><a href="#_irssi">9. irssi</a></span></dt><dt><span class="section"><a href="#_psybnc">10. psybnc</a></span></dt><dt><span class="section"><a href="#_winbot">11. winbot</a></span></dt><dt><span class="section"><a href="#_zbot">12. zbot</a></span></dt><dt><span class="section"><a href="#_ircle">13. ircle</a></span></dt><dt><span class="section"><a href="#_infobot">14. infobot</a></span></dt><dt><span class="section"><a href="#_trillian">15. Trillian</a></span></dt><dt><span class="section"><a href="#_bobot">16. bobot++</a></span></dt><dt><span class="section"><a href="#_axur_epic">17. axur/epic</a></span></dt><dt><span class="section"><a href="#_perlbot">18. Perlbot</a></span></dt><dt><span class="section"><a href="#_oer_oer_mysql">19. oer / oer+MySQL</a></span></dt><dt><span class="section"><a href="#_muh">20. muh</a></span></dt><dt><span class="section"><a href="#_muh2">21. muh2</a></span></dt><dt><span class="section"><a href="#_energymech">22. Energymech</a></span></dt><dt><span class="section"><a href="#_dancer">23. Dancer</a></span></dt><dt><span class="section"><a href="#_virc98">24. ViRC98</a></span></dt><dt><span class="section"><a href="#_pircbot">25. pircbot</a></span></dt><dt><span class="section"><a href="#_eggdrop_racbot">26. Eggdrop RacBot</a></span></dt><dt><span class="section"><a href="#_kvirc">27. KVIrc</a></span></dt><dt><span class="section"><a href="#_moobot">28. moobot</a></span></dt><dt><span class="section"><a href="#_ircii">29. ircII</a></span></dt><dt><span class="section"><a href="#_dc">30. DC++</a></span></dt><dt><span class="section"><a href="#_sirc">31. sirc</a></span></dt><dt><span class="section"><a href="#_dircproxy">32. dircproxy</a></span></dt><dt><span class="section"><a href="#_blootbot">33. blootbot</a></span></dt><dt><span class="section"><a href="#_hydrairc">34. HydraIRC</a></span></dt><dt><span class="section"><a href="#_rbot">35. rbot</a></span></dt><dt><span class="section"><a href="#_ircap">36. IRCAP</a></span></dt><dt><span class="section"><a href="#_vision">37. Vision</a></span></dt><dt><span class="section"><a href="#_supybot">38. Supybot</a></span></dt><dt><span class="section"><a href="#_javabot">39. JavaBot</a></span></dt><dt><span class="section"><a href="#_lulubot">40. lulubot</a></span></dt><dt><span class="section"><a href="#_weechat_weechat3">41. weechat, weechat3</a></span></dt></dl></div><p>This file contains a list of the different logfile formats which pisg
+supports. It also includes a sample line for these formats.</p><p>If you don’t have access to any of the clients/bots or you use some other
+IRC client/bot which isn’t supported, then it’s fairly easy to add support
+for a new IRC log format if you have some Perl knowledge, take a look at
+modules/Pisg/Parser/Format/Template.pm. If you don’t have any Perl
+knowledge, then mail a sample logfile to the mailinglist (preferred as a
+link to the logfile)</p><div class="section" title="1. mIRC6"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="_mirc6"></a>1. mIRC6</h2></div></div></div><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">
+Version 6.x of mIRC
+</li><li class="listitem">
+Same as mIRC except it uses a retarded logging format that makes modes
+    indeciperable from actions (which is a nightmare to parse)
+</li><li class="listitem">
+DON’T USE IT if you can avoid it, it doesn’t do very well at understanding
+    modes (see the "mIRC6hack" format)
+</li><li class="listitem">
+In order to use this, format must be set to <span class="emphasis"><em>mIRC6</em></span>.
+</li><li class="listitem">
+Remember to timestamp your logs, or it wont work, the timestamp must be
+    in [HH:MM] or [HH:MM:SS] format. (logging options → timestamp logs)
+</li></ul></div></div><div class="section" title="2. mIRC6hack"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="_mirc6hack"></a>2. mIRC6hack</h2></div></div></div><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">
+Version 6.x of mIRC using a logging script to produce a saner output
+</li><li class="listitem">
+Same as mIRC6 except it uses <span class="emphasis"><em>**</em></span> for actions
+</li><li class="listitem"><p class="simpara">
+In order to use this, format must be set to <span class="emphasis"><em>mIRC6hack</em></span>, and the following
+    be added to mIRC’s remote script section (Alt-R → Remote): (thanks to
+    virtuall and coaster)
+</p><pre class="literallayout">------------------------------8&lt;------------------------------
+alias me {
+  if ($1) {
+    .describe $active $1-
+    echo $color(own) -qt $active ** $me $1-
+  }
+  else {
+    echo $color(info) $active * /me: insufficient parameters
+  }
+}</pre><pre class="literallayout">on ^*:ACTION:*:*:{
+  echo $color(action) -lt $iif($chan,$chan,$nick) ** $nick $1-
+  haltdef
+}
+------------------------------&gt;8------------------------------</pre></li></ul></div></div><div class="section" title="3. mIRC"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="_mirc"></a>3. mIRC</h2></div></div></div><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">
+A client for Windows (www.mirc.com)
+</li><li class="listitem">
+If you want to create mIRC logfiles with your eggdrop, you can get some TCL
+    which does it all for you (also logrotating and much more).
+</li><li class="listitem">
+MEL (mIRCStats Eggdrop Logger) can be downloaded from the following URL:
+    <a class="ulink" href="http://mel.angelbears.org/" target="_top">http://mel.angelbears.org/</a>
+</li><li class="listitem">
+Remember to timestamp your logs, or it wont work, the timestamp must be
+    in [HH:MM] or [HH:MM:SS] format.
+</li><li class="listitem">
+In order to use this, format must be set to <span class="emphasis"><em>mIRC</em></span>.
+</li></ul></div><p>Example:</p><pre class="literallayout">[23:44] &lt;Christina&gt; Hello world</pre></div><div class="section" title="4. XChat"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="_xchat"></a>4. XChat</h2></div></div></div><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">
+A client for Linux (www.xchat.org)
+</li><li class="listitem">
+In order to use this, format must be set to <span class="emphasis"><em>xchat</em></span>.
+</li><li class="listitem">
+Both the old logformat, and the new logformat from 1.8.7 and above is
+     supported.
+</li></ul></div><p>Example of old logformat:</p><pre class="literallayout">18:01:43 &lt;Ben&gt; Hello world</pre><p>Example of new logformat:</p><pre class="literallayout">jan 13 04:39:42 &lt;Ben&gt; Hello World</pre><p>XChat has changed its logformat again in early 2005. The "brand new" format
+is broken in the same way as the mIRC6 format in that it is now impossible to
+tell actions from real events. Additionally, the format of the lines in the
+log changed. It is possible to revert to the previous format (the one that
+pisg understands) by using the old text theme:
+    <a class="ulink" href="http://xchat.org/files/themes/blacktheme.zip" target="_top">http://xchat.org/files/themes/blacktheme.zip</a></p></div><div class="section" title="5. Eggdrop"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="_eggdrop"></a>5. Eggdrop</h2></div></div></div><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">
+A cool and advanced IRC bot for Linux (www.eggheads.org)
+</li><li class="listitem">
+In order to use this, format must be set to <span class="emphasis"><em>eggdrop</em></span>.
+</li></ul></div><p>You might want to change the logfile-suffix in order for pisg to parse the
+files in the correct order when using <span class="emphasis"><em>logdir</em></span>:</p><pre class="literallayout">set logfile-suffix ".%Y%m%d" instead of the standard format
+set logfile-suffix ".%d%b%Y".</pre><p>Example:</p><pre class="literallayout">[00:02] &lt;Jenny&gt; Hello world</pre></div><div class="section" title="6. Grufti"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="_grufti"></a>6. Grufti</h2></div></div></div><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">
+A bot which I’m not really familiar with (www.grufti.com)
+</li><li class="listitem">
+The author has actually made something like pisg called <span class="emphasis"><em>gruftistats</em></span>,
+    but someone mailed me and told me that it hadn’t been maintained for
+    over a year, and it had some problems..
+</li><li class="listitem">
+In order to use this, format must be set to <span class="emphasis"><em>grufti</em></span>
+</li></ul></div><p>Example:</p><pre class="literallayout">[00:17] &lt;John&gt; Hello world</pre></div><div class="section" title="7. bxlog"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="_bxlog"></a>7. bxlog</h2></div></div></div><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">
+A logging script for BitchX (console client - see scripts.bitchx.com)
+</li><li class="listitem">
+In order to use this, format must be set to <span class="emphasis"><em>bxlog</em></span>
+</li><li class="listitem"><p class="simpara">
+The bxlog-pisg.bx file in the scripts directory might be useful.
+</p><pre class="literallayout">Example:
+      [31 Dec/11:26] &lt;John&gt; Hello world</pre></li></ul></div></div><div class="section" title="8. mbot"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="_mbot"></a>8. mbot</h2></div></div></div><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">
+C-Based IRC Bot (<a class="ulink" href="http://darksun.com.pt/mbot/" target="_top">http://darksun.com.pt/mbot/</a>)
+</li><li class="listitem">
+In the configuration file, timemode must be set to <span class="emphasis"><em>1</em></span>
+</li><li class="listitem">
+In order to use this, format must be set to <span class="emphasis"><em>mbot</em></span>
+</li></ul></div><p>Example:</p><pre class="literallayout">Thu Aug 23 12:59:40 2001 &lt;John&gt; Hello world</pre></div><div class="section" title="9. irssi"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="_irssi"></a>9. irssi</h2></div></div></div><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">
+Console IRC client (www.irssi.org)
+</li><li class="listitem">
+Logfiles must be using the default theme in irssi.
+    (The "(real name)" added by autorealname.pl is ok.)
+</li><li class="listitem">
+In order to use this, format must be set to <span class="emphasis"><em>irssi</em></span>.
+</li><li class="listitem">
+This format also works for ii (wmii) logs.
+</li></ul></div><p>Example:</p><pre class="literallayout">17:40 &lt;@John&gt; Hello world</pre></div><div class="section" title="10. psybnc"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="_psybnc"></a>10. psybnc</h2></div></div></div><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">
+IRC bouncer (<a class="ulink" href="http://www.psychoid.lam3rz.de/" target="_top">http://www.psychoid.lam3rz.de/</a>)
+</li><li class="listitem">
+In order to use this, format must be set to <span class="emphasis"><em>psybnc</em></span>
+</li></ul></div><p>Example:</p><pre class="literallayout">2001-08-19-23-14-06:#LINUX.DE::stelb!user@host.org PRIVMSG #linux.de :hi!</pre></div><div class="section" title="11. winbot"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="_winbot"></a>11. winbot</h2></div></div></div><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">
+Windows-based IRC bot (<a class="ulink" href="http://www.winbot.co.uk/" target="_top">http://www.winbot.co.uk/</a>)
+</li><li class="listitem">
+In order to use this, format must be set to <span class="emphasis"><em>winbot</em></span>
+</li></ul></div><p>Example:</p><pre class="literallayout">15:32.58 17/10/2001  &lt;Azhrarn/#darkgalaxy&gt; This is a normal line.</pre></div><div class="section" title="12. zbot"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="_zbot"></a>12. zbot</h2></div></div></div><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">
+Bot written in C++ (<a class="ulink" href="http://zcbot.sourceforge.net/" target="_top">http://zcbot.sourceforge.net/</a>)
+</li><li class="listitem">
+In order to use this, format must be set to <span class="emphasis"><em>zcbot</em></span>
+</li></ul></div><p>Example:</p><pre class="literallayout">12/11/01 22:05:42 :Keitaro!KOala_v5@EVYRV4A4.ipt.aol.com PRIVMSG #alsa-station :Re all :-)</pre></div><div class="section" title="13. ircle"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="_ircle"></a>13. ircle</h2></div></div></div><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">
+IRC client for Mac OS X
+</li><li class="listitem">
+Support for this format is not completely done yet.
+</li><li class="listitem">
+In order to use this, format must be set to <span class="emphasis"><em>ircle</em></span>
+</li></ul></div><p>Example:</p><pre class="literallayout">6:35 PM:   Sinnikal: thats gross</pre></div><div class="section" title="14. infobot"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="_infobot"></a>14. infobot</h2></div></div></div><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">
+bot written in Perl (<a class="ulink" href="http://www.infobot.org" target="_top">http://www.infobot.org</a>)
+</li><li class="listitem">
+In order to use this, format must be set to <span class="emphasis"><em>infobot</em></span>
+</li></ul></div></div><div class="section" title="15. Trillian"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="_trillian"></a>15. Trillian</h2></div></div></div><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">
+Trillian’s IRC component. (<a class="ulink" href="http://www.trillian.cc" target="_top">http://www.trillian.cc</a>)
+</li><li class="listitem">
+Note: Your Logs must be timestamped in the format [%h:%m] or [%h:%m:%s]
+    This is set in Preferences → General → Windows → Display in your Trillian Client
+</li><li class="listitem">
+Tested with Trillian Version 0.70
+</li><li class="listitem">
+In order to use this, format must be set to <span class="emphasis"><em>Trillian</em></span>
+</li></ul></div></div><div class="section" title="16. bobot++"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="_bobot"></a>16. bobot++</h2></div></div></div><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">
+IRC bot written in C<code class="literal">. (<a class="ulink" href="http://pltplp.net/bobot" target="_top">http://pltplp.net/bobot</a></code>/)
+</li><li class="listitem">
+In order to use this, format must be set to <span class="emphasis"><em>bobot</em></span>
+</li></ul></div><p>Example:</p><pre class="literallayout">[13/12/2001 - 20:38] &lt;NazoZzz&gt; hello world</pre></div><div class="section" title="17. axur/epic"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="_axur_epic"></a>17. axur/epic</h2></div></div></div><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">
+A unix shell client similar to bitchx but not quite.
+</li><li class="listitem">
+EPIC is available at <a class="ulink" href="http://www.epicsol.org/" target="_top">http://www.epicsol.org/</a>
+</li><li class="listitem">
+AXUR script for EPIC is available at
+    <a class="ulink" href="http://www.asciifun.com/images/axur-2000.tar.gz" target="_top">http://www.asciifun.com/images/axur-2000.tar.gz</a> or ax-b12r2.tar.gz
+</li></ul></div><p>axur/epic logs with two formats at once, one for normal users
+and one for the actual client doing the logging.  Why?  no idea.</p><p>The normal format is of:</p><pre class="literallayout">[MM/DD/YYYY @ HH:MM:SS] &lt;nick&gt; saying
+[MM/DD/YYYY @ HH:MM:SS] * nick does some action here</pre><p>The loggers format is of:</p><pre class="literallayout">[MM/DD/YYYY @ HH:MM:SS] &gt;(logger) saying
+[MM/DD/YYYY @ HH:MM:SS] &gt;* logger does some action here</pre><p>Both are supported.</p></div><div class="section" title="18. Perlbot"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="_perlbot"></a>18. Perlbot</h2></div></div></div><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">
+A bot which written in perl that supports loadable modules
+    (<a class="ulink" href="http://perlbot.sourceforge.net" target="_top">http://perlbot.sourceforge.net</a>)
+</li><li class="listitem">
+It also has some modules for searching logs and some perl scripts
+    for searching and browsing the log files.
+    (See examples at <a class="ulink" href="http://stats.978.org" target="_top">http://stats.978.org</a>)
+</li><li class="listitem">
+Development on the bot seems to have stopped. I did need to edit it
+    a bit to get it to log actions correctly.
+</li><li class="listitem">
+In order to use this, format must be set to <span class="emphasis"><em>perlbot</em></span>
+</li></ul></div><p>Example:</p><pre class="literallayout">13:22:57 &lt;Sc00ter&gt; bah, gotta run to the store</pre></div><div class="section" title="19. oer / oer+MySQL"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="_oer_oer_mysql"></a>19. oer / oer+MySQL</h2></div></div></div><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">
+Bot written in C (<a class="ulink" href="http://oer.equnet.org/" target="_top">http://oer.equnet.org/</a>)
+</li><li class="listitem">
+In order to use this, format must be set to <span class="emphasis"><em>oer</em></span>
+</li><li class="listitem"><p class="simpara">
+oer support isn’t finished, the example lines won’t work so I suggest you
+    set the following options in your config:
+</p><pre class="literallayout">&lt;set show_kickline="0"&gt;
+&lt;set show_actionline="0"&gt;
+&lt;set show_shoutline="0"&gt;
+&lt;set show_violentlines="0"&gt;</pre></li><li class="listitem">
+For a detailed description see:
+  <a class="ulink" href="http://faq.equnet.org/?area=b2VyIGFuZCBvZXIrTXlTUUwgRkFR&amp;id=35&amp;lang=en" target="_top">http://faq.equnet.org/?area=b2VyIGFuZCBvZXIrTXlTUUwgRkFR&amp;id=35&amp;lang=en</a>
+</li></ul></div><p>Example:</p><pre class="literallayout">1010866756 :EQU!equ@mira.equnet.org PRIVMSG #oer :test for mbrix</pre></div><div class="section" title="20. muh"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="_muh"></a>20. muh</h2></div></div></div><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">
+A bouncer for unix/linux (<a class="ulink" href="http://mind.riot.org/muh/" target="_top">http://mind.riot.org/muh/</a>)
+</li><li class="listitem">
+In order to use this, format must be set to <span class="emphasis"><em>muh</em></span>.
+</li></ul></div><p>Since you can configure the log-format as you want to, the standard-format
+is used for parsing.
+In order to set it correctly add this to you muhrc:</p><pre class="literallayout">timestamptemplate = "[%a %d %b %H:%M:%S]";</pre><p>Example:</p><pre class="literallayout">[Sat 16 Mar 21:24:09] &lt;pete&gt; hello everybody</pre></div><div class="section" title="21. muh2"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="_muh2"></a>21. muh2</h2></div></div></div><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">
+muh is a bouncer from muh.sf.net
+</li><li class="listitem">
+muh2 is for the new version 2.2, see <span class="emphasis"><em>muh</em></span> for older versions.
+</li><li class="listitem">
+In order to use this, format must be set to <span class="emphasis"><em>muh2</em></span>.
+</li></ul></div><p>Example:</p><pre class="literallayout">[11:23] &lt;boitl&gt; Hello world
+[11:24] * carmen means that she is nice</pre></div><div class="section" title="22. Energymech"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="_energymech"></a>22. Energymech</h2></div></div></div><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">
+An irc bot written in C which is currently beeing developed.
+</li><li class="listitem">
+In order to use this, format must be set to <span class="emphasis"><em>energymech</em></span>.
+</li><li class="listitem">
+Energymech is available at <a class="ulink" href="http://www.energymech.net" target="_top">http://www.energymech.net</a> or (better)
+    at <a class="ulink" href="http://cvs.energymech.net" target="_top">http://cvs.energymech.net</a>
+</li></ul></div><p>Example:</p><pre class="literallayout">[00:02] &lt;Jenny&gt; Hello world
+[00:04] Joins: vjaway (vector@p5086F6EF.dip.t-dialin.net)</pre></div><div class="section" title="23. Dancer"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="_dancer"></a>23. Dancer</h2></div></div></div><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">
+Bot written in C (<a class="ulink" href="http://dancer.sourceforge.net/" target="_top">http://dancer.sourceforge.net/</a>)
+</li><li class="listitem">
+In order to use this, format must be set to <span class="emphasis"><em>dancer</em></span>
+</li></ul></div><p>Example:</p><pre class="literallayout">15.57.40 # &lt;elho&gt; hello world!</pre></div><div class="section" title="24. ViRC98"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="_virc98"></a>24. ViRC98</h2></div></div></div><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">
+A client for Windows (<a class="ulink" href="http://www.hansprestige.com" target="_top">http://www.hansprestige.com</a>)
+      at this time is ViRC2.0rc1
+      maybe the type of logs will change
+</li><li class="listitem">
+Remember to timestamp your logs, or it wont work, activate it by checking
+    "Client setup/ViRC '98 options/Chat logging/ (Miscellaneous logging
+    options) Stamp every message logged with current time"
+</li><li class="listitem">
+In order to use this, format must be set to <span class="emphasis"><em>virc98</em></span>.
+</li></ul></div><p>Examples:</p><pre class="literallayout">01.15.39 [Fender]   this is a normal line writen by myself
+00.55.38 &lt;@jax1n0^O&gt;   this is a normal line writen by another
+22.24.27 * Fender says an action</pre></div><div class="section" title="25. pircbot"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="_pircbot"></a>25. pircbot</h2></div></div></div><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">
+PircBot is a framework for an IRC Bot written in Java.  It allows you to
+      create your own custom IRC Bots using Java by building on the framework
+      that is already provided by the PircBot.
+</li><li class="listitem">
+Homepage: <a class="ulink" href="http://www.jibble.org/pircbot.php" target="_top">http://www.jibble.org/pircbot.php</a>
+</li><li class="listitem">
+In order to use this, format must be set to <span class="emphasis"><em>pircbot</em></span>.
+</li><li class="listitem">
+Parses all data written by the bot as written by the nick assigned to <span class="emphasis"><em>maintainer</em></span>
+</li><li class="listitem">
+Logs are timestamped with MILISECONDS since the epoch
+</li></ul></div><p>Example:</p><pre class="literallayout">1013630386748 :nick!ident@hostname PRIVMSG #channel :Hello world.</pre></div><div class="section" title="26. Eggdrop RacBot"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="_eggdrop_racbot"></a>26. Eggdrop RacBot</h2></div></div></div><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">
+the Eggdrop RacBot is an IRC bot, which dreived from the original eggdrop
+    sources (see <a class="ulink" href="http://www.eggheads.org" target="_top">http://www.eggheads.org</a>)
+</li><li class="listitem">
+Homepage: <a class="ulink" href="http://www.racbot.org/" target="_top">http://www.racbot.org/</a>
+</li><li class="listitem">
+In order to use this, format must be set to <span class="emphasis"><em>RacBot</em></span>.
+</li></ul></div></div><div class="section" title="27. KVIrc"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="_kvirc"></a>27. KVIrc</h2></div></div></div><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">
+A KDE client for Linux (<a class="ulink" href="http://www.kvirc.net/" target="_top">http://www.kvirc.net/</a>)
+</li><li class="listitem">
+Support for this format is not completely done yet, actions and -/+o
+    modes are not detected, so you should add to you config file:
+    &lt;set show_actionline="0"&gt;
+</li><li class="listitem">
+Supports logs from version 2.x.x. v3.x.x or former versions has
+    not been tested.
+</li><li class="listitem">
+In order to use this, format must be set to <span class="emphasis"><em>kvirc</em></span>.
+</li></ul></div><p>Example:</p><pre class="literallayout">### Log session started at Thu Aug 23 17:25:36 2001 ###
+[17:25:36] wwp [anonymous@AMontpellier-201-2-1-77.abo.wanadoo.fr] has joined #ECI
+[17:25:47] &lt;wwp&gt; yop
+### Log session terminated at Sun Sep 9 22:56:51 2001 ###</pre></div><div class="section" title="28. moobot"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="_moobot"></a>28. moobot</h2></div></div></div><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">
+Python-based, modular IRC bot.  <a class="ulink" href="http://sourceforge.net/projects/moobot" target="_top">http://sourceforge.net/projects/moobot</a>
+</li><li class="listitem">
+Turn on logging by adding an entry to the data table with type = <span class="emphasis"><em>logtype</em></span>
+    and data = <span class="emphasis"><em>file</em></span> or <span class="emphasis"><em>date</em></span>.  Add another entry with type = <span class="emphasis"><em>logfile</em></span> and
+    data = the name of the file if type == <span class="emphasis"><em>file</em></span> or a string to be passed to
+    strftime if type == <span class="emphasis"><em>date</em></span>.
+</li><li class="listitem">
+The format name is "moobot".
+</li><li class="listitem">
+All nicks are logged with their hostmasks, with the exception of those
+    from the bot itself.  (This may change in the future to have the bot’s
+    hostmask, too.)
+</li><li class="listitem"><p class="simpara">
+Examples:
+</p><pre class="literallayout">2002-07-06 00:05:29 :vergil!~vergil@host PUBMSG #space :mike_lap: i'm not joking, actually.
+2002-07-04 15:56:19 :SpaceBot PUBMSG #space :huh?
+2002-07-06 00:07:30 :vergil!~vergil@host CTCP #space :ACTION salutes
+2002-07-18 10:37:18 :jeffcovey!~jeff@host KICK #space vergil :two days in a row!
+2002-07-06.log:2002-07-06 12:07:41 :phil_tty!mjpr@host TOPIC #space :&lt;She-Ra&gt; of course, god can go to rotters, for all she's managed not to do for me
+2002-07-04 17:34:01 :jeffcovey!~jeff@host MODE #space +o CowBot
+2002-07-04 12:02:42 :Leebert!~lsherida@host JOIN :#space
+2002-07-04 18:24:18 :mike_lap!~emag@host NICK :Cathy</pre></li></ul></div></div><div class="section" title="29. ircII"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="_ircii"></a>29. ircII</h2></div></div></div><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">
+The original IRC client (<a class="ulink" href="http://www.eterna.com.au/ircii/" target="_top">http://www.eterna.com.au/ircii/</a>)
+</li><li class="listitem">
+In order to use this, format must be set to <span class="emphasis"><em>ircII</em></span>
+</li><li class="listitem">
+You need to add a few on triggers to your .ircrc:
+    on #<sup>timer 50 "*0" echo $0
+    on #</sup>timer 50 "*5" echo $0
+    to mark the time. They can be adjusted to taste (the above lines mark every
+    5 minutes), with the main effect being the topic change times will only
+    accurate to how often the time is marked.
+</li><li class="listitem">
+The config option "Maintainer" needs to be set to the maintainer’s nick
+</li></ul></div><p>Example:</p><pre class="literallayout">22:40
+*** sonnlich (sonnloki@202.72.122.25348) has joined channel #unisfa
+* sonnlich waves.
+&gt; evening rae
+&lt;sonnlich&gt; Evening.</pre></div><div class="section" title="30. DC++"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="_dc"></a>30. DC++</h2></div></div></div><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">
+Direct Connect Hub
+</li><li class="listitem">
+In order to use this, format must be set to <span class="emphasis"><em>DCpp</em></span>
+</li><li class="listitem">
+Not an IRC logger, rather a shared network botnet log
+</li><li class="listitem">
+You MUST put botnicks into botnicks variable if you want to see kicks
+</li></ul></div><p>Example:</p><pre class="literallayout">&lt;set botnicks="bot1 bot2 MainBot"&gt;</pre></div><div class="section" title="31. sirc"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="_sirc"></a>31. sirc</h2></div></div></div><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">
+Simple IRC Client (<a class="ulink" href="http://www.iagora.com/~espel/sirc.html" target="_top">http://www.iagora.com/~espel/sirc.html</a>)
+</li><li class="listitem">
+In order to use this, format must be set to <span class="emphasis"><em>sirc</em></span>
+</li><li class="listitem">
+You must also load the sirc-timestamp.pl script in the scripts subdirectory
+    into sirc (/load sirc-timestamp.pl after copying to appropriate location)
+</li></ul></div></div><div class="section" title="32. dircproxy"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="_dircproxy"></a>32. dircproxy</h2></div></div></div><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">
+Detachable IRC Proxy Server (<a class="ulink" href="http://www.dircproxy.net/" target="_top">http://www.dircproxy.net/</a>)
+</li><li class="listitem">
+In order to use this, format must be set to <span class="emphasis"><em>dircproxy</em></span>
+</li><li class="listitem">
+Currently does not recognize nick changes - apparently it logs nick changes
+    to a separate file.  As a result, nick tracking will not work.
+</li><li class="listitem">
+This parser recognize both the 1.0.5 and the 1.1.0 log format.
+</li></ul></div></div><div class="section" title="33. blootbot"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="_blootbot"></a>33. blootbot</h2></div></div></div><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">
+supports multiple channels, though the log will be parsed once for each
+    channel
+</li><li class="listitem">
+<a class="ulink" href="http://blootbot.sourceforge.net/" target="_top">http://blootbot.sourceforge.net/</a>
+</li><li class="listitem">
+In order to use this, format must be set to <span class="emphasis"><em>blootbot</em></span>
+</li></ul></div><p>Example: (also in the parser module)</p><pre class="literallayout">01:02.03 &lt;nick/#channel&gt; normal
+01:02.03 * nick/#channel action
+01:02.03 &gt;&gt;&gt; topic/#channel by nick -&gt; topic...
+01:02.03 &gt;&gt;&gt; mode/#channel [+o nick] by ChanServ
+01:02.03 &gt;&gt;&gt; join/#channel nick (~user@example.com)
+01:02.03 &gt;&gt;&gt; kick/#channel [nick!~user@example.com] by nick (reason)
+01:02.03 &gt;&gt;&gt; nick_ materializes into nick</pre></div><div class="section" title="34. HydraIRC"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="_hydrairc"></a>34. HydraIRC</h2></div></div></div><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">
+HydraIRC is an open-source IRC client with an attractive and easy to use
+    interface
+</li><li class="listitem">
+<a class="ulink" href="http://hydrairc.sourceforge.net/" target="_top">http://hydrairc.sourceforge.net/</a>
+</li><li class="listitem">
+In order to use this, format must be set to <span class="emphasis"><em>hydra</em></span>
+</li></ul></div><p>Example:</p><pre class="literallayout">[2003-02-22 16:49:18] *** Alexander changed topic to wibble
+[2003-02-22 16:52:29] &lt;Alexander&gt; Sorry about the delay.
+[2003-02-22 16:52:33] &lt;Eien&gt; Slow.  Waking.  Up.
+[2003-02-22 16:52:34] *** Melody sets channel #ar-roleplay mode +v Alexander
+[2003-02-22 16:58:57] *** Kemmy|ZZZ changed nick to Kemayo
+[2003-02-22 17:03:34] * Alexander stirs Eien's brain.  "Cooooooool..."</pre></div><div class="section" title="35. rbot"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="_rbot"></a>35. rbot</h2></div></div></div><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">
+rbot is a ruby IRC bot. Think of him as a ruby
+    infobot, with more and different features, and a nicer plugin scheme.
+</li><li class="listitem">
+<a class="ulink" href="http://linuxbrit.co.uk/rbot/" target="_top">http://linuxbrit.co.uk/rbot/</a>
+</li><li class="listitem">
+In order to use this, format must be set to <span class="emphasis"><em>rbot</em></span>
+</li></ul></div><p>Example:</p><pre class="literallayout">[2003/07/22 22:02:59] &lt;Rathnor&gt; well, i'm considering setting up a cronjob or something to watch it
+[2003/07/22 22:03:11] &lt;ak|ra&gt; hehe
+[2003/07/22 22:03:24] @ Mode +o Rathnor by ChanServ
+[2003/07/22 22:03:25] @ Quit: oddbudman: Remote closed the connection
+[2003/07/22 22:03:29] &lt;FluxBot&gt; Rathnor: :(</pre></div><div class="section" title="36. IRCAP"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="_ircap"></a>36. IRCAP</h2></div></div></div><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">
+Version 7.5 or 7.51 of IRCAP (www.ircap.com or www.ircap.net).
+</li><li class="listitem">
+mIRC version 6.03 or 6.12 (this are the mIRC versions required by IRCAP, so not really a parser requirement).
+</li><li class="listitem">
+Timestamp logs activated in mIRC:
+   Enter Options (inside File -mIRC6.03- or Tools -mIRC6.12-), IRC→Logging and check Timestamp Logs.
+</li><li class="listitem">
+To use this, format must be set to <span class="emphasis"><em>IRCAP</em></span>.
+</li></ul></div><p>Example:</p><pre class="literallayout">[2:51] &lt;Lawy&gt; a las wenassssssssss
+[2:51] &lt;Lawy&gt; [ArCePi] nas nas
+[2:51] &lt;Lawy&gt; [BruJo] wenas
+[2:51] &lt;Danaita&gt; lawyyyy</pre></div><div class="section" title="37. Vision"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="_vision"></a>37. Vision</h2></div></div></div><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">
+An irc client for BeOS ( <a class="ulink" href="http://vision.sourceforge.net" target="_top">http://vision.sourceforge.net</a> and <a class="ulink" href="http://www.bebits.com/app/2623" target="_top">http://www.bebits.com/app/2623</a> )
+</li><li class="listitem">
+Timestamping has to be enabled in the preferences
+</li><li class="listitem">
+The messages Vision displays for joins/parts/topic changes etc, is fully
+    user configurable, this parses the default messages. If you have changed
+    them in the preferences you have to edit the parser to reflect the changes.
+</li><li class="listitem">
+In order to use this, format must be set to <span class="emphasis"><em>Vision</em></span>
+</li></ul></div></div><div class="section" title="38. Supybot"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="_supybot"></a>38. Supybot</h2></div></div></div><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">
+<a class="ulink" href="http://supybot.sf.net" target="_top">http://supybot.sf.net</a>
+</li><li class="listitem">
+Version tested with 0.77
+</li><li class="listitem"><p class="simpara">
+Log format :
+</p><pre class="literallayout">normal msg:  [05-Mar-2004 17:28:10]  * Jkx|home bon je vais pas trainer ..
+channel msg: [17-Feb-2004 08:13:47]  *** Jkx changes topic to "Oh my god of topic</pre></li></ul></div></div><div class="section" title="39. JavaBot"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="_javabot"></a>39. JavaBot</h2></div></div></div><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">
+<a class="ulink" href="http://javabot.sourceforge.net" target="_top">http://javabot.sourceforge.net</a>
+</li><li class="listitem">
+Version has to be 0.3.3 or newer
+</li><li class="listitem">
+To use this, format must be set to javabot
+</li><li class="listitem"><p class="simpara">
+Example:
+</p><pre class="literallayout">maj 07 21:11:44 &lt;CreoN&gt; a regular line
+maj 07 21:12:02 ---     CreoN sets mode +o scalldog
+maj 07 21:12:05 &lt;--     CreoN has kicked JavaBot (JavaBot)
+maj 07 21:12:06 --&gt;     JavaBot (~javabot@host.com) has joined #channel</pre></li></ul></div></div><div class="section" title="40. lulubot"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="_lulubot"></a>40. lulubot</h2></div></div></div><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">
+<a class="ulink" href="http://lulubot.berlios.de" target="_top">http://lulubot.berlios.de</a>
+</li><li class="listitem">
+Version tested with the CVS the 12/04/04
+</li><li class="listitem"><p class="simpara">
+Log format :
+</p><pre class="literallayout">[22-11-2004/14:42] *** Joined ace (~ace@154.25.145.85)
+[22-11-2004/15:00] &lt;ace&gt; morning
+[22-11-2004/15:01] * ace is back</pre></li><li class="listitem">
+Parser written by Vianney Lecroart &lt;<a class="ulink" href="mailto:acemtp@free.fr" target="_top">acemtp@free.fr</a>&gt;
+</li></ul></div></div><div class="section" title="41. weechat, weechat3"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="_weechat_weechat3"></a>41. weechat, weechat3</h2></div></div></div><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">
+<a class="ulink" href="http://weechat.flashtux.org/" target="_top">http://weechat.flashtux.org/</a>
+</li><li class="listitem">
+There are two parsers, one for the old log format ("weechat"), and one for
+    the new format starting from version 0.3 ("weechat3").
+</li></ul></div></div></div></body></html>

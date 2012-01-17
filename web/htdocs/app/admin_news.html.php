@@ -2,50 +2,21 @@
 
 session_start();
 if (!isset($_SESSION['authed']) || !$_SESSION['authed']) {
-    $pw_salt='pisg+admin,';
-    $pw_hash='a1764831e62d52191009207dadc0bc8e';
-    $_SESSION['authed'] = ((isset($_REQUEST['password']) && md5($pw_salt.$_REQUEST['password']) == $pw_hash));
+    header('Location: admin');
+    die();
 }
-
-?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
-<head>
-<title>pisg news admin system</title>
-<link rel="stylesheet" href="css/admin.css" type="text/css">
-<style type="text/css">
-
-body {
-    background-color: white;
-}
-</style>
-</head>
-<body>
-<?
-if (!$_SESSION['authed']) { ?>
-    Please type in administrator password<br />
-    <form method="post" action="">
-    <input type="password" name="password" size="40">
-    <input type="hidden" name="add" value="<? print $add; ?>">
-    <input type="hidden" name="edit" value="<? print $edit; ?>">
-    <input type="hidden" name="delete" value="<? print $delete; ?>">
-    <input type="submit" value="Submit">
-    </form>
-<? } else { ?>
-<?
-include("mysql.php");
 
 if (isset($_GET['add'])) {
 
     $date = date("Y-m-d", time());
-    mysql_query("INSERT INTO news (title, date, text) VALUES
+    $db->query("INSERT INTO news (title, date, text) VALUES
     ('$_POST[title]','$date','$_POST[text]')") or die(mysql_error());
 
 } elseif (isset($_GET['edit'])) {
 
     $date = mktime(0,0,0,$_POST['mm'],$_POST['dd'], $_POST['yyyy']);
     $date = date("Y-m-d", $date);
-    mysql_query("UPDATE news SET title='$_POST[title]', date='$date', text='$_POST[text]' WHERE ID='$id'") or die(mysql_error());
+    $db->query("UPDATE news SET title='$_POST[title]', date='$date', text='$_POST[text]' WHERE ID='$id'");
 
 }
 ?>
@@ -67,13 +38,13 @@ if (isset($_GET['add'])) {
 if (!isset($_GET['start'])) { $start = 0; }
 if (!isset($_GET['end'])) { $end = 20; }
 
-$query = mysql_query("SELECT * FROM news ORDER BY date DESC LIMIT $start,$end") or die(mysql_error());
+$query = $db->query("SELECT * FROM news ORDER BY date DESC LIMIT $start,$end");
 
-while ($row = mysql_fetch_array($query)) {
+while ($query as $row) {
     ?>
  <tr>
-  <td class="text"><a href="admin.php?id=<? print $row[id] ?>"><? print $row[title]; ?></a></td>
-  <td class="text" align="left" style="color: gray"><? print $row[date]; ?></td>
+  <td class="text"><a href="admin.php?id=<?=$row['id']?>"><?=$row['title']?></a></td>
+  <td class="text" align="left" style="color: gray"><?=$row['date']?></td>
  </tr>
 
 <? } ?>
@@ -85,7 +56,7 @@ while ($row = mysql_fetch_array($query)) {
 <table border="0" cellpadding="0" cellspacing="0" width="150" align="right">
 <tr>
 <?
-$query = mysql_query("SELECT * FROM news") or die(mysql_error());
+$query = $db->query("SELECT * FROM news") or die(mysql_error());
 
 $rows = mysql_num_rows($query);
 
@@ -155,7 +126,3 @@ Text: <textarea name="text" rows="10" cols="80"></textarea><br />
 <input type="submit" name="Add new" value="Add new">
 </form>
 <? } ?>
-
-<? } ?>
-</body>
-</html>

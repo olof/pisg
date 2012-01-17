@@ -1,61 +1,92 @@
 html {
-    background-color: #F0F0F0;
+	background-color: #F0F0F0;
 }
-
 body {
-    font-family: verdana, arial, sans-serif;
-    color: #585858;
-    margin: 0px;
+	font-family: verdana, arial, sans-serif;
+	color: #585858;
+	margin: 0px;
 }
-
+h2 {
+	font-size: x-large;
+	color: black;
+	font-weight: bold;
+	background: #fffdbc;
+	padding: 3px;
+	border: 1px solid black
+}
+h3 {
+	font-size: larger;
+	color: black;
+	font-weight: bold;
+	background: #fffdbc;
+	padding: 3px;
+	border: 1px solid black
+}
+h4 {
+	color: black;
+	background: #fffdbc;
+	padding: 3px;
+	border: 1px solid black
+}
+b {
+	color: black;
+}
+a {
+	font-weight: bold;
+	font-family: verdana, arial, sans-serif;
+	color: #0f4391;
+}
+a:hover {
+	text-decoration: underline;
+}
+a {
+	text-decoration: none;
+}
 .top {
-    color: black;
-    font-weight: bold;
-    font-size: 20px;
-    background-color: #6699CC;
-    border-bottom: 3px solid black;
-    padding: 5px;
-    text-align: center;
+	color: black;
+	font-weight: bold;
+	font-size: 20px;
+	background-color: #6699CC;
+	border-bottom: 3px solid black;
+	padding: 5px;
+	text-align: center;
 }
 
 .box {
-    background: white;
-    border: 1px solid #ccccbb;
-    border-top: none;
-    padding: 5px;
-    text-align: center;
+	background: white;
+	border: 1px solid #ccccbb;
+	border-top: none;
+	padding: 5px;
+	text-align: center;
 }
-
-h3 {
-    font-size: larger;
-    color: black;
-    font-weight: bold;
-    background: #fffdbc;
-    padding: 3px;
-    border: 1px solid black
+#content {
+	padding: 0 10px;
 }
-
-h4 {
-    color: black;
-    background: #fffdbc;
-    padding: 3px;
-    border: 1px solid black
+#footer {
+	font-size: x-small;
+	text-align: center;
+	border-top: 1px solid #ccc;
+	padding: 5px 0;
 }
-
-b {
-    color: black;
+#examples {
+	border-top: 1px solid black;
+	margin-left: auto;
+	margin-right: auto;
 }
-
-a {
-    font-weight: bold;
-    font-family: verdana, arial, sans-serif;
-    color: #0f4391;
+.example_odd {
+	border-bottom: 1px solid black;
+	background-color: #EFF7FE;
 }
-
-a:hover {
-    text-decoration: underline;
+.example_even {
+	border-bottom: 1px solid black;
+	background-color: #FFFFFF;
 }
-
-a {
-    text-decoration: none;
+#nav {
+	list-style:none;
+}
+#nav li {
+	display:inline;
+}
+#nav li a {
+	padding:8px 16px;
 }
