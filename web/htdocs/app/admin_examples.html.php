@@ -26,7 +26,7 @@ foreach ($query as $row)
     $row['url'] = htmlentities($row['url']);
     $row['channel'] = utf8_encode(htmlentities($row['channel']));
 ?>
- <li><?=$row['id']?> | <a href="admin_examples.php?verify=<?=$row['id']?>">verify</a> | <a href="admin_examples?remove=<?=$row['id']?>">remove</a> | <a href="admin_examples?doedit=<?=$row['id']?>">edit</a> | <?=$row['channel']?> | URL: <a href="<?=$row['url']?>"><?=$row['url']?></a></li>
+ <li><?=$row['id']?> | <a href="admin_examples?verify=<?=$row['id']?>">verify</a> | <a href="admin_examples?remove=<?=$row['id']?>">remove</a> | <a href="admin_examples?doedit=<?=$row['id']?>">edit</a> | <?=$row['channel']?> | URL: <a href="<?=$row['url']?>"><?=$row['url']?></a></li>
 <? } // end while ?>
 </ol>
 <br />
@@ -51,7 +51,7 @@ if (isset($_GET['doedit'])) {
     $row = $db->fetch($query);
 ?>
 <h3>Editing statistics page <?=$_GET['doedit']?></h3>
-<form action="admin_examples.php?edit=<?= $_GET['doedit']?>" method="post">
+<form action="admin_examples?edit=<?= $_GET['doedit']?>" method="post">
 <input type="text" name="url" value="<?= $row['url'] ?>" />
 <input type="text" name="channel" value="<?= $row['channel'] ?>" />
 <input type="text" name="maintainer" value="<?= $row['maintainer'] ?>" />
