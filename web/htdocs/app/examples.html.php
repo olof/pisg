@@ -20,11 +20,12 @@ foreach ($query as $row)
     $class = ($row['id'] % 2 == 1)?'example_odd':'example_even';
     $url = htmlentities($row['url']);
     $channel = htmlentities($row['channel']);
+    $network = htmlentities($row['network']);
     $maintainer = htmlentities($row['maintainer']);
     ?>
     <tr><td class="<?=$class?>" align="left">
     <b><a href="<?=$url?>"><?=$channel?></a></b> @ <?=$network?> by <?=$maintainer?></td>
-    <td class="<?=$class?>" align="right"><a href="examples_remove&amp;id=<?=$row['id']?>">Remove</a></td>
+    <td class="<?=$class?>" align="right"><a href="examples_remove?id=<?=$row['id']?>">Remove</a></td>
     </tr>
     <?php
 }
