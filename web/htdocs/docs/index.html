@@ -1,8 +1,8 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <HTML
 ><HEAD
 ><TITLE
->pisg 0.72 documentation</TITLE
+>pisg 0.73 documentation</TITLE
 ><META
 NAME="GENERATOR"
 CONTENT="Modular DocBook HTML Stylesheet Version 1.79"></HEAD
@@ -24,7 +24,7 @@ CLASS="TITLEPAGE"
 CLASS="title"
 ><A
 NAME="AEN2"
->pisg 0.72 documentation</A
+>pisg 0.73 documentation</A
 ></H1
 ><H2
 CLASS="subtitle"
@@ -38,70 +38,70 @@ CLASS="TOC"
 >Table of Contents</B
 ></DT
 ><DT
->1. <A
+><A
 HREF="#what-is-pisg"
 >What is pisg?</A
 ></DT
 ><DD
 ><DL
 ><DT
->1.1. <A
+><A
 HREF="#requirements"
 >What are the requirements to run pisg?</A
 ></DT
 ></DL
 ></DD
 ><DT
->2. <A
+><A
 HREF="#setting-up-pisg"
 >Setting up pisg for the first time</A
 ></DT
 ><DD
 ><DL
 ><DT
->2.1. <A
+><A
 HREF="#setting-up-a-channel"
 >Setting up a channel</A
 ></DT
 ><DT
->2.2. <A
+><A
 HREF="#user-options"
 >Specifying user options</A
 ></DT
 ><DT
->2.3. <A
+><A
 HREF="#global-options"
 >Setting global options</A
 ></DT
 ><DT
->2.4. <A
+><A
 HREF="#ignoring-links"
 >Ignoring links</A
 ></DT
 ><DT
->2.5. <A
+><A
 HREF="#including-config"
 >Including common settings for various channels</A
 ></DT
 ><DT
->2.6. <A
+><A
 HREF="#using-css"
 >Changing the layout of your stats page</A
 ></DT
 ><DT
->2.7. <A
+><A
 HREF="#running-pisg"
 >Running pisg</A
 ></DT
 ><DT
->2.8. <A
+><A
 HREF="#mailing-list-and-bugs"
 >Obtaining help and reporting bugs</A
 ></DT
 ></DL
 ></DD
 ><DT
->3. <A
+><A
 HREF="#reference"
 >General pisg options</A
 ></DT
@@ -203,7 +203,7 @@ HREF="#CacheDir"
 ></DL
 ></DD
 ><DT
->4. <A
+><A
 HREF="#reference-stats"
 >Options for various statistics features</A
 ></DT
@@ -512,7 +512,7 @@ HREF="#SortByWords"
 ></DL
 ></DD
 ><DT
->5. <A
+><A
 HREF="#reference-pictures"
 >Picture options</A
 ></DT
@@ -556,7 +556,7 @@ HREF="#PicHeight"
 ></DL
 ></DD
 ><DT
->6. <A
+><A
 HREF="#reference-misc"
 >Misc options</A
 ></DT
@@ -615,7 +615,7 @@ HREF="#StatsDump"
 ></DL
 ></DD
 ><DT
->7. <A
+><A
 HREF="#copyright"
 >Copyright and License</A
 ></DT
@@ -627,7 +627,7 @@ CLASS="chapter"
 ><A
 NAME="what-is-pisg"
 ></A
->Chapter 1. What is pisg?</H1
+>What is pisg?</H1
 ><P
 >&#13;     pisg is an IRC statistics generator. It takes IRC logfiles and turns
      them into nice looking stats.
@@ -669,7 +669,7 @@ CLASS="sect1"
 CLASS="sect1"
 ><A
 NAME="requirements"
->1.1. What are the requirements to run pisg?</A
+>What are the requirements to run pisg?</A
 ></H2
 ><P
 >&#13;
@@ -698,12 +698,9 @@ TARGET="_top"
 ><LI
 STYLE="list-style-type: disc"
 ><P
->&#13;       <SPAN
-CLASS="emphasis"
-><I
+>&#13;       <I
 CLASS="emphasis"
 >Optional</I
-></SPAN
 > - a system to host the statistics page
        24 hours a day, 7 days a week.
        </P
@@ -711,12 +708,9 @@ CLASS="emphasis"
 ><LI
 STYLE="list-style-type: disc"
 ><P
->&#13;       <SPAN
-CLASS="emphasis"
-><I
+>&#13;       <I
 CLASS="emphasis"
 >Optional</I
-></SPAN
 > - a system to log the channel, 24 hours
        a day, 7 days a week.
        </P
@@ -732,7 +726,7 @@ CLASS="chapter"
 ><A
 NAME="setting-up-pisg"
 ></A
->Chapter 2. Setting up pisg for the first time</H1
+>Setting up pisg for the first time</H1
 ><P
 >&#13;   Most configuration happens through the <TT
 CLASS="filename"
@@ -747,7 +741,7 @@ CLASS="sect1"
 CLASS="sect1"
 ><A
 NAME="setting-up-a-channel"
->2.1. Setting up a channel</A
+>Setting up a channel</A
 ></H2
 ><P
 >&#13;   An element called <A
@@ -756,7 +750,13 @@ HREF="#Channel"
 > is made for defining
    channels, a quick example of a channel is here:
 
-   <PRE
+   <TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
 CLASS="programlisting"
 >&#13;   
     &#60;channel="#channel"&#62;
@@ -767,6 +767,9 @@ CLASS="programlisting"
     &#60;/channel&#62;
    
    </PRE
+></TD
+></TR
+></TABLE
 >
 
    The above will define a <A
@@ -816,42 +819,78 @@ CLASS="sect1"
 CLASS="sect1"
 ><A
 NAME="user-options"
->2.2. Specifying user options</A
+>Specifying user options</A
 ></H2
 ><P
 >&#13;    User options are set with a simple XML-like syntax in the form:
 
-   <PRE
+   <TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
 CLASS="programlisting"
 >&#13;   &#60;user nick="NICK" option="VALUE"&#62;
    </PRE
+></TD
+></TR
+></TABLE
 >
 
     Remember, the nick is always required.
 
     For example to add aliases to a nick, then you could do this:
-    <PRE
+    <TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
 CLASS="programlisting"
 >&#13;    &#60;user nick="Joe" alias="Joe^*"&#62;
     </PRE
+></TD
+></TR
+></TABLE
 >
 
     The asterisk (*) means that it will match all nicks starting with 'Joe^'. So
     it will add all Joe^'s to 'Joe' in the stats.
 
     Another thing you can do is to add a picture to a user:
-    <PRE
+    <TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
 CLASS="programlisting"
 >&#13;    &#60;user nick="Ben" pic="ben_holiday.jpg"&#62;
     </PRE
+></TD
+></TR
+></TABLE
 >
 
     If you have a larger picture of the user as well, you can make the picture
     on the stats page link to it:
-    <PRE
+    <TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
 CLASS="programlisting"
 >&#13;     &#60;user nick="Ben" pic="ben_holiday.jpg" bigpic="ben-big.jpg"&#62;
     </PRE
+></TD
+></TR
+></TABLE
 >
 
     You can include * or ? to enable filename globbing to randomly choose one
@@ -860,47 +899,101 @@ CLASS="programlisting"
 HREF="#ImageGlobPath"
 >ImageGlobPath</A
 > option)
-    <PRE
+    <TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
 CLASS="programlisting"
 >&#13;    &#60;user nick="Ben" pic="ben_*.jpg"&#62;
     </PRE
+></TD
+></TR
+></TABLE
 >
 
     You can also set a user's sex.
     The sex setting can be "f"emale, "m"ale, or "b"ot:
-    <PRE
+    <TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
 CLASS="programlisting"
 >&#13;    &#60;user nick="Ben" sex="m"&#62;
     </PRE
+></TD
+></TR
+></TABLE
 >
 
     Also you can add links to URLs and e-mails:
-    <PRE
+    <TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
 CLASS="programlisting"
 >&#13;    &#60;user nick="Christine" link="http://www.christine.com"&#62;
     </PRE
+></TD
+></TR
+></TABLE
 >
 
         or
 
-    <PRE
+    <TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
 CLASS="programlisting"
 >&#13;    &#60;user nick="Chris" link="chris@host.com"&#62;
     </PRE
+></TD
+></TR
+></TABLE
 >
 
     The last thing you can do is to ignore nicks (for example bots):
-    <PRE
+    <TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
 CLASS="programlisting"
 >&#13;    &#60;user nick="nameofbot" ignore="y"&#62;
     </PRE
+></TD
+></TR
+></TABLE
 >
 
     You don't have to do all this in many lines, you could just as easily do:
-    <PRE
+    <TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
 CLASS="programlisting"
 >&#13;    &#60;user nick="Joe" alias="Joe^away Joe^work" pic="joe.jpg" link="joe@joe.com" sex="m"&#62;
     </PRE
+></TD
+></TR
+></TABLE
 >
 
     (Here the aliases are a space separated list of nicks, that also works! But *
@@ -913,32 +1006,52 @@ CLASS="sect1"
 CLASS="sect1"
 ><A
 NAME="global-options"
->2.3. Setting global options</A
+>Setting global options</A
 ></H2
 ><P
 >&#13;     Many times, it will be useful to set up global options, global options
      are set like this:
 
-     <PRE
+     <TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
 CLASS="programlisting"
 >&#13;     &#60;set option="VALUE"&#62;
      </PRE
+></TD
+></TR
+></TABLE
 >
 
      Any global option will be overriden by anything defined within channel
      elements (see <A
 HREF="#setting-up-a-channel"
->Section 2.1</A
+>the Section called <I
+>Setting up a channel</I
+></A
 >)
      </P
 ><P
 >&#13;     For example, to change the background color of the stats page, you
      could do:
 
-     <PRE
+     <TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
 CLASS="programlisting"
 >&#13;     &#60;set bgcolor="black"&#62;
      </PRE
+></TD
+></TR
+></TABLE
 >
 
      You can set many options in a single <B
@@ -946,10 +1059,19 @@ CLASS="command"
 >set</B
 >:
 
-     <PRE
+     <TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
 CLASS="programlisting"
 >&#13;     &#60;set lang="DE" timeoffset="+1"&#62;
      </PRE
+></TD
+></TR
+></TABLE
 >
 
      The above will set the language on the statistics page to DE (Deutsch,
@@ -964,18 +1086,27 @@ CLASS="sect1"
 CLASS="sect1"
 ><A
 NAME="ignoring-links"
->2.4. Ignoring links</A
+>Ignoring links</A
 ></H2
 ><P
 >&#13;    It's possible to ignore links in the "Most referenced URLs" section:
 
 
-    <PRE
+    <TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
 CLASS="programlisting"
 >&#13;    
      &#60;link url="http://www.slashdot.org" ignore="y"&#62;
     
     </PRE
+></TD
+></TR
+></TABLE
 >
     </P
 ></DIV
@@ -985,19 +1116,28 @@ CLASS="sect1"
 CLASS="sect1"
 ><A
 NAME="including-config"
->2.5. Including common settings for various channels</A
+>Including common settings for various channels</A
 ></H2
 ><P
 >&#13;    If you have, for example, more than one channel, where the users are the
     same, or you don't want to maintain more than one user file, you can use
     the "include" setting in the main config file:
 
-    <PRE
+    <TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
 CLASS="programlisting"
 >&#13;    
      &#60;include="/home/vetinari/pisg/users.cfg"&#62;
     
     </PRE
+></TD
+></TR
+></TABLE
 >
 
     This will include the file /home/vetinari/pisg/users.cfg in the config
@@ -1013,7 +1153,7 @@ CLASS="sect1"
 CLASS="sect1"
 ><A
 NAME="using-css"
->2.6. Changing the layout of your stats page</A
+>Changing the layout of your stats page</A
 ></H2
 ><P
 >&#13;    The standard layout and colors in the outputted HTML page are made to be
@@ -1065,7 +1205,7 @@ CLASS="sect1"
 CLASS="sect1"
 ><A
 NAME="running-pisg"
->2.7. Running pisg</A
+>Running pisg</A
 ></H2
 ><P
 >&#13;    When everything is set up in the pisg configuration file (pisg.cfg),
@@ -1075,30 +1215,48 @@ NAME="running-pisg"
 ><P
 >&#13;    Using Linux, BSD or another UNIX-like system:
 
-    <PRE
+    <TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
 CLASS="screen"
->&#13;    <SAMP
+>&#13;    <TT
 CLASS="prompt"
->user@host:pisg-0.37$</SAMP
+>user@host:pisg-0.37$</TT
 > <KBD
 CLASS="userinput"
 >./pisg</KBD
 >
     </PRE
+></TD
+></TR
+></TABLE
 >
     </P
 ><P
 >&#13;    Using Windows:
-    <PRE
+    <TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
 CLASS="screen"
->&#13;    <SAMP
+>&#13;    <TT
 CLASS="prompt"
->c:\pisg&#62;</SAMP
+>c:\pisg&#62;</TT
 > <KBD
 CLASS="userinput"
 >perl pisg</KBD
 >
     </PRE
+></TD
+></TR
+></TABLE
 >
     </P
 ><P
@@ -1135,7 +1293,7 @@ CLASS="sect1"
 CLASS="sect1"
 ><A
 NAME="mailing-list-and-bugs"
->2.8. Obtaining help and reporting bugs</A
+>Obtaining help and reporting bugs</A
 ></H2
 ><P
 >&#13;    If your problem could not be resolved through here, then you should send
@@ -1163,7 +1321,7 @@ CLASS="chapter"
 ><A
 NAME="reference"
 ></A
->Chapter 3. General pisg options</H1
+>General pisg options</H1
 ><H1
 ><A
 NAME="Channel"
@@ -1184,6 +1342,12 @@ NAME="AEN126"
 ></A
 ><H2
 >Synopsis</H2
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
 ><PRE
 CLASS="programlisting"
 >&#13;      
@@ -1194,6 +1358,9 @@ CLASS="programlisting"
         &#60;/channel&#62;
       
      </PRE
+></TD
+></TR
+></TABLE
 ></DIV
 ><DIV
 CLASS="refsect1"
@@ -1241,6 +1408,12 @@ NAME="AEN141"
 ></A
 ><H2
 >Synopsis</H2
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
 ><PRE
 CLASS="programlisting"
 >&#13;      
@@ -1253,6 +1426,9 @@ CLASS="programlisting"
         &#60;set Format="mIRC"&#62;
       
     </PRE
+></TD
+></TR
+></TABLE
 ></DIV
 ><DIV
 CLASS="refsect1"
@@ -1306,6 +1482,12 @@ NAME="AEN157"
 ></A
 ><H2
 >Synopsis</H2
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
 ><PRE
 CLASS="programlisting"
 >&#13;      
@@ -1318,6 +1500,9 @@ CLASS="programlisting"
         &#60;set Network="Quakenet"&#62;
       
     </PRE
+></TD
+></TR
+></TABLE
 ></DIV
 ><DIV
 CLASS="refsect1"
@@ -1364,6 +1549,12 @@ NAME="AEN172"
 ></A
 ><H2
 >Synopsis</H2
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
 ><PRE
 CLASS="programlisting"
 >&#13;      
@@ -1376,6 +1567,9 @@ CLASS="programlisting"
         &#60;set OutputFile="mychan.html"&#62;
       
     </PRE
+></TD
+></TR
+></TABLE
 ></DIV
 ><DIV
 CLASS="refsect1"
@@ -1422,6 +1616,12 @@ NAME="AEN187"
 ></A
 ><H2
 >Synopsis</H2
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
 ><PRE
 CLASS="programlisting"
 >&#13;      
@@ -1435,6 +1635,9 @@ CLASS="programlisting"
         &#60;set OutputTag="-week"&#62;
       
     </PRE
+></TD
+></TR
+></TABLE
 ></DIV
 ><DIV
 CLASS="refsect1"
@@ -1458,13 +1661,22 @@ HREF="#NFiles"
 >NFiles</A
 > (-nf). Example:
 
-    <PRE
+    <TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
 CLASS="programlisting"
 >&#13;      
       $ pisg -co pisg.conf
       $ pisg -co pisg.conf -nf 8 -t -week
       
     </PRE
+></TD
+></TR
+></TABLE
 >
 
     Leaving out the <B
@@ -1506,6 +1718,12 @@ NAME="AEN206"
 ></A
 ><H2
 >Synopsis</H2
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
 ><PRE
 CLASS="programlisting"
 >&#13;      
@@ -1517,6 +1735,9 @@ CLASS="programlisting"
         &#60;set Logfile="foo.log"&#62;
       
     </PRE
+></TD
+></TR
+></TABLE
 ></DIV
 ><DIV
 CLASS="refsect1"
@@ -1573,6 +1794,12 @@ NAME="AEN223"
 ></A
 ><H2
 >Synopsis</H2
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
 ><PRE
 CLASS="programlisting"
 >&#13;      
@@ -1584,6 +1811,9 @@ CLASS="programlisting"
         &#60;set LogDir="dailylogs/"&#62;
       
     </PRE
+></TD
+></TR
+></TABLE
 ></DIV
 ><DIV
 CLASS="refsect1"
@@ -1647,6 +1877,12 @@ NAME="AEN242"
 ></A
 ><H2
 >Synopsis</H2
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
 ><PRE
 CLASS="programlisting"
 >&#13;      
@@ -1659,6 +1895,9 @@ CLASS="programlisting"
         &#60;set NFiles="8"&#62;
       
     </PRE
+></TD
+></TR
+></TABLE
 ></DIV
 ><DIV
 CLASS="refsect1"
@@ -1713,6 +1952,12 @@ NAME="AEN259"
 ></A
 ><H2
 >Synopsis</H2
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
 ><PRE
 CLASS="programlisting"
 >&#13;      
@@ -1725,6 +1970,9 @@ CLASS="programlisting"
         &#60;set Maintainer="Benny"&#62;
       
     </PRE
+></TD
+></TR
+></TABLE
 ></DIV
 ><DIV
 CLASS="refsect1"
@@ -1782,6 +2030,12 @@ NAME="AEN276"
 ></A
 ><H2
 >Synopsis</H2
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
 ><PRE
 CLASS="programlisting"
 >&#13;      
@@ -1794,6 +2048,9 @@ CLASS="programlisting"
         &#60;set ColorScheme="default"&#62;
       
     </PRE
+></TD
+></TR
+></TABLE
 ></DIV
 ><DIV
 CLASS="refsect1"
@@ -1857,6 +2114,12 @@ NAME="AEN294"
 ></A
 ><H2
 >Synopsis</H2
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
 ><PRE
 CLASS="programlisting"
 >&#13;      
@@ -1870,6 +2133,9 @@ CLASS="programlisting"
         &#60;set AltColorScheme="layout/darkgalaxy.css layout/justgrey.css"&#62;
       
     </PRE
+></TD
+></TR
+></TABLE
 ></DIV
 ><DIV
 CLASS="refsect1"
@@ -1924,6 +2190,12 @@ NAME="AEN311"
 ></A
 ><H2
 >Synopsis</H2
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
 ><PRE
 CLASS="programlisting"
 >&#13;      
@@ -1937,6 +2209,9 @@ CLASS="programlisting"
         &#60;set Lang="FR,SE"&#62;
       
     </PRE
+></TD
+></TR
+></TABLE
 ></DIV
 ><DIV
 CLASS="refsect1"
@@ -2018,6 +2293,12 @@ NAME="AEN327"
 ></A
 ><H2
 >Synopsis</H2
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
 ><PRE
 CLASS="programlisting"
 >&#13;      
@@ -2031,6 +2312,9 @@ CLASS="programlisting"
         &#60;set PageHead="someheader.txt"&#62;
       
     </PRE
+></TD
+></TR
+></TABLE
 ></DIV
 ><DIV
 CLASS="refsect1"
@@ -2084,6 +2368,12 @@ NAME="AEN343"
 ></A
 ><H2
 >Synopsis</H2
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
 ><PRE
 CLASS="programlisting"
 >&#13;      
@@ -2097,6 +2387,9 @@ CLASS="programlisting"
         &#60;set PageFoot="somefooter.txt"&#62;
       
     </PRE
+></TD
+></TR
+></TABLE
 ></DIV
 ><DIV
 CLASS="refsect1"
@@ -2149,6 +2442,12 @@ NAME="AEN359"
 ></A
 ><H2
 >Synopsis</H2
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
 ><PRE
 CLASS="programlisting"
 >&#13;      
@@ -2161,6 +2460,9 @@ CLASS="programlisting"
         &#60;set LogPrefix="logjanuary"&#62;
       
     </PRE
+></TD
+></TR
+></TABLE
 ></DIV
 ><DIV
 CLASS="refsect1"
@@ -2208,12 +2510,21 @@ NAME="AEN374"
 ></A
 ><H2
 >Synopsis</H2
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
 ><PRE
 CLASS="programlisting"
 >&#13;      
         &#60;set LogSuffix="\.\d\d([A-Za-z]+)\d\d\d\d||\.(\d\d)[A-Za-z]+\d\d\d\d||\.\d\d[A-Za-z]+(\d\d\d\d)"&#62;
       
      </PRE
+></TD
+></TR
+></TABLE
 ></DIV
 ><DIV
 CLASS="refsect1"
@@ -2264,12 +2575,21 @@ NAME="AEN390"
 ></A
 ><H2
 >Synopsis</H2
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
 ><PRE
 CLASS="programlisting"
 >&#13;      
         &#60;set Silent="1"&#62;
       
     </PRE
+></TD
+></TR
+></TABLE
 ></DIV
 ><DIV
 CLASS="refsect1"
@@ -2318,6 +2638,12 @@ NAME="AEN405"
 ></A
 ><H2
 >Synopsis</H2
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
 ><PRE
 CLASS="programlisting"
 >&#13;      
@@ -2325,6 +2651,9 @@ CLASS="programlisting"
         &#60;set CacheDir="/path/to/pisg_cache"&#62;
       
     </PRE
+></TD
+></TR
+></TABLE
 ></DIV
 ><DIV
 CLASS="refsect1"
@@ -2377,7 +2706,7 @@ CLASS="chapter"
 ><A
 NAME="reference-stats"
 ></A
->Chapter 4. Options for various statistics features</H1
+>Options for various statistics features</H1
 ><H1
 ><A
 NAME="DailyActivity"
@@ -2398,6 +2727,12 @@ NAME="AEN426"
 ></A
 ><H2
 >Synopsis</H2
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
 ><PRE
 CLASS="programlisting"
 >&#13;      
@@ -2410,6 +2745,9 @@ CLASS="programlisting"
         &#60;set DailyActivity="31"&#62;
       
     </PRE
+></TD
+></TR
+></TABLE
 ></DIV
 ><DIV
 CLASS="refsect1"
@@ -2454,6 +2792,12 @@ NAME="AEN440"
 ></A
 ><H2
 >Synopsis</H2
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
 ><PRE
 CLASS="programlisting"
 >&#13;      
@@ -2466,6 +2810,9 @@ CLASS="programlisting"
         &#60;set ShowActiveTimes="1"&#62;
       
     </PRE
+></TD
+></TR
+></TABLE
 ></DIV
 ><DIV
 CLASS="refsect1"
@@ -2509,6 +2856,12 @@ NAME="AEN454"
 ></A
 ><H2
 >Synopsis</H2
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
 ><PRE
 CLASS="programlisting"
 >&#13;      
@@ -2521,6 +2874,9 @@ CLASS="programlisting"
         &#60;set ShowActiveNicks="1"&#62;
       
     </PRE
+></TD
+></TR
+></TABLE
 ></DIV
 ><DIV
 CLASS="refsect1"
@@ -2564,6 +2920,12 @@ NAME="AEN468"
 ></A
 ><H2
 >Synopsis</H2
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
 ><PRE
 CLASS="programlisting"
 >&#13;      
@@ -2576,6 +2938,9 @@ CLASS="programlisting"
         &#60;set ShowBigNumbers="1"&#62;
       
     </PRE
+></TD
+></TR
+></TABLE
 ></DIV
 ><DIV
 CLASS="refsect1"
@@ -2620,6 +2985,12 @@ NAME="AEN482"
 ></A
 ><H2
 >Synopsis</H2
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
 ><PRE
 CLASS="programlisting"
 >&#13;      
@@ -2632,6 +3003,9 @@ CLASS="programlisting"
         &#60;set ShowTopics="1"&#62;
       
     </PRE
+></TD
+></TR
+></TABLE
 ></DIV
 ><DIV
 CLASS="refsect1"
@@ -2675,6 +3049,12 @@ NAME="AEN496"
 ></A
 ><H2
 >Synopsis</H2
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
 ><PRE
 CLASS="programlisting"
 >&#13;      
@@ -2687,6 +3067,9 @@ CLASS="programlisting"
         &#60;set ShowLines="1"&#62;
       
     </PRE
+></TD
+></TR
+></TABLE
 ></DIV
 ><DIV
 CLASS="refsect1"
@@ -2731,6 +3114,12 @@ NAME="AEN510"
 ></A
 ><H2
 >Synopsis</H2
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
 ><PRE
 CLASS="programlisting"
 >&#13;      
@@ -2743,6 +3132,9 @@ CLASS="programlisting"
         &#60;set ShowWpl="1"&#62;
       
     </PRE
+></TD
+></TR
+></TABLE
 ></DIV
 ><DIV
 CLASS="refsect1"
@@ -2787,6 +3179,12 @@ NAME="AEN524"
 ></A
 ><H2
 >Synopsis</H2
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
 ><PRE
 CLASS="programlisting"
 >&#13;      
@@ -2799,6 +3197,9 @@ CLASS="programlisting"
         &#60;set ShowCpl="1"&#62;
       
     </PRE
+></TD
+></TR
+></TABLE
 ></DIV
 ><DIV
 CLASS="refsect1"
@@ -2843,6 +3244,12 @@ NAME="AEN538"
 ></A
 ><H2
 >Synopsis</H2
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
 ><PRE
 CLASS="programlisting"
 >&#13;      
@@ -2855,6 +3262,9 @@ CLASS="programlisting"
         &#60;set ShowWords="1"&#62;
       
     </PRE
+></TD
+></TR
+></TABLE
 ></DIV
 ><DIV
 CLASS="refsect1"
@@ -2902,6 +3312,12 @@ NAME="AEN553"
 ></A
 ><H2
 >Synopsis</H2
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
 ><PRE
 CLASS="programlisting"
 >&#13;      
@@ -2914,6 +3330,9 @@ CLASS="programlisting"
         &#60;set ShowLastSeen="1"&#62;
       
     </PRE
+></TD
+></TR
+></TABLE
 ></DIV
 ><DIV
 CLASS="refsect1"
@@ -2957,6 +3376,12 @@ NAME="AEN567"
 ></A
 ><H2
 >Synopsis</H2
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
 ><PRE
 CLASS="programlisting"
 >&#13;      
@@ -2969,6 +3394,9 @@ CLASS="programlisting"
         &#60;set ShowTime="1"&#62;
       
     </PRE
+></TD
+></TR
+></TABLE
 ></DIV
 ><DIV
 CLASS="refsect1"
@@ -3013,6 +3441,12 @@ NAME="AEN581"
 ></A
 ><H2
 >Synopsis</H2
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
 ><PRE
 CLASS="programlisting"
 >&#13;      
@@ -3025,6 +3459,9 @@ CLASS="programlisting"
         &#60;set ShowLineTime="1"&#62;
       
     </PRE
+></TD
+></TR
+></TABLE
 ></DIV
 ><DIV
 CLASS="refsect1"
@@ -3071,6 +3508,12 @@ NAME="AEN595"
 ></A
 ><H2
 >Synopsis</H2
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
 ><PRE
 CLASS="programlisting"
 >&#13;      
@@ -3083,6 +3526,9 @@ CLASS="programlisting"
         &#60;set ShowWordTime="1"&#62;
       
     </PRE
+></TD
+></TR
+></TABLE
 ></DIV
 ><DIV
 CLASS="refsect1"
@@ -3129,6 +3575,12 @@ NAME="AEN609"
 ></A
 ><H2
 >Synopsis</H2
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
 ><PRE
 CLASS="programlisting"
 >&#13;      
@@ -3141,6 +3593,9 @@ CLASS="programlisting"
         &#60;set ShowRandQuote="1"&#62;
       
     </PRE
+></TD
+></TR
+></TABLE
 ></DIV
 ><DIV
 CLASS="refsect1"
@@ -3185,6 +3640,12 @@ NAME="AEN623"
 ></A
 ><H2
 >Synopsis</H2
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
 ><PRE
 CLASS="programlisting"
 >&#13;      
@@ -3197,6 +3658,9 @@ CLASS="programlisting"
         &#60;set ShowLegend="1"&#62;
       
     </PRE
+></TD
+></TR
+></TABLE
 ></DIV
 ><DIV
 CLASS="refsect1"
@@ -3240,6 +3704,12 @@ NAME="AEN637"
 ></A
 ><H2
 >Synopsis</H2
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
 ><PRE
 CLASS="programlisting"
 >&#13;      
@@ -3252,6 +3722,9 @@ CLASS="programlisting"
         &#60;set ShowKickLine="1"&#62;
       
     </PRE
+></TD
+></TR
+></TABLE
 ></DIV
 ><DIV
 CLASS="refsect1"
@@ -3295,6 +3768,12 @@ NAME="AEN651"
 ></A
 ><H2
 >Synopsis</H2
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
 ><PRE
 CLASS="programlisting"
 >&#13;      
@@ -3307,6 +3786,9 @@ CLASS="programlisting"
         &#60;set ShowActionLine="1"&#62;
       
     </PRE
+></TD
+></TR
+></TABLE
 ></DIV
 ><DIV
 CLASS="refsect1"
@@ -3350,6 +3832,12 @@ NAME="AEN665"
 ></A
 ><H2
 >Synopsis</H2
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
 ><PRE
 CLASS="programlisting"
 >&#13;      
@@ -3362,6 +3850,9 @@ CLASS="programlisting"
         &#60;set ShowShoutLine="1"&#62;
       
     </PRE
+></TD
+></TR
+></TABLE
 ></DIV
 ><DIV
 CLASS="refsect1"
@@ -3405,6 +3896,12 @@ NAME="AEN679"
 ></A
 ><H2
 >Synopsis</H2
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
 ><PRE
 CLASS="programlisting"
 >&#13;      
@@ -3417,6 +3914,9 @@ CLASS="programlisting"
         &#60;set ShowFoulDecimals="1"&#62;
       
     </PRE
+></TD
+></TR
+></TABLE
 ></DIV
 ><DIV
 CLASS="refsect1"
@@ -3460,6 +3960,12 @@ NAME="AEN693"
 ></A
 ><H2
 >Synopsis</H2
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
 ><PRE
 CLASS="programlisting"
 >&#13;      
@@ -3472,6 +3978,9 @@ CLASS="programlisting"
         &#60;set ShowFoulLine="1"&#62;
       
     </PRE
+></TD
+></TR
+></TABLE
 ></DIV
 ><DIV
 CLASS="refsect1"
@@ -3515,6 +4024,12 @@ NAME="AEN707"
 ></A
 ><H2
 >Synopsis</H2
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
 ><PRE
 CLASS="programlisting"
 >&#13;      
@@ -3527,6 +4042,9 @@ CLASS="programlisting"
         &#60;set ShowViolentLines="1"&#62;
       
     </PRE
+></TD
+></TR
+></TABLE
 ></DIV
 ><DIV
 CLASS="refsect1"
@@ -3570,6 +4088,12 @@ NAME="AEN721"
 ></A
 ><H2
 >Synopsis</H2
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
 ><PRE
 CLASS="programlisting"
 >&#13;      
@@ -3582,6 +4106,9 @@ CLASS="programlisting"
         &#60;set ShowMuw="1"&#62;
       
     </PRE
+></TD
+></TR
+></TABLE
 ></DIV
 ><DIV
 CLASS="refsect1"
@@ -3629,6 +4156,12 @@ NAME="AEN736"
 ></A
 ><H2
 >Synopsis</H2
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
 ><PRE
 CLASS="programlisting"
 >&#13;      
@@ -3641,6 +4174,9 @@ CLASS="programlisting"
         &#60;set ShowMrn="1"&#62;
       
     </PRE
+></TD
+></TR
+></TABLE
 ></DIV
 ><DIV
 CLASS="refsect1"
@@ -3688,6 +4224,12 @@ NAME="AEN751"
 ></A
 ><H2
 >Synopsis</H2
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
 ><PRE
 CLASS="programlisting"
 >&#13;      
@@ -3700,6 +4242,9 @@ CLASS="programlisting"
         &#60;set ShowMru="1"&#62;
       
     </PRE
+></TD
+></TR
+></TABLE
 ></DIV
 ><DIV
 CLASS="refsect1"
@@ -3747,6 +4292,12 @@ NAME="AEN766"
 ></A
 ><H2
 >Synopsis</H2
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
 ><PRE
 CLASS="programlisting"
 >&#13;      
@@ -3759,6 +4310,9 @@ CLASS="programlisting"
         &#60;set ShowCharts="1"&#62;
       
     </PRE
+></TD
+></TR
+></TABLE
 ></DIV
 ><DIV
 CLASS="refsect1"
@@ -3809,6 +4363,12 @@ NAME="AEN782"
 ></A
 ><H2
 >Synopsis</H2
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
 ><PRE
 CLASS="programlisting"
 >&#13;      
@@ -3821,6 +4381,9 @@ CLASS="programlisting"
         &#60;set ShowOps="0"&#62;
       
     </PRE
+></TD
+></TR
+></TABLE
 ></DIV
 ><DIV
 CLASS="refsect1"
@@ -3866,6 +4429,12 @@ NAME="AEN796"
 ></A
 ><H2
 >Synopsis</H2
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
 ><PRE
 CLASS="programlisting"
 >&#13;      
@@ -3878,6 +4447,9 @@ CLASS="programlisting"
         &#60;set ShowVoices="1"&#62;
       
     </PRE
+></TD
+></TR
+></TABLE
 ></DIV
 ><DIV
 CLASS="refsect1"
@@ -3922,6 +4494,12 @@ NAME="AEN810"
 ></A
 ><H2
 >Synopsis</H2
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
 ><PRE
 CLASS="programlisting"
 >&#13;      
@@ -3934,6 +4512,9 @@ CLASS="programlisting"
         &#60;set ShowHalfops="1"&#62;
       
     </PRE
+></TD
+></TR
+></TABLE
 ></DIV
 ><DIV
 CLASS="refsect1"
@@ -3978,6 +4559,12 @@ NAME="AEN824"
 ></A
 ><H2
 >Synopsis</H2
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
 ><PRE
 CLASS="programlisting"
 >&#13;      
@@ -3990,6 +4577,9 @@ CLASS="programlisting"
         &#60;set ShowMostNicks="1"&#62;
       
     </PRE
+></TD
+></TR
+></TABLE
 ></DIV
 ><DIV
 CLASS="refsect1"
@@ -4053,6 +4643,12 @@ NAME="AEN843"
 ></A
 ><H2
 >Synopsis</H2
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
 ><PRE
 CLASS="programlisting"
 >&#13;      
@@ -4065,6 +4661,9 @@ CLASS="programlisting"
         &#60;set ShowActiveGenders="1"&#62;
       
     </PRE
+></TD
+></TR
+></TABLE
 ></DIV
 ><DIV
 CLASS="refsect1"
@@ -4077,7 +4676,11 @@ NAME="AEN845"
 >&#13;    Setting this option will make pisg create statistics on which gender
     (female/male/bot) talked most (see the "sex" option in <A
 HREF="#user-options"
->Section 2.2</A
+>the Section called <I
+>Specifying user options</I
+> in the Chapter called <I
+>Setting up pisg for the first time</I
+></A
 >). See also <A
 HREF="#NickLimit"
 >NickLimit</A
@@ -4114,6 +4717,12 @@ NAME="AEN859"
 ></A
 ><H2
 >Synopsis</H2
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
 ><PRE
 CLASS="programlisting"
 >&#13;      
@@ -4126,6 +4735,9 @@ CLASS="programlisting"
         &#60;set ShowSmileys="1"&#62;
       
     </PRE
+></TD
+></TR
+></TABLE
 ></DIV
 ><DIV
 CLASS="refsect1"
@@ -4172,6 +4784,12 @@ NAME="AEN874"
 ></A
 ><H2
 >Synopsis</H2
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
 ><PRE
 CLASS="programlisting"
 >&#13;      
@@ -4184,6 +4802,9 @@ CLASS="programlisting"
         &#60;set ShowKarma="1"&#62;
       
     </PRE
+></TD
+></TR
+></TABLE
 ></DIV
 ><DIV
 CLASS="refsect1"
@@ -4236,6 +4857,12 @@ NAME="AEN890"
 ></A
 ><H2
 >Synopsis</H2
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
 ><PRE
 CLASS="programlisting"
 >&#13;      
@@ -4248,6 +4875,9 @@ CLASS="programlisting"
         &#60;set ShowMostActiveByHour="1"&#62;
       
     </PRE
+></TD
+></TR
+></TABLE
 ></DIV
 ><DIV
 CLASS="refsect1"
@@ -4299,6 +4929,12 @@ NAME="AEN906"
 ></A
 ><H2
 >Synopsis</H2
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
 ><PRE
 CLASS="programlisting"
 >&#13;      
@@ -4311,6 +4947,9 @@ CLASS="programlisting"
         &#60;set ShowOnlyTop="1"&#62;
       
     </PRE
+></TD
+></TR
+></TABLE
 ></DIV
 ><DIV
 CLASS="refsect1"
@@ -4367,6 +5006,12 @@ NAME="AEN923"
 ></A
 ><H2
 >Synopsis</H2
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
 ><PRE
 CLASS="programlisting"
 >&#13;      
@@ -4380,6 +5025,9 @@ CLASS="programlisting"
         &#60;set ShowMostActiveByHourGraph="1"&#62;
       
     </PRE
+></TD
+></TR
+></TABLE
 ></DIV
 ><DIV
 CLASS="refsect1"
@@ -4427,12 +5075,21 @@ NAME="AEN938"
 ></A
 ><H2
 >Synopsis</H2
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
 ><PRE
 CLASS="programlisting"
 >&#13;      
         &#60;set IgnoreWords="there about"&#62;
       
     </PRE
+></TD
+></TR
+></TABLE
 ></DIV
 ><DIV
 CLASS="refsect1"
@@ -4479,12 +5136,21 @@ NAME="AEN952"
 ></A
 ><H2
 >Synopsis</H2
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
 ><PRE
 CLASS="programlisting"
 >&#13;      
         &#60;set NoIgnoredQuotes="1"&#62;
       
     </PRE
+></TD
+></TR
+></TABLE
 ></DIV
 ><DIV
 CLASS="refsect1"
@@ -4528,12 +5194,21 @@ NAME="AEN966"
 ></A
 ><H2
 >Synopsis</H2
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
 ><PRE
 CLASS="programlisting"
 >&#13;      
         &#60;set FoulWords="ass fuck bitch"&#62;
       
     </PRE
+></TD
+></TR
+></TABLE
 ></DIV
 ><DIV
 CLASS="refsect1"
@@ -4580,12 +5255,21 @@ NAME="AEN980"
 ></A
 ><H2
 >Synopsis</H2
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
 ><PRE
 CLASS="programlisting"
 >&#13;      
         &#60;set ViolentWords="slaps beats kick"&#62;
       
     </PRE
+></TD
+></TR
+></TABLE
 ></DIV
 ><DIV
 CLASS="refsect1"
@@ -4631,6 +5315,12 @@ NAME="AEN994"
 ></A
 ><H2
 >Synopsis</H2
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
 ><PRE
 CLASS="programlisting"
 >&#13;      
@@ -4643,6 +5333,9 @@ CLASS="programlisting"
         &#60;set MinQuote="5"&#62;
       
     </PRE
+></TD
+></TR
+></TABLE
 ></DIV
 ><DIV
 CLASS="refsect1"
@@ -4692,6 +5385,12 @@ NAME="AEN1009"
 ></A
 ><H2
 >Synopsis</H2
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
 ><PRE
 CLASS="programlisting"
 >&#13;      
@@ -4704,6 +5403,9 @@ CLASS="programlisting"
         &#60;set MaxQuote="100"&#62;
       
     </PRE
+></TD
+></TR
+></TABLE
 ></DIV
 ><DIV
 CLASS="refsect1"
@@ -4752,6 +5454,12 @@ NAME="AEN1024"
 ></A
 ><H2
 >Synopsis</H2
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
 ><PRE
 CLASS="programlisting"
 >&#13;      
@@ -4764,6 +5472,9 @@ CLASS="programlisting"
         &#60;set WordLength="2"&#62;
       
     </PRE
+></TD
+></TR
+></TABLE
 ></DIV
 ><DIV
 CLASS="refsect1"
@@ -4808,6 +5519,12 @@ NAME="AEN1038"
 ></A
 ><H2
 >Synopsis</H2
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
 ><PRE
 CLASS="programlisting"
 >&#13;      
@@ -4820,6 +5537,9 @@ CLASS="programlisting"
         &#60;set QuoteWidth="48"&#62;
       
     </PRE
+></TD
+></TR
+></TABLE
 ></DIV
 ><DIV
 CLASS="refsect1"
@@ -4865,6 +5585,12 @@ NAME="AEN1052"
 ></A
 ><H2
 >Synopsis</H2
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
 ><PRE
 CLASS="programlisting"
 >&#13;      
@@ -4877,6 +5603,9 @@ CLASS="programlisting"
         &#60;set BigNumbersThreshold="sqrt"&#62;
       
     </PRE
+></TD
+></TR
+></TABLE
 ></DIV
 ><DIV
 CLASS="refsect1"
@@ -4926,6 +5655,12 @@ NAME="AEN1067"
 ></A
 ><H2
 >Synopsis</H2
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
 ><PRE
 CLASS="programlisting"
 >&#13;      
@@ -4938,6 +5673,9 @@ CLASS="programlisting"
         &#60;set ActiveNicks="10"&#62;
       
     </PRE
+></TD
+></TR
+></TABLE
 ></DIV
 ><DIV
 CLASS="refsect1"
@@ -4981,6 +5719,12 @@ NAME="AEN1081"
 ></A
 ><H2
 >Synopsis</H2
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
 ><PRE
 CLASS="programlisting"
 >&#13;      
@@ -4993,6 +5737,9 @@ CLASS="programlisting"
         &#60;set ActiveNicks2="10"&#62;
       
     </PRE
+></TD
+></TR
+></TABLE
 ></DIV
 ><DIV
 CLASS="refsect1"
@@ -5036,6 +5783,12 @@ NAME="AEN1095"
 ></A
 ><H2
 >Synopsis</H2
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
 ><PRE
 CLASS="programlisting"
 >&#13;      
@@ -5048,6 +5801,9 @@ CLASS="programlisting"
         &#60;set ActiveNicksByHour="10"&#62;
       
     </PRE
+></TD
+></TR
+></TABLE
 ></DIV
 ><DIV
 CLASS="refsect1"
@@ -5091,6 +5847,12 @@ NAME="AEN1109"
 ></A
 ><H2
 >Synopsis</H2
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
 ><PRE
 CLASS="programlisting"
 >&#13;      
@@ -5103,6 +5865,9 @@ CLASS="programlisting"
         &#60;set MostNicksHistory="10"&#62;
       
     </PRE
+></TD
+></TR
+></TABLE
 ></DIV
 ><DIV
 CLASS="refsect1"
@@ -5153,6 +5918,12 @@ NAME="AEN1125"
 ></A
 ><H2
 >Synopsis</H2
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
 ><PRE
 CLASS="programlisting"
 >&#13;      
@@ -5165,6 +5936,9 @@ CLASS="programlisting"
         &#60;set MostNicksVerbose="1"&#62;
       
     </PRE
+></TD
+></TR
+></TABLE
 ></DIV
 ><DIV
 CLASS="refsect1"
@@ -5219,6 +5993,12 @@ NAME="AEN1142"
 ></A
 ><H2
 >Synopsis</H2
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
 ><PRE
 CLASS="programlisting"
 >&#13;      
@@ -5231,6 +6011,9 @@ CLASS="programlisting"
         &#60;set TopicHistory="10"&#62;
       
     </PRE
+></TD
+></TR
+></TABLE
 ></DIV
 ><DIV
 CLASS="refsect1"
@@ -5274,6 +6057,12 @@ NAME="AEN1156"
 ></A
 ><H2
 >Synopsis</H2
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
 ><PRE
 CLASS="programlisting"
 >&#13;      
@@ -5286,6 +6075,9 @@ CLASS="programlisting"
         &#60;set UrlHistory="10"&#62;
       
     </PRE
+></TD
+></TR
+></TABLE
 ></DIV
 ><DIV
 CLASS="refsect1"
@@ -5332,6 +6124,12 @@ NAME="AEN1171"
 ></A
 ><H2
 >Synopsis</H2
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
 ><PRE
 CLASS="programlisting"
 >&#13;      
@@ -5344,6 +6142,9 @@ CLASS="programlisting"
         &#60;set ChartsHistory="5"&#62;
       
     </PRE
+></TD
+></TR
+></TABLE
 ></DIV
 ><DIV
 CLASS="refsect1"
@@ -5394,6 +6195,12 @@ NAME="AEN1187"
 ></A
 ><H2
 >Synopsis</H2
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
 ><PRE
 CLASS="programlisting"
 >&#13;      
@@ -5404,6 +6211,9 @@ CLASS="programlisting"
         &#60;/channel&#62;
       
     </PRE
+></TD
+></TR
+></TABLE
 ></DIV
 ><DIV
 CLASS="refsect1"
@@ -5455,6 +6265,12 @@ NAME="AEN1203"
 ></A
 ><H2
 >Synopsis</H2
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
 ><PRE
 CLASS="programlisting"
 >&#13;      
@@ -5467,6 +6283,9 @@ CLASS="programlisting"
         &#60;set WordHistory="15"&#62;
       
     </PRE
+></TD
+></TR
+></TABLE
 ></DIV
 ><DIV
 CLASS="refsect1"
@@ -5513,6 +6332,12 @@ NAME="AEN1218"
 ></A
 ><H2
 >Synopsis</H2
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
 ><PRE
 CLASS="programlisting"
 >&#13;      
@@ -5525,6 +6350,9 @@ CLASS="programlisting"
         &#60;set NickHistory="15"&#62;
       
     </PRE
+></TD
+></TR
+></TABLE
 ></DIV
 ><DIV
 CLASS="refsect1"
@@ -5571,6 +6399,12 @@ NAME="AEN1233"
 ></A
 ><H2
 >Synopsis</H2
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
 ><PRE
 CLASS="programlisting"
 >&#13;      
@@ -5583,6 +6417,9 @@ CLASS="programlisting"
         &#60;set SmileyHistory="15"&#62;
       
     </PRE
+></TD
+></TR
+></TABLE
 ></DIV
 ><DIV
 CLASS="refsect1"
@@ -5629,6 +6466,12 @@ NAME="AEN1248"
 ></A
 ><H2
 >Synopsis</H2
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
 ><PRE
 CLASS="programlisting"
 >&#13;      
@@ -5641,6 +6484,9 @@ CLASS="programlisting"
         &#60;set KarmaHistory="15"&#62;
       
     </PRE
+></TD
+></TR
+></TABLE
 ></DIV
 ><DIV
 CLASS="refsect1"
@@ -5690,12 +6536,21 @@ NAME="AEN1264"
 ></A
 ><H2
 >Synopsis</H2
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
 ><PRE
 CLASS="programlisting"
 >&#13;      
         &#60;set NickTracking="1"&#62;
       
     </PRE
+></TD
+></TR
+></TABLE
 ></DIV
 ><DIV
 CLASS="refsect1"
@@ -5749,12 +6604,21 @@ NAME="AEN1280"
 ></A
 ><H2
 >Synopsis</H2
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
 ><PRE
 CLASS="programlisting"
 >&#13;      
         &#60;set NickLimit="0"&#62;
       
     </PRE
+></TD
+></TR
+></TABLE
 ></DIV
 ><DIV
 CLASS="refsect1"
@@ -5811,6 +6675,12 @@ NAME="AEN1297"
 ></A
 ><H2
 >Synopsis</H2
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
 ><PRE
 CLASS="programlisting"
 >&#13;      
@@ -5823,6 +6693,9 @@ CLASS="programlisting"
         &#60;set SortByWords="1"&#62;
       
     </PRE
+></TD
+></TR
+></TABLE
 ></DIV
 ><DIV
 CLASS="refsect1"
@@ -5853,7 +6726,7 @@ CLASS="chapter"
 ><A
 NAME="reference-pictures"
 ></A
->Chapter 5. Picture options</H1
+>Picture options</H1
 ><H1
 ><A
 NAME="PicLocation"
@@ -5874,12 +6747,21 @@ NAME="AEN1313"
 ></A
 ><H2
 >Synopsis</H2
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
 ><PRE
 CLASS="programlisting"
 >&#13;      
         &#60;set PicLocation="gfx/"&#62;
       
     </PRE
+></TD
+></TR
+></TABLE
 ></DIV
 ><DIV
 CLASS="refsect1"
@@ -5923,6 +6805,12 @@ NAME="AEN1327"
 ></A
 ><H2
 >Synopsis</H2
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
 ><PRE
 CLASS="programlisting"
 >&#13;      
@@ -5934,6 +6822,9 @@ CLASS="programlisting"
         &#60;set UserPics="3"&#62;
       
     </PRE
+></TD
+></TR
+></TABLE
 ></DIV
 ><DIV
 CLASS="refsect1"
@@ -5992,6 +6883,12 @@ NAME="AEN1344"
 ></A
 ><H2
 >Synopsis</H2
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
 ><PRE
 CLASS="programlisting"
 >&#13;      
@@ -6004,6 +6901,9 @@ CLASS="programlisting"
         &#60;set ImagePath="users/"&#62;
       
     </PRE
+></TD
+></TR
+></TABLE
 ></DIV
 ><DIV
 CLASS="refsect1"
@@ -6051,6 +6951,12 @@ NAME="AEN1359"
 ></A
 ><H2
 >Synopsis</H2
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
 ><PRE
 CLASS="programlisting"
 >&#13;      
@@ -6063,6 +6969,9 @@ CLASS="programlisting"
         &#60;set DefaultPic="unknown.gif"&#62;
       
     </PRE
+></TD
+></TR
+></TABLE
 ></DIV
 ><DIV
 CLASS="refsect1"
@@ -6117,6 +7026,12 @@ NAME="AEN1376"
 ></A
 ><H2
 >Synopsis</H2
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
 ><PRE
 CLASS="programlisting"
 >&#13;      
@@ -6130,6 +7045,9 @@ CLASS="programlisting"
         &#60;set DefaultPic="default-??.gif"&#62;
       
     </PRE
+></TD
+></TR
+></TABLE
 ></DIV
 ><DIV
 CLASS="refsect1"
@@ -6191,6 +7109,12 @@ NAME="AEN1394"
 ></A
 ><H2
 >Synopsis</H2
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
 ><PRE
 CLASS="programlisting"
 >&#13;      
@@ -6203,6 +7127,9 @@ CLASS="programlisting"
         &#60;set PicWidth="500"&#62;
       
     </PRE
+></TD
+></TR
+></TABLE
 ></DIV
 ><DIV
 CLASS="refsect1"
@@ -6253,6 +7180,12 @@ NAME="AEN1410"
 ></A
 ><H2
 >Synopsis</H2
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
 ><PRE
 CLASS="programlisting"
 >&#13;      
@@ -6265,6 +7198,9 @@ CLASS="programlisting"
         &#60;set PicHeight="500"&#62;
       
     </PRE
+></TD
+></TR
+></TABLE
 ></DIV
 ><DIV
 CLASS="refsect1"
@@ -6302,7 +7238,7 @@ CLASS="chapter"
 ><A
 NAME="reference-misc"
 ></A
->Chapter 6. Misc options</H1
+>Misc options</H1
 ><H1
 ><A
 NAME="Charset"
@@ -6323,6 +7259,12 @@ NAME="AEN1428"
 ></A
 ><H2
 >Synopsis</H2
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
 ><PRE
 CLASS="programlisting"
 >&#13;      
@@ -6335,6 +7277,9 @@ CLASS="programlisting"
         &#60;set Charset="iso-8859-15"&#62;
       
     </PRE
+></TD
+></TR
+></TABLE
 ></DIV
 ><DIV
 CLASS="refsect1"
@@ -6386,6 +7331,12 @@ NAME="AEN1443"
 ></A
 ><H2
 >Synopsis</H2
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
 ><PRE
 CLASS="programlisting"
 >&#13;      
@@ -6400,6 +7351,9 @@ CLASS="programlisting"
         &#60;set LogCharset="iso-8859-15"&#62;
       
     </PRE
+></TD
+></TR
+></TABLE
 ></DIV
 ><DIV
 CLASS="refsect1"
@@ -6450,6 +7404,12 @@ NAME="AEN1459"
 ></A
 ><H2
 >Synopsis</H2
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
 ><PRE
 CLASS="programlisting"
 >&#13;      
@@ -6466,6 +7426,9 @@ CLASS="programlisting"
         &#60;set LogCharsetFallback="iso-8859-15"&#62;
       
     </PRE
+></TD
+></TR
+></TABLE
 ></DIV
 ><DIV
 CLASS="refsect1"
@@ -6534,6 +7497,12 @@ NAME="AEN1479"
 ></A
 ><H2
 >Synopsis</H2
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
 ><PRE
 CLASS="programlisting"
 >&#13;      
@@ -6547,6 +7516,9 @@ CLASS="programlisting"
         &#60;set TimeOffset="+2"&#62;
       
     </PRE
+></TD
+></TR
+></TABLE
 ></DIV
 ><DIV
 CLASS="refsect1"
@@ -6595,6 +7567,12 @@ NAME="AEN1494"
 ></A
 ><H2
 >Synopsis</H2
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
 ><PRE
 CLASS="programlisting"
 >&#13;      
@@ -6603,6 +7581,9 @@ CLASS="programlisting"
         &#60;set RegexpAliases="1"&#62;
       
     </PRE
+></TD
+></TR
+></TABLE
 ></DIV
 ><DIV
 CLASS="refsect1"
@@ -6657,12 +7638,21 @@ NAME="AEN1511"
 ></A
 ><H2
 >Synopsis</H2
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
 ><PRE
 CLASS="programlisting"
 >&#13;      
         &#60;set LangFile="mylang.txt"&#62;
       
     </PRE
+></TD
+></TR
+></TABLE
 ></DIV
 ><DIV
 CLASS="refsect1"
@@ -6706,12 +7696,21 @@ NAME="AEN1525"
 ></A
 ><H2
 >Synopsis</H2
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
 ><PRE
 CLASS="programlisting"
 >&#13;      
         &#60;set CssDir="/usr/share/pisg/layout/"&#62;
       
     </PRE
+></TD
+></TR
+></TABLE
 ></DIV
 ><DIV
 CLASS="refsect1"
@@ -6763,6 +7762,12 @@ NAME="AEN1541"
 ></A
 ><H2
 >Synopsis</H2
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
 ><PRE
 CLASS="programlisting"
 >&#13;      
@@ -6770,6 +7775,9 @@ CLASS="programlisting"
         &#60;set HiCell=""&#62;
       
     </PRE
+></TD
+></TR
+></TABLE
 ></DIV
 ><DIV
 CLASS="refsect1"
@@ -6835,12 +7843,21 @@ NAME="AEN1561"
 ></A
 ><H2
 >Synopsis</H2
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
 ><PRE
 CLASS="programlisting"
 >&#13;      
         &#60;set LogType="Logfile"&#62;
       
     </PRE
+></TD
+></TR
+></TABLE
 ></DIV
 ><DIV
 CLASS="refsect1"
@@ -6884,12 +7901,21 @@ NAME="AEN1575"
 ></A
 ><H2
 >Synopsis</H2
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
 ><PRE
 CLASS="programlisting"
 >&#13;      
         &#60;set StatsDump="statsdump"&#62;
       
     </PRE
+></TD
+></TR
+></TABLE
 ></DIV
 ><DIV
 CLASS="refsect1"
@@ -6921,7 +7947,7 @@ CLASS="chapter"
 ><A
 NAME="copyright"
 ></A
->Chapter 7. Copyright and License</H1
+>Copyright and License</H1
 ><P
 >&#13;    pisg - Perl IRC Statistics Generator
     </P
