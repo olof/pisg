@@ -24,6 +24,7 @@ $path=$route->path;
 $newpath=$route->checkpath($path);
 if ($path != $newpath) { $route->redirect($basepath.$newpath); }
 //backwards compat
+if ($path == 'frontpage') { $route->redirect($basepath); }
 if (isset($_GET['page'])) { $route->redirect($basepath.htmlspecialchars($_GET['page'])); }
 
 //set title
