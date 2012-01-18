@@ -20,6 +20,11 @@ FreeBSD port</a> package.</p>
 href="http://fink.sourceforge.net/pdb/package.php/pisg">fink package</a>,
 installable via the <a href="http://fink.sourceforge.net">Fink project</a></p>
 
+<h3>RHEL/CentOS/Fedora (Linux)</h3>
+<p>You can install pisg on most redhat based Linux operating systems using the following:</p>
+<pre>yum install pisg</pre>
+<p>Note: You may need <a href="http://fedoraproject.org/wiki/EPEL">EPEL</a> installed and enabled.</p>
+
 <h3>Git</h3>
 <p>You can also download the latest development version of pisg via the Git
 repositry.</p>
