@@ -5,7 +5,7 @@
 <link rel="stylesheet" type="text/css" href="css/<?=$style?$style:'pisg'?>.css" />
 </head>
 <body>
- <div class="top"><h1><a href="home"><?=$sitename?></a></h1></div>
+ <div class="top"><h1><a href="home"><img src="images/logo.png" alt="<?=$sitename?>"></a></h1></div>
  <ul id="nav" class="box">
   <li><a href="about">About</a></li>
   <li><a href="examples">Examples</a></li>
