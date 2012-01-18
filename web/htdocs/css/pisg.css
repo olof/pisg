@@ -8,25 +8,25 @@ body {
 }
 h2 {
 	font-size: x-large;
-	color: black;
+	color: #333;
 	font-weight: bold;
 	background: #fffdbc;
 	padding: 3px;
-	border: 1px solid black
+	border: none;
 }
 h3 {
 	font-size: larger;
-	color: black;
+	color: #333;
 	font-weight: bold;
 	background: #fffdbc;
 	padding: 3px;
-	border: 1px solid black
+	border: none;
 }
 h4 {
-	color: black;
+	color: #333;
 	background: #fffdbc;
 	padding: 3px;
-	border: 1px solid black
+	border: none;
 }
 b {
 	color: black;
