@@ -1,10 +1,15 @@
-html {
-	background-color: #F0F0F0;
+html,body {
+	margin: 0;
+	padding:0;
 }
 body {
+	background: white;
 	font-family: verdana, arial, sans-serif;
-	color: #585858;
-	margin: 0px;
+	color: #333;
+	line-height: 130%;
+}
+h1 {
+	margin:0;
 }
 h2 {
 	font-size: x-large;
@@ -28,13 +33,10 @@ h4 {
 	padding: 3px;
 	border: none;
 }
-b {
-	color: black;
-}
 a {
 	font-weight: bold;
 	font-family: verdana, arial, sans-serif;
-	color: #0f4391;
+	color: #0c4686;
 }
 a:hover {
 	text-decoration: underline;
@@ -43,24 +45,24 @@ a {
 	text-decoration: none;
 }
 .top {
-	color: black;
-	font-weight: bold;
-	font-size: 20px;
-	background-color: #6699CC;
-	border-bottom: 3px solid black;
-	padding: 5px;
 	text-align: center;
+	background: #69C;
+	height: 100%;
+	margin: 0;
+	padding: 20px 0;
+	border-bottom: 3px solid black;
 }
 
 .box {
 	background: white;
 	border: 1px solid #ccccbb;
 	border-top: none;
-	padding: 5px;
+	padding-bottom: 5px;
 	text-align: center;
 }
 #content {
-	padding: 0 10px;
+	margin: 0 auto;
+	width: 720px;
 }
 #footer {
 	font-size: x-small;
@@ -83,10 +85,16 @@ a {
 }
 #nav {
 	list-style:none;
+	background: #f0f0f0;
+	margin:0;
+	padding: 0.5em 0;
 }
 #nav li {
 	display:inline;
 }
 #nav li a {
 	padding:8px 16px;
+	font-weight: bold;
+	font-family: verdana, arial, sans-serif;
+	color: #0f4391;
 }
