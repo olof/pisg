@@ -3,7 +3,7 @@
 <head>
 <title><?=$pagetitle?></title>
 <link rel="stylesheet" type="text/css" href="css/<?=$style?$style:'pisg'?>.css" />
-<link rel="shortcut icon" href="facicon.png" />
+<link rel="shortcut icon" href="favicon.png" />
 </head>
 <body>
  <div class="top"><h1><a href="<?=$basepath?>"><img src="images/logo.png" alt="<?=$sitename?>"></a></h1></div>
