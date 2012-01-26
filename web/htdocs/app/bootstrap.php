@@ -43,9 +43,10 @@ $view->data+=$config['data'];
 //add the logic data
 $file=DIR_APP.DIRSEP.$path;
 if (file_exists($file.'.php')) { include $file.'.php'; }
+$data['config']=&$config;
+$data['db']=&$db;
 $data['path']=$path;
 $data['content']='';
-$data['db']=&$db;
 //add data to view
 $view->data+=$data;
 unset($data);

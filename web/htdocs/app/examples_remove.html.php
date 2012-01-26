@@ -1,33 +1,43 @@
-<h3>Remove example pisg page</h3>
+<h3>Remove example</h3>
 
-<? if (isset($_POST['remove_description'])) { ?>
+<?php
 
-<?
-include("mysql.php");
-$query = mysql_query("SELECT channel, url, network, maintainer FROM
-examples WHERE id='$id'") or die(mysql_error());
+$id=isset($_REQUEST['id'])?htmlspecialchars($_REQUEST['id']):'';
+    
+if (isset($_POST['remove_description'])) {
 
-mysql_query("UPDATE examples SET remove=1, reason='$remove_description' WHERE ID='$id'") or die(mysql_error());
+    $remove_description=$db->quote($_POST['remove_description']);
+    $email=isset($_POST['email'])?$db->quote($_POST['email']):'';
 
-$row = mysql_fetch_array($query);
-/*
-$host = gethostbyaddr($REMOTE_ADDR);
-mail("morten@mbrix.dk", "[pisg] Page removal", "Page to be removed:\n\tID: $id\n\tURL: $row[url]\n\tChannel: $row[channel]\n\n\tPage removal reason: $remove_description\n\nUser agent: $HTTP_USER_AGENT\nHost: $host\n");
-*/
+    $row = $db->query("SELECT channel, url, network, maintainer FROM examples WHERE id='$id'")->fetch();
+
+    //$db->exec("UPDATE examples SET remove=1, reason=$remove_description WHERE ID=$id");
+
+    include'sendmail.php';
+    $mail=new Sendmail($config['smtp']['user'],$config['smtp']['pass'],$config['smtp']['host'],$config['smtp']['port']);
+    $to='pisg-commits@lists.sourceforge.net';
+    $subject='Example removal';
+    $message="Example to be removed:\n
+        ID: $id\n
+        Channel: ".$row['channel']."\n
+        URL: ".$row['url']."\n
+        Reason: $remove_description";
+    $mail->send($to, $subject, $message, $email);
+
 ?>
 
-Thank you for the notice of removal, your submission will be reviewed, and
-the page will be removed if the reason is found appropriate.
+<p>Thank you for the notice of removal, your submission will be reviewed, and
+the link will be removed if the reason is found appropriate.</p>
 
-<? } else { ?>
-Please state briefly why the page should be removed, and then enter
-'submit'.
+<?php } else { ?>
 
-<form method="POST" action="index.php?page=examples_remove">
-
-<input type="text" name="remove_description" size="50"/>
-<input type="hidden" name="id" value="<?=$id?>" /><br /> 
-<input type="submit" />
+<form method="POST" action="examples_remove">
+    <p>Please state briefly why the page should be removed.</p>
+    <input type="text" name="remove_description" size="50" />
+    <p>Please enter your email address:</p>
+    <input type="text" name="email" size="50" />
+    <input type="hidden" name="id" value="<?=$id?>" />
+    <input type="submit" />
 </form>
 
-<? } ?>
+<?php } ?>
