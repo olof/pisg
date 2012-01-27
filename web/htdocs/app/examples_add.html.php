@@ -9,7 +9,7 @@ if ($_POST) {
     $maintainer=isset($_POST['maintainer'])?htmlspecialchars($_POST['maintainer']):'';
     $email=isset($_POST['email'])?$db->quote($_POST['email']):'';
 
-    $sql="INSERT INTO examples (channel, url, network, maintainer) VALUES (%s, %s, %s, %s)",$db->quote($channel),$db->quote($url),$db->quote($network),$db->quote($maintainer));
+    $sql=sprintf("INSERT INTO examples (channel, url, network, maintainer) VALUES (%s, %s, %s, %s)",$db->quote($channel),$db->quote($url),$db->quote($network),$db->quote($maintainer));
     $db->exec($sql);
 
     include'sendmail.php';
