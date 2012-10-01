@@ -193,14 +193,13 @@ sub match_domain
 {
     my ($url, $level) = @_;
 
-    my ($domain) = $url =~ m;^(?:\w+://)?([\w.-]+?);;
+    my ($domain) = $url =~ m;^(?:\w+://)?([\w.-]+);;
     $domain =~ s/(.*)\.?$/lc $1/e;
 
     my @labels = split /\./, $domain;
-    return ( $level and $level < @labels ? 
-        join '.', @labels[ @labels - $level .. $#labels ]: 
-        $domain
-    );
+    return $domain unless $level and @labels > $level;
+
+    return join '.', @labels[ @labels - $level .. $#labels ];
 }
 
 sub htmlentities
