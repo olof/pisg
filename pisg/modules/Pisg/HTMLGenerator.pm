@@ -163,6 +163,10 @@ sub create_output
         $self->_mosturls();
     }
 
+    if ($self->{cfg}->{showmrd}) {
+        $self->_mostdomains();
+    }
+
     if ($self->{cfg}->{showcharts}) {
         $self->_charts();
     }
@@ -2003,6 +2007,46 @@ sub _karma
         _html("</tr>");
     }
     _html("</table>");
+}
+
+sub _mostdomains
+{
+    # List showing the most referenced URLs
+    my $self = shift;
+
+    my @sortdomains = sort { $self->{stats}->{dnscounts}{$b} <=> $self->{stats}->{dnscounts}{$a} }
+                        keys %{ $self->{stats}->{dnscounts} };
+
+    if (@sortdomains) {
+
+        $self->_headline($self->_template_text('domainstopic'));
+
+        _html("<table border=\"0\" width=\"$self->{cfg}->{tablewidth}\"><tr>");
+        _html("<td>&nbsp;</td><td class=\"tdtop\"><b>" . $self->_template_text('domain') . "</b></td>");
+        _html("<td class=\"tdtop\"><b>" . $self->_template_text('numberuses') . "</b></td>");
+        _html("<td class=\"tdtop\"><b>" . $self->_template_text('lastused') . "</b></td></tr>");
+
+        for(my $i = 0; $i < $self->{cfg}->{domainhistory}; $i++) {
+            last unless $i < @sortdomains;
+            my $a = $i + 1;
+            my $dnscount = $self->{stats}->{dnscounts}{$sortdomains[$i]};
+            my $lastused = $self->{stats}->{dnsnicks}{$sortdomains[$i]};
+            my $printdns = $sortdomains[$i];
+            if ($printdns and length($printdns) > 60) {
+                $printdns = substr($printdns, 0, 60);
+            }
+
+            # can't hurt, can it? IDNs could be a problem otherwise
+            $printdns = htmlentities($printdns, $self->{cfg}->{charset});
+            my $class = ($a == 1) ? 'hirankc' : 'rankc';
+            _html("<tr><td class=\"$class\">$a</td>");
+            _html("<td class=\"hicell\">$printdns</td>");
+            _html("<td class=\"hicell\">$dnscount</td>");
+            _html("<td class=\"hicell\">$lastused</td>");
+            _html("</tr>");
+        }
+        _html("</table>");
+    }
 }
 
 sub _mosturls
