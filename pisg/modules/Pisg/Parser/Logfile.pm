@@ -430,12 +430,17 @@ sub _parse_file
                             if $thing =~ /\w\W*?\w/ and !is_ignored($thing) and $thing ne lc($nick);
                     }
 
-                    # Find URLs
+                    # Find URLs and domains
                     if (my @urls = match_urls($saying)) {
                         foreach my $url (@urls) {
                             if(!url_is_ignored($url)) {
                                 $stats->{urlcounts}{$url}++;
                                 $stats->{urlnicks}{$url} = $nick;
+
+                                my $domain = match_domain($url, $self->{cfg}->{domainlevel});
+                                die($url) unless $domain;
+                                $stats->{dnscounts}{$domain}++;
+                                $stats->{dnsnicks}{$domain} = $nick;
                             }
                         }
                     }
@@ -854,7 +859,7 @@ sub _merge_stats
             $stats->{$key} = $s->{$key};
         } elsif ($key =~ /^(parsedlines|totallines)$/) { # {key} = int: add
             $stats->{$key} += $s->{$key};
-        } elsif ($key =~ /^(wordnicks|word_upcase|urlnicks|chartnicks|smileynicks)$/) { # {key}->{} = str: copy
+        } elsif ($key =~ /^(wordnicks|word_upcase|urlnicks|dnsnicks|chartnicks|smileynicks)$/) { # {key}->{} = str: copy
             foreach my $subkey (keys %{$s->{$key}}) {
                 $stats->{$key}->{$subkey} = $s->{$key}->{$subkey};
             }

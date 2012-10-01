@@ -26,7 +26,7 @@ Pisg::Common - some common functions of pisg.
 
 use Exporter;
 @ISA = ('Exporter');
-@EXPORT = qw(add_alias add_aliaswild add_ignore add_url_ignore is_ignored url_is_ignored find_alias store_aliases restore_aliases match_urls match_email htmlentities urlencode is_nick randomglob wordlist_regexp);
+@EXPORT = qw(add_alias add_aliaswild add_ignore add_url_ignore is_ignored url_is_ignored find_alias store_aliases restore_aliases match_urls match_domain match_email htmlentities urlencode is_nick randomglob wordlist_regexp);
 
 use strict;
 $^W = 1;
@@ -184,6 +184,23 @@ sub match_urls
     }
 
     return @urls;
+}
+
+# Given $url, extract the $level last labels of the domain. E.g.:
+#  match_domain('http://www.youtube.com/watch?v=xxxxx', 2)
+# returns "youtube.com".
+sub match_domain
+{
+    my ($url, $level) = @_;
+
+    my ($domain) = $url =~ m;^(?:\w+://)?(.*?)(?:/.*)?$;;
+    $domain =~ s/(.*)\.?$/lc $1/e;
+
+    my @labels = split /\./, $domain;
+    return ( $level and $level < @labels ? 
+        join '.', @labels[ @labels - $level .. $#labels ]: 
+        $domain
+    );
 }
 
 sub htmlentities
