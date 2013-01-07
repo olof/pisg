@@ -399,6 +399,11 @@ sub _parse_file
                         }
                     }
 
+                    if (my @lol = $saying =~ /\b(?:rofl(?:ol)|lol|lulz)\b/igo) {
+                        $stats->{lol}{$nick} += int @lol;
+                        push @{ $lines->{lollines}{$nick} }, $line;
+                    }
+
                     if ($self->{foulwords_regexp} and my @foul = $saying =~ /$self->{foulwords_regexp}/) {
                         $stats->{foul}{$nick} += scalar @foul;
                         push @{ $lines->{foullines}{$nick} }, $line;

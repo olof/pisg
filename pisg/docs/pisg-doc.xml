@@ -1806,6 +1806,40 @@
     </refsect1>
     </refentry>
 
+    <!-- *** SHOWLOLLINE *** -->
+    <refentry id="ShowLolLine">
+
+    <refmeta> <refentrytitle>ShowLolLine</refentrytitle> </refmeta>
+
+    <refnamediv>
+    <refname>ShowLolLine</refname>
+    <refpurpose>enable or disable the lol line</refpurpose>
+    </refnamediv>
+
+    <refsynopsisdiv><programlisting>
+      <![CDATA[
+        <channel="#channel">
+         Logfile = "channel.log"
+         Format = "bobot"
+         ShowLolLine = "0"
+        </channel>
+
+        <set ShowLolLine="1">
+      ]]>
+    </programlisting></refsynopsisdiv>
+
+    <refsect1>
+    <title>Description</title>
+    <para>
+    By default, pisg shows an example lol line in the "Most
+    lols"-stats.  With this option it can be disabled.
+    </para>
+    </refsect1>
+    <refsect1>
+    <title>Default</title>
+    <para> 1 (enabled) </para>
+    </refsect1>
+    </refentry>
     <!-- *** SHOWVIOLENTLINES *** -->
     <refentry id="ShowViolentLines">
 

@@ -155,6 +155,7 @@ sub get_default_config_settings
         showfoulline => 0,
         showfouldecimals => 1,
         showshoutline => 1,
+        showlolline => 1,
         showviolentlines => 1,
         showrandquote => 1,
         showmuw => 1,

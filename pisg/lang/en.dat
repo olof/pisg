@@ -81,6 +81,11 @@ foul2 = "<b>[:nick]</b> also makes sailors blush, [:per]% of the time."
 foul3 = "Nobody is foul-mouthed in [:channel]!  Get out much?"
 foultext = "<b>For example, like this:</b><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[:line]"
 
+lol1 = "<b>[:nick]</b> likes to share a good laughter, lolling [:count] times."
+lol2 = "<b>[:nick]</b> is also a cheerful fellow, with [:count] lols to [:his:her:] name."
+lol3 = "No lolling in [:channel]? How dull!"
+loltext = "<b>For example, like this:</b><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[:line]"
+
 smiles1 = "<b>[:nick]</b> brings happiness to the world.  [:per]% lines contained smiling faces.  :)"
 smiles2 = "<b>[:nick]</b> isn't a sad person either, smiling [:per]% of the time."
 smiles3 = "Nobody smiles in [:channel]!  Cheer up guys and girls."
