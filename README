@@ -1,0 +1,18 @@
+Note about this github repo (olof/pisg)
+---------------------------------------
+This is an unofficial pisg repo, with various patches. Please do
+not bother upstream if this doesn't work :-). (Feel free to open
+issues here though!)
+
+ * The branch "upstream" points to the current HEAD of upstream's master
+ * The branch "integration" has all my patches cherry-picked
+
+Currently, the following features has been applied:
+
+ * Most referenced domains (similar to most referenced URLs)
+ * Most lollers (toplist of people saying lol)
+
+/Olof Johansson (zibri @ freenode, oftc)
+
+PS. Upstream's README is (as it has always been) available in
+pisg/README.
