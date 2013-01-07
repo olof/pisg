@@ -1,3 +1,20 @@
+Note about this github repo (olof/pisg)
+---------------------------------------
+This is an unofficial pisg repo, with various patches. Please do not
+bother upstream if this doesn't work :-). (Feel free to open issues
+here though!)
+
+ * The branch "upstream" points to the current HEAD of upstream's master
+ * The branch "integration" has all my patches cherry-picked
+
+/Olof Johansson (zibri @ freenode, oftc)
+
+The rest of this document is upstream's README.
+
+========================================================================
+
+
+
 Perl IRC Statistics Generator (pisg) is a Perl script which takes IRC
 logfiles and turns them into nice looking stats, which can be amusing to
 show for the users of your channel.
