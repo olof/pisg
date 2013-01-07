@@ -193,7 +193,7 @@ sub match_domain
 {
     my ($url, $level) = @_;
 
-    my ($domain) = $url =~ m;^(?:\w+://)?(.*?)(?:/.*)?$;;
+    my ($domain) = $url =~ m;^(?:\w+://)?([\w.-]+?);;
     $domain =~ s/(.*)\.?$/lc $1/e;
 
     my @labels = split /\./, $domain;
