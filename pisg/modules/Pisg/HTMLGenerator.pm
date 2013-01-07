@@ -183,6 +183,7 @@ sub create_output
         $self->_mostmonologues();
         $self->_mostjoins();
         $self->_mostfoul();
+        $self->_mostlol();
         _html("</table>"); # Needed for sections
     }
 
@@ -1258,6 +1259,56 @@ sub _mostfoul
         _html("</td></tr>");
     } else {
         my $text = $self->_template_text('foul3');
+
+        _html("<tr><td class=\"hicell\">$text</td></tr>");
+    }
+}
+
+sub _mostlol
+{
+    my $self = shift;
+
+    my %count;
+
+    foreach my $nick (sort keys %{ $self->{stats}->{lol} }) {
+        if ($self->{topactive}{$nick} || !$self->{cfg}->{showonlytop}) {
+            if ($self->{stats}->{lines}{$nick} > 15) {
+                $count{$nick} = $self->{stats}->{lol}->{$nick};
+            }
+        }
+    }
+
+    my @lollers = sort { $count{$b} <=> $count{$a} } keys %count;
+
+    if (@lollers) {
+        my %hash = (
+            nick  => $lollers[0],
+            count => $count{$lollers[0]},
+            line  => $self->_format_line($self->{stats}{lollines}{$lollers[0]}),
+        );
+
+        my $text = $self->_template_text('lol1', %hash);
+
+        if($self->{cfg}->{showlolline}) {
+            my $exttext = $self->_template_text('loltext', %hash);
+            _html("<tr><td class=\"hicell\">$text<br /><span class=\"small\">$exttext</span>");
+        } else {
+            _html("<tr><td class=\"hicell\">$text");
+        }
+
+        if (@lollers >= 2) {
+            my %hash = (
+                nick => $lollers[1],
+                count  => $count{$lollers[1]}
+            );
+
+            my $text = $self->_template_text('lol2', %hash);
+            _html("<br /><span class=\"small\">$text</span>");
+        }
+
+        _html("</td></tr>");
+    } else {
+        my $text = $self->_template_text('lol3');
 
         _html("<tr><td class=\"hicell\">$text</td></tr>");
     }
