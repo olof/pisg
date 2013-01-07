@@ -11,7 +11,7 @@ pisg-doc.xml: .version
 pisg-doc.txt: pisg-doc.xml
 	docbook2txt pisg-doc.xml
 	mv pisg-doc.txt pisg-tmp.txt
-	cat pisg-tmp.txt | ./modifytxt.pl > pisg-doc.txt
+	cat pisg-tmp.txt | perl modifytxt.pl > pisg-doc.txt
 	rm -f pisg-tmp.txt
 
 pisg-doc.html: pisg-doc.xml
